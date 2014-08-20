@@ -1,0 +1,75 @@
+//
+// Part of MZP.CZ Redesign Project
+// @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
+// @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
+// @licence CC BY-NC-ND 3.0 CZ
+// --------------------------------------------------
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?zgai7r');
+	src:url('../fonts/icomoon.eot?#iefixzgai7r') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?zgai7r') format('woff'),
+		url('../fonts/icomoon.ttf?zgai7r') format('truetype'),
+		url('../fonts/icomoon.svg?zgai7r#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icomoon,
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb2:before {
+	content: "\e60b";
+}
+.icon-bar:before {
+	content: "\e60a";
+}
+.icon-caret:before {
+	content: "\e609";
+}
+.icon-gt:before {
+	content: "\e608";
+}
+.icon-search:before {
+	content: "\e607";
+}
+.icon-bubble:before {
+	content: "\e600";
+}
+.icon-clock:before {
+	content: "\e601";
+}
+.icon-crumb:before {
+	content: "\e602";
+}
+.icon-home:before {
+	content: "\e603";
+}
+.icon-print:before {
+	content: "\e604";
+}
+.icon-rss:before {
+	content: "\e605";
+}
+.icon-sitemap:before {
+	content: "\e606";
+}
+.icon-fb:before {
+	content: "\e60c";
+}
+.icon-rss2:before {
+	content: "\e60d";
+}

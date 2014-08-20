@@ -1,0 +1,76 @@
+//
+// Part of MZP.CZ Redesign Project
+// @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
+// @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
+// @licence CC BY-NC-ND 3.0 CZ
+// --------------------------------------------------
+
+// Local variables and mixins
+@import "variables";
+@import "mixins";
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+//@import "bootstrap/print";
+//@import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+//@import "bootstrap/type";
+//@import "bootstrap/code";
+@import "bootstrap/grid";
+//@import "bootstrap/tables";
+//@import "bootstrap/forms";
+//@import "bootstrap/buttons";
+
+// Components
+//@import "bootstrap/component-animations";
+//@import "bootstrap/dropdowns";
+//@import "bootstrap/button-groups";
+//@import "bootstrap/input-groups";
+//@import "bootstrap/navs";
+//@import "bootstrap/navbar";
+//@import "bootstrap/breadcrumbs";
+//@import "bootstrap/pagination";
+//@import "bootstrap/pager";
+//@import "bootstrap/labels";
+//@import "bootstrap/badges";
+//@import "bootstrap/jumbotron";
+//@import "bootstrap/thumbnails";
+//@import "bootstrap/alerts";
+//@import "bootstrap/progress-bars";
+//@import "bootstrap/media";
+//@import "bootstrap/list-group";
+//@import "bootstrap/panels";
+@import "bootstrap/responsive-embed";
+//@import "bootstrap/wells";
+//@import "bootstrap/close";
+
+// Components w/ JavaScript
+//@import "bootstrap/modals";
+@import "bootstrap/tooltip";
+//@import "bootstrap/popovers";
+//@import "bootstrap/carousel";
+
+// Compass
+@import "compass/css3/images";
+@import "compass/css3/border-radius";
+@import "compass/utilities/sprites";
+@import "compass/css3/transition";
+
+// Owl carousel
+@import "owl.carousel.scss"; // from bower_components
+@import "owl.carousel";
+
+// MZP styles
+@import "icomoon";
+@import "common";
+@import "layout";
+@import "content";
+
+
+

@@ -1,0 +1,38 @@
+{
+  "name": "mzp-cz-redesign",
+  "title": "MZP.CZ Redesign Project",
+  "version": "0.1.0",
+  "author": {
+    "name": "Lukas Vorlicek <lukas.vorlicek@codeart.cz>"
+  },
+  "licenses": [
+    {
+      "type": "CC BY-NC-ND 3.0 CZ",
+      "url": "http://creativecommons.org/licenses/by-nc-nd/3.0/cz/"
+    }
+  ],
+  "private": true,
+  "engines": {
+    "node": ">= 0.10.30"
+  },
+  "dependencies": {
+    "connect": "^3.1.1",
+    "serve-static": "^1.5.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compass": "^0.9.1",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-htmlhint": "^0.4.1",
+    "grunt-markdown-pdf": "^2.1.1"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "postupdate": "bower update"
+  }
+}
