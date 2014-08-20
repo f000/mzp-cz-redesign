@@ -216,6 +216,8 @@ button, a {
     @extend .icon-gt;
     font-family: $font-family-sans-serif;
     &:before{
+      padding-right:5px;
+      font-size: $font-size-small;
       font-family: 'icomoon';
     }
   }
