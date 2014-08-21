@@ -1,50 +1,58 @@
+//
+// Part of MZP.CZ Redesign Project
+// @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
+// @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
+// @licence CC BY-NC-ND 3.0 CZ
+// --------------------------------------------------
+
 .main-menu{
-  > ul{
-    list-style-type: none;
-    margin: 0 $grid-gutter-width 0 0;
-    padding-left: 0;
-    > li{
-      display: inline-block;
-      a,a:visited{
-        color:$gray-dark;
-        display:block;
-        border-right:1px solid $green-border;
-        padding: 0 1em 0 0;
-        margin:0 1em 0 0;
-        @extend .icomoon;
-        @extend .icon-bar;
-        font-family: $font-family-sans-serif;
-        &:before {
-          font-family: 'icomoon';
-          font-size:$icomoon-bar-fontsize;
-        	position: absolute;
-          margin-top:-33px;
-          font-weight:400;
-          color:$brand-green3;
-          display:none;
-        }
-        &:hover,&:focus{
-          color:$brand-green3;
-          text-decoration:none;
-          outline:0;
-          &:before {
-            display:block;
-          }
-        }
-      }
-      &:last-child{
-        a,a:visited{
-          border-right:0;
-          padding:0;
-        }
-      }
-      &.active a, &.active a:visited{
+  list-style-type: none;
+  margin: 0 $grid-gutter-width 0 0;
+  padding-left: 0;
+  > li{
+    display: inline-block;
+    a,a:visited{
+      color:$gray-dark;
+      display:block;
+      border-right:1px solid $green-border;
+      padding: 0 1em 0 0;
+      margin:0 1em 0 0;
+      @extend .icomoon;
+      @extend .icon-bar;
+      font-family: $font-family-sans-serif;
+      &:before {
+        font-family: 'icomoon';
+        font-size:$icomoon-bar-fontsize;
+      	position: absolute;
+        margin-top:-33px;
+        font-weight:400;
         color:$brand-green3;
+        display:none;
+      }
+      &:hover,&:focus{
+        color:$brand-green3;
+        text-decoration:none;
+        outline:0;
         &:before {
           display:block;
         }
       }
     }
+    &:last-child{
+      a,a:visited{
+        border-right:0;
+        padding:0;
+      }
+    }
+    &.active a, &.active a:visited{
+      color:$brand-green3;
+      &:before {
+        display:block;
+      }
+    }
   }
-  ul ul{display: none;}
+  .sub{
+    display: none;
+    ul{}
+  }
 }

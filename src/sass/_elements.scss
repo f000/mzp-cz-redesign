@@ -28,7 +28,7 @@
     &:before{
       padding-right:5px;
       font-size: $font-size-small;
-      font-family: 'icomoon';
+      font-family: "icomoon";
     }
   }
 }
@@ -74,7 +74,7 @@
     font-family: $font-family-sans-serif;
     color:#80807e;
     &:before {
-    	font-family: 'icomoon';
+    	font-family: "icomoon";
       font-size:$icomoon-bar-fontsize;
     	position: absolute;
       margin-top:-33px;
@@ -492,7 +492,7 @@
 }
 
 // Icon nav list
-.icon-nav{
+.ico-nav{
   padding:0;
   list-style-type: none;
   a,a:visited{
@@ -583,5 +583,3 @@
     }
   }
 }
-
-

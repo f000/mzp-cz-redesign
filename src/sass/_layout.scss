@@ -177,7 +177,7 @@
   @extend .col-md-9;
   text-align:right;
   padding: 40px 0 50px 0;
-  @extend .main-menu;
+  //@extend .main-menu; selectors length optimization
   @extend .no-print;
 }
 
@@ -200,7 +200,7 @@
   @extend .no-print;
 }
 
-//Footer
+// Footer layout
 #footer-nav1,
 #footer-nav2,
 #footer-contact{
@@ -211,7 +211,6 @@
   @extend .col-md-3;
   @extend .col-md-pull-9;
 }
-
 #footer-nav1,
 #footer-nav2,
 #footer-contact,
@@ -228,6 +227,8 @@
     @extend .no-print;
   }
 }
+
+// Footer elements
 #print,
 #sitemap{
   @extend .icon-li;
@@ -245,7 +246,7 @@ li#print{
   padding:$line-height-computed 0 $line-height-computed*2 + 12px;
 }
 
-// MZP carousel
+// Organizations
 #organizations{
   @extend .col-md-12;
   > h3{
