@@ -6,17 +6,23 @@
 // --------------------------------------------------
 
 // Full width backgrounds
-.bg-1{
+#bg-1{
   background-color: $bg-gray1;
   @include background-image(linear-gradient(top, $bg-gray1 0%, $bg-gray2 90%, $bg-gray3 100%));
   border-bottom: 1px solid $gray-lighter;
+  @extend .no-print;
 }
-.bg-2{
+#bg-2{
   background-color: $bg-white;
   @include background-image(linear-gradient(top, $bg-gray3 0%, $bg-gray2 10%, $bg-white 60%));
   border-top: 1px solid $gray-xlighter;
+  @media print {
+    border:0;
+    background-image: none;
+    background-color:transparent;
+  }
 }
-.bg-3{
+#bg-3{
   background-color: $bg-white;
   border-top: 1px solid $gray-lighter;
   @include background-image(
@@ -28,22 +34,38 @@
     font-size:$font-size-base;
   }
   padding-bottom:$grid-gutter-width * 4;
+  @media print {
+    border:0;
+    background-image: none;
+    background-color:transparent;
+  }
 }
-.bg-4{ //orgs
+#bg-4{ //orgs
   background-color: $bg-white;
   border-top: 1px solid #e9e9ea;
   padding: 0;
+  @extend .no-print;
+
 }
-.bg-5{
+#bg-5{
   background-color: $gray-darker;
   padding:($grid-gutter-width+5) 0;
+  @media print {
+    padding:0;
+    background-color:transparent;
+  }
+  aside,section{
+    @extend .no-print;
+  }
 }
-.bg-6{
+#bg-6{
   background-color: $bg-white;
   padding:($grid-gutter-width+5) 0 0;
   border-top: 1px solid $gray-lighter;
+  @extend .no-print;
+
 }
-.bg-line-1{
+#bg-line-1{
   height:1px;
   background-color: $bg-white;
 }
@@ -72,11 +94,17 @@
   @extend .col-md-3;
   margin:30px 0 0;
   a{
+    text-decoration:none;
+    color:#000;
     display: block;
     background: url('../img/logo-mzp-cs.svg') no-repeat scroll top left;
     height: 60px;
     width: 100%;
     background-size:contain;
+    @media print {
+      background-image: none;
+      background-color:transparent;
+    }
   }
 }
 .no-svg #header-logo{
@@ -150,6 +178,7 @@
   text-align:right;
   padding: 40px 0 50px 0;
   @extend .main-menu;
+  @extend .no-print;
 }
 
 // Main content
@@ -162,11 +191,13 @@
 #left-sidebar{
   @extend .col-md-3;
   @extend .col-md-pull-6;
+  @extend .no-print;
 }
 
 // Right sidebar
 #right-sidebar{
   @extend .col-md-3;
+  @extend .no-print;
 }
 
 //Footer
@@ -194,6 +225,7 @@
   border-left: 0;  
   ul{
     padding-left:0;
+    @extend .no-print;
   }
 }
 #print,
@@ -231,7 +263,3 @@ li#print{
 #events{
   margin-bottom:$grid-gutter-width/2;
 }
-
-
-
-

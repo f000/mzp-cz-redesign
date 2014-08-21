@@ -10,6 +10,13 @@
   display:none;
 }
 
+// No read more
+.read-more{
+  @media print {
+    display:none;
+  }
+}
+
 // List with arrows
 .arrows{
   list-style: none;
@@ -149,6 +156,11 @@
   @include clearfix();
   .news-item{
     @extend .col-md-6;
+    @media print {
+      width:100%;
+      margin:0;
+      padding:0;
+    }
   }  
 }
 
