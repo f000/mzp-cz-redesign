@@ -146,7 +146,7 @@
 
 // Main navigation
 #main-nav{
-  @extend .col-md-6;
+  @extend .col-md-9;
   text-align:right;
   padding: 40px 0 50px 0;
   > ul{
@@ -239,18 +239,22 @@
 #footer{
   padding-left: $grid-gutter-width/2;
   border-left: 0;  
+  ul{
+    padding-left:0;
+  }
 }
 #print,
 #sitemap{
   @extend .icon-li;
 }
-#print{
+li#print{
   padding-left:0;
-  border:0;
+  border-left:0 !important;
 }
 #accessibility,
 #gotop{
   display:block;
+  float:none;
 }
 #accessibility{
   padding:$line-height-computed 0 $line-height-computed*2 + 12px;

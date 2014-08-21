@@ -117,31 +117,27 @@ module.exports = function(grunt) {
     },
     compass: {
       options: {
-        banner: '<%= banner %>'
+        banner: '<%= banner %>',
+        specify: '<%=dirs.src%>/sass/*',
+        sassDir: '<%=dirs.src%>/sass/',
+        cssDir: '<%=dirs.dist%>/css/',
+        imagesDir: '<%=dirs.src%>/img/',
+        generatedImagesDir: '<%=dirs.dist%>/img/',
+        importPath: [
+          '<%=dirs.libs%>/bootstrap-sass-official/assets/stylesheets/',
+          '<%=dirs.libs%>/owl-carousel2/src/scss/'
+        ],
+        relativeAssets: true
       },
       dist: {
         options: {
-          specify: '<%=dirs.src%>/sass/*',
-          sassDir: '<%=dirs.src%>/sass/',
-          cssDir: '<%=dirs.dist%>/css/',
-          imagesDir: '<%=dirs.src%>/img/',
-          generatedImagesDir: '<%=dirs.dist%>/img/',
-          importPath: ['<%=dirs.libs%>/bootstrap-sass-official/assets/stylesheets/','<%=dirs.libs%>/owl-carousel2/src/scss/'],
           outputStyle: 'compressed',
-          relativeAssets: true,
           noLineComments: true
         }
       },
       dev: {
         options: {
-          specify: '<%=dirs.src%>/sass/*',
-          sassDir: '<%=dirs.src%>/sass/',
-          cssDir: '<%=dirs.dist%>/css/',
-          imagesDir: '<%=dirs.src%>/img/',
-          generatedImagesDir: '<%=dirs.dist%>/img/',
-          importPath: '<%=dirs.libs%>/bootstrap-sass-official/assets/stylesheets/',
           outputStyle: 'nested',
-          relativeAssets: true,
           noLineComments: false
         }
       }

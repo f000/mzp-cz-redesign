@@ -1,0 +1,74 @@
+//
+// Part of MZP.CZ Redesign Project
+// @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
+// @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
+// @licence CC BY-NC-ND 3.0 CZ
+// --------------------------------------------------
+
+//TODO
+
+
+
+//nav
+.carousel-wrap{
+    margin:0 $grid-gutter-width;
+}
+
+.owl-carousel{
+  list-style-type:none;
+  padding-left:0;
+  a, a:visited{
+    text-decoration:none;
+    color:$gray-xdarker;
+    &:hover,&:focus{
+      color:$gray;
+    }
+  }
+  li{
+    min-height:130px;
+    text-align:center;
+  }
+  strong{
+    display:none;
+  }
+  abbr{
+    border:0;
+  }
+  
+  .owl-controls {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    .owl-nav {
+       div{
+        color: $gray-darker;
+        font-size: $font-size-xxlarge;
+        display: inline-block;
+        cursor: pointer;
+        position:relative;
+        margin-top:-130px + $font-size-xxlarge + 12;
+        &:hover {
+          color: $gray;
+          text-decoration: none;
+        }
+      }
+      .disabled {
+        color: $gray;
+        cursor: default;
+      }
+    }
+  }
+  
+  .owl-prev{
+    float:left;
+    position:relative;
+    left:-$grid-gutter-width;
+  }
+  .owl-next{
+    float:right;
+    margin-right:-$grid-gutter-width;
+
+  }
+
+  
+}

@@ -31,17 +31,23 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-fb2:before {
+.icon-lt2:before {
+	content: "\e602";
+}
+.icon-gt2:before {
 	content: "\e60b";
 }
-.icon-bar:before {
-	content: "\e60a";
+.icon-lt:before {
+	content: "\e60c";
 }
 .icon-caret:before {
 	content: "\e609";
 }
 .icon-gt:before {
 	content: "\e608";
+}
+.icon-bar:before {
+	content: "\e60a";
 }
 .icon-search:before {
 	content: "\e607";
@@ -51,9 +57,6 @@
 }
 .icon-clock:before {
 	content: "\e601";
-}
-.icon-crumb:before {
-	content: "\e602";
 }
 .icon-home:before {
 	content: "\e603";
@@ -67,9 +70,7 @@
 .icon-sitemap:before {
 	content: "\e606";
 }
-.icon-fb:before {
-	content: "\e60c";
-}
-.icon-rss2:before {
+.icon-facebook:before {
 	content: "\e60d";
 }
+

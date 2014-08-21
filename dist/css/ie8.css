@@ -4,26 +4,4 @@
  * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
  * @licence CC BY-NC-ND 3.0 CZ
  */
-/* line 17, ../../src/sass/ie8.scss */
-.fluid-bg1 {
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF6F6F6', endColorstr='#FFE9E9E9'); }
-
-/* line 20, ../../src/sass/ie8.scss */
-.fluid-bg2 {
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#FFFFFFFF'); }
-
-/* line 28, ../../src/sass/ie8.scss */
-.news-list article + article + article,
-.news-list article + article + article + article + article {
-  clear: both; }
-/* line 32, ../../src/sass/ie8.scss */
-.news-list article + article + article + article,
-.news-list article + article + article + article + article + article {
-  clear: none; }
-
-/* line 39, ../../src/sass/ie8.scss */
-.banner-list ul li {
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFFFFFFF', endColorstr='#FFE9E9E9'); }
+.fluid-bg1{*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF6F6F6', endColorstr='#FFE9E9E9')}.fluid-bg2{*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#FFFFFFFF')}.news-list article+article+article,.news-list article+article+article+article+article{clear:both}.news-list article+article+article+article,.news-list article+article+article+article+article+article{clear:none}.banner-list ul li{*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFFFFFFF', endColorstr='#FFE9E9E9')}

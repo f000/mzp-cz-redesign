@@ -1,18 +1,18 @@
 /*
- * Part of MZP.CZ Redesign Project
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
+* Part of MZP.CZ Redesign Project
+* @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
+* @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
+* @licence CC BY-NC-ND 3.0 CZ
+*/
 
 /*jslint todo: true */
 /*global Modernizr:false, $:false*/
 
 // SVG Fallback
 if(!Modernizr.svgasimg) {
-    $('img[src*="svg"]').attr('src', function() {
-        return $(this).attr('src').replace('.svg', '.png');
-    });
+  $('img[src*="svg"]').attr('src', function() {
+    return $(this).attr('src').replace('.svg', '.png');
+  });
 }
 
 // Go to top Link
@@ -27,9 +27,9 @@ function scrollToTop(sel) {
 // TODO remove for production
 function shuffleTagCloud(sel) {
   var cloud = $(sel),
-      tags = cloud.children();
+  tags = cloud.children();
   while (tags.length) {
-      cloud.append(tags.splice(Math.floor(Math.random() * tags.length), 1)[0]);
+    cloud.append(tags.splice(Math.floor(Math.random() * tags.length), 1)[0]);
   }
 }
 
@@ -40,10 +40,33 @@ function printPage(sel) {
   });
 }
 
+// Owl carousel
+function owlCarousel(sel) {
+  $(sel).owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    navText: ['<span class="icon-lt2"></span>','<span class="icon-gt2"></span>'],
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:4
+      },
+      1000:{
+        items:6
+      }
+    }
+  });
+}
+
 function initMZP() {
-  shuffleTagCloud('#tagcloud-nav ol');
+  shuffleTagCloud('.tag-cloud');
   scrollToTop('#gotop a');
   printPage('#print a');
+  owlCarousel('.owl-carousel');
   
   //TODO qTip2 for submenu
   //TODO qTip2 for banner figcaption

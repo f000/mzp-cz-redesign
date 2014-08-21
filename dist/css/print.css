@@ -4,19 +4,4 @@
  * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
  * @licence CC BY-NC-ND 3.0 CZ
  */
-/* line 13, ../../src/sass/print.scss */
-.no-print,
-#search-form,
-#lang-nav,
-#main-nav,
-#hp-nav,
-.sidebar {
-  display: none; }
-
-/* line 17, ../../src/sass/print.scss */
-.print-only {
-  display: block; }
-
-/* line 21, ../../src/sass/print.scss */
-#page-header {
-  background: none; }
+.no-print,#search-form,#lang-nav,#main-nav,#hp-nav,.sidebar{display:none}.print-only{display:block}#page-header{background:none}
