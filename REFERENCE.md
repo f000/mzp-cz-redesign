@@ -39,17 +39,27 @@ Pro explicitní definice byla zavedena CSS třída `.print-only` (viditelnost po
 
 ## Pokyny pro implementaci
 
+### Nastavení serveru
+
+Pro HTML soubory doporučujeme posílat HTTP hlavičku `X-UA-Compatible" s hodnotou `IE=edge,chrome=1`. 
+
+HTML, Javascript, CSS a ostatni nekomprimované soubory (TODO)
+
+### Zabezpečení
+
+V produkční verzi nedoporučujeme používání externích zdrojů, jako např. jQuery z Google CND a Google Analytics. Vhodná náhrada za Analytics je např. provozování lokální instalace [Piwik](http://piwik.org).
+
 ### Externí odkazy
 
-Pro kompatibilitu a přístupnost je používán parametr odkazu `target="_blank"`. Pro maximální přístupnost je třeba do těchto odkazů doplňovat upozornění na otevření nového okna
+Pro kompatibilitu a přístupnost je používán parametr odkazu `target="_blank"`. Pro maximální přístupnost je třeba do těchto odkazů přidávat upozornění na otevření nového okna
   
     `<a href="http://facebook.com" target="_blank">MŽP na Facebooku<span class="sr-only"> (otevře nové okno)</span></a>`
 
 ### Sprites
 
-Elementy `.mzp-topics` a `.mzp-organizations` používají pro optimalizaci rychlosti techniku image sprites.
+Elementy `.mzp-topics` a `.mzp-organizations` používají pro optimalizaci rychlosti načítání techniku image sprites.
 
-Sprites se generují pomocí Compass z podadresářů `src/img/`. Pro změnu obrázků stačí přepsat tyto soubory. Pro přidání dalších dalších organizací do `.mzp-organizations` je nutno navíc modifikovat stylesheet `_layout.scss`.
+Obrázkové Sprites se generují pomocí Compass z podadresářů `src/img/`. Pro změnu obrázků stačí přepsat tyto soubory a spustit `grunt compass:dist`. Pro přidání dalších dalších organizací do `.mzp-organizations` je nutno navíc modifikovat stylesheet `_layout.scss`.
 
 ### SVG
 

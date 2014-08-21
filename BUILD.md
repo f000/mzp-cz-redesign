@@ -41,7 +41,7 @@ Jednoduchý build systém (Grunt Task Runner) má nastaveny následující úloh
 – zkopíruje  `dist/*.html` do `src/*.html`
 - pomocí Compass zkompiluje SAAS skripty z `src/sass/` do `dist/css/` vč. minifikace a 
 – vygeneruje nové sprites z podadresářů `src/img/` do `dist/img/`
-- validuje, sloučí a zkompresuje skripty z `src/js/` do `dist/js/` (pomocí UglifyJS)
+- validuje, sloučí a zkomprimuje skripty z `src/js/` do `dist/js/` (pomocí UglifyJS)
 
 Spusťte kompletní task set:
 
