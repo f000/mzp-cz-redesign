@@ -78,7 +78,7 @@
 // Special headings
 .sidebar-box h3,
 #organizations h3,
-#content h1{
+#content h1.green2{
   @extend .fancy-header;
 }
 
@@ -86,7 +86,6 @@
 #header-nav{
   @extend .col-md-12;
   text-align:right;
-
 }
 
 // Logo
@@ -226,6 +225,9 @@
     padding-left:0;
     @extend .no-print;
   }
+  p{
+    margin-bottom:$line-height-computed ;
+  }
 }
 
 // Footer elements
@@ -241,9 +243,10 @@ li#print{
 #gotop{
   display:block;
   float:none;
+  margin-bottom:$line-height-computed ;
 }
 #accessibility{
-  padding:$line-height-computed 0 $line-height-computed*2 + 12px;
+  margin:$line-height-computed 0 $line-height-computed*1.8;
 }
 
 // Organizations
@@ -263,4 +266,12 @@ li#print{
 // Homepage event list
 #events{
   margin-bottom:$grid-gutter-width/2;
+}
+
+// Breadcrumb navigation
+#crumb-nav{
+    @extend .col-md-12;
+    ol{
+      @extend .breadcrumb-nav;
+    }
 }

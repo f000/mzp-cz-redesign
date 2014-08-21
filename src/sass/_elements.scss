@@ -583,3 +583,33 @@
     }
   }
 }
+
+// Breadcrumb nav
+.breadcrumb-nav{
+  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
+  margin-bottom: $line-height-computed;
+  list-style: none;
+  > li {
+    display: inline-block;
+    @extend .icomoon;
+    font-family: $font-family-sans-serif;
+    font-size:$font-size-small;
+    &:before {
+      font-family: "icomoon";
+      font-size:$font-size-xsmall * 2;
+      color: $gray;
+      content: "\e603\00a0"; //home + space
+      position:relative;
+      top: $font-size-xsmall/2 -1px;
+    }
+    + li:before {
+      font-size:$font-size-small * 2;
+      content: "\e60e";
+      position:relative;
+      top: $font-size-small/2;
+    }
+  }
+  > .active {
+    color: $breadcrumb-active-color;
+  }
+}

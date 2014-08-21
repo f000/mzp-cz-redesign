@@ -95,7 +95,7 @@
 				}
 				/* ---- perex */
 					.contentMainText div.perex {
-						font-weight: bolder;
+						font-weight: $weight-bold-sans-serif;
 						color: #000;
 					}
 					// TODO WTF?
@@ -291,7 +291,7 @@
 		 	   		padding: 1em 1em 1em 4em;
 					margin: 1em 0;
 					line-height: 1.2em;
-					font-weight: bold;
+					font-weight: $weight-bold-sans-serif;
 					background-repeat: no-repeat;
 					background-position: 0 center;
 		 	   }
@@ -466,7 +466,7 @@
 						background-repeat: no-repeat;
 						background-position: 100% 0;
 						border-bottom: 1px solid #edf2dc;
-						font-weight: bolder;
+						font-weight: $weight-bold-sans-serif;
 						color: #000;
 					}
 					.contact .contactTop address {
@@ -629,7 +629,7 @@
 						color: #ac0900;
 						border-bottom: 1px solid #dce6bb;
 						width: 350px;
-						font-weight: bolder;
+						font-weight: $weight-bold-sans-serif;
 						overflow: hidden;
 					}
 					ul.contactTel li ul li span.fright {
@@ -637,7 +637,7 @@
 						border-bottom: 1px solid #dce6bb;
 						width: 116px;
 						text-align: right;
-						font-weight: bolder;
+						font-weight: $weight-bold-sans-serif;
 					}
 					ul.contactTel li ul li.end span.fleft,
 					ul.contactTel li ul li.end span.fright {
@@ -831,7 +831,7 @@
 					border-top: 1px solid #edf2dc;
 					font-size: 120%;
 					text-align: center;
-					font-weight: bolder;
+					font-weight: $weight-bold-sans-serif;
 				}
 				table.calendar td {
 					background-color: #f4f8ea;
@@ -853,12 +853,12 @@
 				table.calendar td.act {
 			/*		background-image: url(../img/bg/calenda-action_act.png);	*/
 					color:#AC0900;
-					font-weight:bold;
+					font-weight:$weight-bold-sans-serif;
 				}
 				table.calendar td.action  a {
 					color: #83B719;
 					text-decoration: none;
-					font-weight: bolder;
+					font-weight: $weight-bold-sans-serif;
 				}
 				table.calendar td.act  a {
 					color: #AC0900;
@@ -868,7 +868,7 @@
 					border: none;
 				}
 				table.calendar .mounth .tmounth {
-					font-weight: bolder;
+					font-weight: $weight-bold-sans-serif;
 					color: #83B719;
 					text-align: center;
 					font-size: 120%;

@@ -11,10 +11,10 @@
 $opacity-hover:0.8;
 $transition-duration:0.2s;
 $icomoon-bar-fontsize:49px;
+$border-radius-small:       2px;;
 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap.
 
 $gray-xdarker:   #282828;
 $gray-darker:   #4f4f4f;
@@ -44,16 +44,11 @@ $brand-gray3: lighten(#000, 100%);
 
 $facebook-blue: rgb(59, 89, 152);
 
-$brand-primary:         $brand-green2;
-//$brand-success:         #5cb85c;
-//$brand-info:            #5bc0de;
-//$brand-warning:         #f0ad4e;
-//$brand-danger:          #d9534f;
+$brand-primary: $brand-green2;
 
 
 //== Scaffolding
 //
-//## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
 //$body-bg:               #fff;
@@ -77,19 +72,21 @@ $font-family-sans-serif:  "myriad-pro", Verdana, Helvetica, sans-serif;
 //$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base: 16px;
+$weight-bold-sans-serif:600;
+
+$font-size-base: 15px;
 $font-size-large: 19px;
 $font-size-xlarge: 22px;
-$font-size-xxlarge: 25px;
+$font-size-xxlarge: 26px;
 $font-size-small: 13px;
 $font-size-xsmall: 11px;
 
-//$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+$font-size-h1: $font-size-xxlarge;
 $font-size-h2: $font-size-xlarge;
-$font-size-h3: 18px;
-//$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
-//$font-size-h5:            $font-size-base;
-//$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+$font-size-h3: $font-size-large;
+$font-size-h4: $font-size-base;
+$font-size-h5: $font-size-small;
+$font-size-h6: $font-size-xsmall;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        20/15;
@@ -124,7 +121,7 @@ $headings-font-weight:    400;
 
 //$border-radius-base:        4px;
 //$border-radius-large:       6px;
-$border-radius-small:       2px;
+
 
 //** Global color for active items (e.g., navs or dropdowns).
 //$component-active-color:    #fff;
@@ -157,91 +154,6 @@ $border-radius-small:       2px;
 //** Border color for table and cell borders.
 //$table-border-color:            #ddd;
 
-
-//== Buttons
-//
-//## For each of Bootstrap's buttons, define text, background and border color.
-
-//$btn-font-weight:                normal;
-
-//$btn-default-color:              #333;
-//$btn-default-bg:                 #fff;
-//$btn-default-border:             #ccc;
-
-//$btn-primary-color:              #fff;
-//$btn-primary-bg:                 $brand-primary;
-//$btn-primary-border:             darken($btn-primary-bg, 5%);
-
-//$btn-success-color:              #fff;
-//$btn-success-bg:                 $brand-success;
-//$btn-success-border:             darken($btn-success-bg, 5%);
-
-//$btn-info-color:                 #fff;
-//$btn-info-bg:                    $brand-info;
-//$btn-info-border:                darken($btn-info-bg, 5%);
-
-//$btn-warning-color:              #fff;
-//$btn-warning-bg:                 $brand-warning;
-//$btn-warning-border:             darken($btn-warning-bg, 5%);
-
-//$btn-danger-color:               #fff;
-//$btn-danger-bg:                  $brand-danger;
-//$btn-danger-border:              darken($btn-danger-bg, 5%);
-
-//$btn-link-disabled-color:        $gray-light;
-
-
-//== Forms
-//
-//##
-
-//** `<input>` background color
-//$input-bg:                       #fff;
-//** `<input disabled>` background color
-//$input-bg-disabled:              $gray-lighter;
-
-//** Text color for `<input>`s
-//$input-color:                    $gray;
-//** `<input>` border color
-//$input-border:                   #ccc;
-//** `<input>` border radius
-//$input-border-radius:            $border-radius-base;
-//** Border color for inputs on focus
-//$input-border-focus:             #66afe9;
-
-//** Placeholder text color
-//$input-color-placeholder:        $gray-light;
-
-//** Default `.form-control` height
-//$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2);
-//** Large `.form-control` height
-//$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2);
-//** Small `.form-control` height
-//$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
-
-$legend-color: $gray-darker;
-//$legend-border-color:            #e5e5e5;
-
-//** Background color for textual input addons
-//$input-group-addon-bg:           $gray-lighter;
-//** Border color for textual input addons
-//$input-group-addon-border-color: $input-border;
-
-
-//-- Z-index master list
-//
-// Warning: Avoid customizing these values. They're used for a bird's eye view
-// of components dependent on the z-axis and are designed to all work together.
-//
-// Note: These variables are not generated into the Customizer.
-
-//$zindex-navbar:            1000;
-//$zindex-dropdown:          1000;
-//$zindex-popover:           1060;
-//$zindex-tooltip:           1070;
-//$zindex-navbar-fixed:      1030;
-//$zindex-modal-background:  1040;
-//$zindex-modal:             1050;
 
 
 //== Media queries breakpoints
@@ -318,81 +230,6 @@ $legend-color: $gray-darker;
 //$container-lg:                 $container-large-desktop;
 
 
-//== Tabs
-//$nav-tabs-border-color:                     #ddd;
-
-//$nav-tabs-link-hover-border-color:          $gray-lighter;
-
-//$nav-tabs-active-link-hover-bg:             $body-bg;
-//$nav-tabs-active-link-hover-color:          $gray;
-//$nav-tabs-active-link-hover-border-color:   #ddd;
-
-//$nav-tabs-justified-link-border-color:            #ddd;
-//$nav-tabs-justified-active-link-border-color:     $body-bg;
-
-//== Pills
-//$nav-pills-border-radius:                   $border-radius-base;
-//$nav-pills-active-link-hover-bg:            $component-active-bg;
-//$nav-pills-active-link-hover-color:         $component-active-color;
-
-
-//== Pagination
-//
-//##
-
-//$pagination-color:                     $link-color;
-//$pagination-bg:                        #fff;
-//$pagination-border:                    #ddd;
-
-//$pagination-hover-color:               $link-hover-color;
-//$pagination-hover-bg:                  $gray-lighter;
-//$pagination-hover-border:              #ddd;
-
-//$pagination-active-color:              #fff;
-//$pagination-active-bg:                 $brand-primary;
-//$pagination-active-border:             $brand-primary;
-
-//$pagination-disabled-color:            $gray-light;
-//$pagination-disabled-bg:               #fff;
-//$pagination-disabled-border:           #ddd;
-
-
-//== Pager
-//
-//##
-
-//$pager-bg:                             $pagination-bg;
-//$pager-border:                         $pagination-border;
-//$pager-border-radius:                  15px;
-
-//$pager-hover-bg:                       $pagination-hover-bg;
-
-//$pager-active-bg:                      $pagination-active-bg;
-//$pager-active-color:                   $pagination-active-color;
-
-//$pager-disabled-color:                 $pagination-disabled-color;
-
-//== Form states and alerts
-//
-//## Define colors for form feedback states and, by default, alerts.
-
-//$state-success-text:             #3c763d;
-//$state-success-bg:               #dff0d8;
-//$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%);
-
-//$state-info-text:                #31708f;
-//$state-info-bg:                  #d9edf7;
-//$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%);
-
-//$state-warning-text:             #8a6d3b;
-//$state-warning-bg:               #fcf8e3;
-//$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%);
-
-//$state-danger-text:              #a94442;
-//$state-danger-bg:                #f2dede;
-//$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);
-
-
 //== Tooltips
 //
 //##
@@ -410,113 +247,6 @@ $legend-color: $gray-darker;
 //** Tooltip arrow color
 //$tooltip-arrow-color:         $tooltip-bg;
 
-
-//== Popovers
-//
-//##
-
-//** Popover body background color
-//$popover-bg:                          #fff;
-//** Popover maximum width
-//$popover-max-width:                   276px;
-//** Popover border color
-//$popover-border-color:                rgba(0,0,0,.2);
-//** Popover fallback border color
-//$popover-fallback-border-color:       #ccc;
-
-//** Popover title background color
-//$popover-title-bg:                    darken($popover-bg, 3%);
-
-//** Popover arrow width
-//$popover-arrow-width:                 10px;
-//** Popover arrow color
-//$popover-arrow-color:                 #fff;
-
-//** Popover outer arrow width
-//$popover-arrow-outer-width:           ($popover-arrow-width + 1);
-//** Popover outer arrow color
-//$popover-arrow-outer-color:           fade_in($popover-border-color, 0.05);
-//** Popover outer arrow fallback color
-//$popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%);
-
-
-//== Labels
-//
-//##
-
-//** Default label background color
-//$label-default-bg:            $gray-light;
-//** Primary label background color
-//$label-primary-bg:            $brand-primary;
-//** Success label background color
-//$label-success-bg:            $brand-success;
-//** Info label background color
-//$label-info-bg:               $brand-info;
-//** Warning label background color
-//$label-warning-bg:            $brand-warning;
-//** Danger label background color
-//$label-danger-bg:             $brand-danger;
-
-//** Default label text color
-//$label-color:                 #fff;
-//** Default text color of a linked label
-//$label-link-hover-color:      #fff;
-
-
-
-//== Alerts
-//
-//## Define alert colors, border radius, and padding.
-
-//$alert-padding:               15px;
-//$alert-border-radius:         $border-radius-base;
-//$alert-link-font-weight:      bold;
-
-//$alert-success-bg:            $state-success-bg;
-//$alert-success-text:          $state-success-text;
-//$alert-success-border:        $state-success-border;
-
-//$alert-info-bg:               $state-info-bg;
-//$alert-info-text:             $state-info-text;
-//$alert-info-border:           $state-info-border;
-
-//$alert-warning-bg:            $state-warning-bg;
-//$alert-warning-text:          $state-warning-text;
-//$alert-warning-border:        $state-warning-border;
-
-//$alert-danger-bg:             $state-danger-bg;
-//$alert-danger-text:           $state-danger-text;
-//$alert-danger-border:         $state-danger-border;
-
-
-
-//== Thumbnails
-//
-//##
-
-//** Padding around the thumbnail image
-//$thumbnail-padding:           4px;
-//** Thumbnail background color
-//$thumbnail-bg:                $body-bg;
-//** Thumbnail border color
-//$thumbnail-border:            #ddd;
-//** Thumbnail border radius
-//$thumbnail-border-radius:     $border-radius-base;
-
-//** Custom text color for thumbnail captions
-//$thumbnail-caption-color:     $text-color;
-//** Padding around the thumbnail caption
-//$thumbnail-caption-padding:   9px;
-
-
-//== Wells
-//
-//##
-
-//$well-bg:                     #f5f5f5;
-//$well-border:                 darken($well-bg, 7%);
-
-
 //== Breadcrumbs
 //
 //##
@@ -531,32 +261,3 @@ $legend-color: $gray-darker;
 //$breadcrumb-active-color:       $gray-light;
 //** Textual separator for between breadcrumb elements
 //$breadcrumb-separator:          "/";
-
-
-
-//== Type
-//
-//##
-
-//** Horizontal offset for forms and lists.
-//$component-offset-horizontal: 180px;
-//** Text muted color
-//$text-muted:                  $gray-light;
-//** Abbreviations and acronyms border color
-//$abbr-border-color:           $gray-light;
-//** Headings small color
-//$headings-small-color:        $gray-light;
-//** Blockquote small color
-//$blockquote-small-color:      $gray-light;
-//** Blockquote font size
-//$blockquote-font-size:        ($font-size-base * 1.25);
-//** Blockquote border color
-//$blockquote-border-color:     $gray-lighter;
-//** Page header border color
-//$page-header-border-color:    $gray-lighter;
-//** Width of horizontal description list titles
-//$dl-horizontal-offset:        $component-offset-horizontal;
-//** Horizontal line color.
-//$hr-border:                   $gray-lighter;
-
-

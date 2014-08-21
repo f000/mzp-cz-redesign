@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
   <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <!-- TODO remove for production --><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <title>Ministerstvo životního prostředí</title>
   <meta name="description" content="Oficiální webové stránky Ministerstva životního prostředí ČR"/>
   <meta name="keywords" content="životní prostředí, ministerstvo, státní správa, MŽP"/>
@@ -12,11 +12,10 @@
   <script>try{Typekit.load();}catch(e){}</script>
   <script src="js/modernizr-2.8.3-custom.min.js"></script>
   <link rel="stylesheet" media="all" href="css/all.css"/>
-  <link rel="stylesheet" media="print" href="css/print.css"/>
   <!--[if lt IE 9]>
-    <link rel="stylesheet" href="css/ie8.css" />
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
+  <link rel="stylesheet" href="css/ie8.css" />
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
   <![endif]-->
   <link rel="alternate" type="application/rss+xml" title="Aktuality MŽP" href="http://www.env.cz/C1257458002F0DC7/rss?OpenAgent&amp;type=news"/>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
@@ -36,14 +35,14 @@
       <li><a href="#content">Hlavní obsah</a></li>
       <li><a href="#main-nav">Hlavní navigace</a></li>
       <li><a href="#sub-nav">Menu aktuální sekce a služby webu</a></li>
-      <li><a href="#crumb-nav">Drobečková navigace</a></li>
+      <li><a href="#crumb-nav">Drobečková navigace</a></li><!-- TODO subpage only -->
     </ul>
   </nav>
   <header role="banner">
-    <div class="fluid-bg1">
+    <div id="bg-1">
       <div class="container">
         <div class="row">
-          <div id="header-nav" class="col-md-12">
+          <div id="header-nav">
             <section id="search-form">
               <h3 class="sr-only">Hledání</h3>
               <form action="search" method="get" role="search">
@@ -63,21 +62,21 @@
         </div>
       </div>
     </div>
-    <div class="fluid-bg2">
+    <div id="bg-2">
       <div class="container">
         <div class="row">
-          <h1 id="header-logo" class="col-md-3">
-            <a href="/" title="Návrat na titulní stránku" rel="home">
+          <h1 id="header-logo">
+            <a href="/" title="Návrat na úvodní stránku" rel="home">
               <span class="sr-only">Ministerstvo životního prostředí</span>
               <img src="img/logo-mzp-cs.svg" width="263" height="40" class="img-responsive print-only" alt="Logo MŽP"/>
             </a>
           </h1>
-          <nav id="main-nav" class="col-md-9" role="navigation">
+          <nav id="main-nav" role="navigation">
             <h3 class="sr-only">Hlavní navigace</h3>
-            <ul>
+            <ul class="main-menu">
               <li class="active"><a href="#">Úvodní stránka</a></li>
               <li><a href="#">Ministerstvo</a>
-                <div class="main-subnav">
+                <div class="sub">
                   <ul>
                     <li>
                       <a href="#">Ministr</a>
@@ -130,111 +129,73 @@
       </div>
     </div>
   </header>
-  <div class="fluid-bg6">
-    <div class="container">
-      <nav class="row mzp-topics">
-        <h3 class="sr-only">Témata</h3>
-        <ul>
-          <li class="col-xs-6 col-sm-5 col-md-3">
-            <a href="#" class="ovzdusi"><span><em class="icon-gt"></em>Ovzduší</span></a>
-          </li>
-          <li class="col-xs-6 col-sm-5 col-md-3">
-            <a href="#" class="priroda"><span><em class="icon-gt"></em>Příroda a krajina</span></a>
-          </li>
-          <li class="col-xs-6 col-sm-5 col-md-3">
-            <a href="#" class="voda"><span><em class="icon-gt"></em>Voda</span></a>
-          </li>
-          <li class="col-xs-6 col-sm-5 col-md-3 ">
-            <a href="#" class="odpady"><span><em class="icon-gt"></em>Odpadové hospodářství</span></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="fluid-bg3">
-    <div class="fluid-bgline1"></div>
+  <div id="bg-3">
+    <div class="bg-line-1"></div>
     <div class="container">
       <div class="row">
-        <main id="content" class="col-md-6 col-md-push-3" role="main">
+        <nav id="crumb-nav">
+          <ol>
+            <li><a href="#"><span class="sr-only">Úvodní stránka</span></a></li>
+            <li><a href="#">Ministerstvo</a></li>
+            <li>Organizace zřizované MŽP</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row">
+        <main id="content" role="main">
           <section>
-            <h1 class="green2">Aktuality</h1>
-            <div class="row news-list">
-              <article class="col-md-6 news-item">
-                <a href="#">
-                  <div class="photo"><img src="http://ima.gs/7bc143/none/fff/263x197.png" class="img-responsive" alt="Dummy image"/></div>
-                  <time datetime="2014-08-16"><span class="icon-clock"></span>16.08.2014</time>
-                  <h2>Ministr Brabec na den strážcem šumavské přírody</h2>
-                  <blockquote>Národní parky jsou chloubou každého státu. Jejich přírodní stav i každodenní život je prioritou většiny ministrů životního prostředí. Nejinak je tomu i u současného ministra životního prostředí Richarda Brabce, který aktuálně tráví dovolenou v NP Šumava. Koncem září předloží na vládu revoluční novelu zákona o ochraně přírody a krajiny, jejímž cílem je mj. otevřít národní parky šetrnému turismu. Na ochranu unikátní přírody a turistický ruch v národních parcích dohlížejí strážci. g Brabec si vyzkoušel, co taková práce strážce parku obnáší.</blockquote>
-                  <p class="read-more"><small>Celý článek</small></p>
-                </a>
-              </article>
-              <article class="col-md-6 news-item">
-                <a href="#">
-                  <div class="photo"><img src="http://ima.gs/7bc143/none/fff/263x197.png" class="img-responsive" alt="Dummy image"/></div>
-                  <time datetime="2014-08-12"><span class="icon-clock"></span>12.8.2014</time>
-                  <h2>222 přihlášených filmů na 40. ročník Ekofilmu je rekord</h2>
-                  <blockquote>40. ročník festivalu o životním prostředí, přírodním a kulturním dědictví má první rekord. Je jím počet přihlášených filmů, který čítá 222, což je o 99 víc než vloni a nejvíc za celou dobu konání festivalu v Ostravě. Zastoupeno je celkem 34 států a 5 kontinentů. Českých snímků je letos opět méně než polovina...</blockquote>
-                  <p class="read-more"><small>Celý článek</small></p>
-                </a>
-              </article>
-              <article class="col-md-6 news-item">
-                <a href="#">
-                  <div class="photo"><img src="http://ima.gs/7bc143/none/fff/263x197.png" class="img-responsive" alt="Dummy image"/></div>
-                  <time datetime="2014-08-11"><span class="icon-clock"></span>11.8.2014</time>
-                  <h2>O kotlíkových dotacích Středočeského kraje více na webu</h2>
-                  <blockquote>Středočeský kraj pokračuje v mimořádně úspěšném projektu takzvaných kotlíkových dotací. Na výměnu starých kotlů za nové a tím i na zlepšení kvality ovzduší ve středních Čechách je ve druhém kole dotačního řízení na kotlíkové dotace připraveno celkem 80 miliónů korun, což je dvojnásobek oproti první výzvě </blockquote>
-                  <p class="read-more"><small>Celý článek</small></p>
-                </a>
-              </article>
-              <article class="col-md-6 news-item">
-                <a href="#">
-                  <div class="photo"><img src="http://ima.gs/7bc143/none/fff/263x197.png" class="img-responsive" alt="Dummy image"/></div>
-                  <time datetime="2014-08-07"><span class="icon-clock"></span>7.8.2014</time>
-                  <h2>Za nejkrásnější snímky magického kouta v české přírodě víkend pro dva v národním parku</h2>
-                  <blockquote>Ministerstvo životního prostředí vyhlásilo letní soutěž s názvem Moje Magické Místo v české přírodě. Širokou veřejnost motivuje k výletům do české přírody a objevování jejích netušených zajímavých míst. Ministerstvo bude fotografie průběžně zveřejňovat na svých facebookových stránkách. Z nejzdařilejších laických snímků se chystá putovní výstava se stejnojmenným názvem.</blockquote>
-                  <p class="read-more"><small>Celý článek</small></p>
-                </a>
-              </article>
-            </div>
-            <p class="read-more"><a href="">Archiv novinek</a></p>
+            <h1>Organizace zřizované MŽP (h1)</h1>
+            <p>Seznam oficiálních webových stránek organizací, které patří do resortu Ministerstva životního prostředí ČR. V této rubrice najdete odkazy na stránky Krkonošského národního parku nebo na organizaci CENIA – informační agentury životního prostředí či Agenturu ochrany přírody a krajiny a na další organizace. Seznam je pravidelně aktualizován. (odstavec)</p>
+            <h2>Agentura ochrany přírody a krajiny ČR (h2)</h2>
+            <p>Oficiální stránky Agentury ochrany přírody a krajiny ČR. Kontakt: Kaplanova 1931/1, 148 00 Praha 11 - Chodov, tel.+420 283 069 242.</p>
+            <h3>Nadpis level 3</h3>
+            <p>MŽP je ústředním orgánem státní správy pro:</p>
+            <ul>
+              <li>ochranu přirozené akumulace vod</li>
+              <li>ochranu vodních zdrojů a ochranu jakosti podzemních a povrchových vod</li>
+              <li>ochranu ovzduší</li>
+              <li>ochranu přírody a krajiny</li>
+              <li>ochranu zemědělského půdního fondu</li>
+            </ul>
+            <h4>Dokumenty (h4)</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            	      Český hydrometeorologický ústav (h6)
+            	      Oficiální stránky Českého hydrometeorologického ústavu. Kontakt: Na Šabatce 		      2050/17 143 06 Praha 412-Komořany, tel. +420 244 03 1111 .
+            	      Správa jeskyní ČR
+            	      Oficiální stránky Správy jeskyní ČR. Kontakt: Květnové náměstí 3, 252 43 Průhonice, 		      tel.+420 271 000 040.
+            Odkazy (h5)
+            	      Správa Krkonošského národního parku
+            	      Oficiální stránky Krkonošského národního parku - KRNAP. Kontakt: Dobrovského 3, 		     543  01 Vrchlabí, tel. +420 499 456 111.SEA)
+            Organizační struktura
+            Organizační strukturu Ministerstva životního prostředí tvoří ministr, sekce, odbory a oddělení. Kliknutím na jméno příslušného vedoucího zaměstnance získáte jeho kontaktní údaje, včetně e-mailu. 
+                  Grafické schéma aktuální organizační struktury (PDF, 194 kB) 
+            010 Odbor interního auditu a finanční kontroly – Ing. Jiří Červenka
+            011 odd. interního auditu
+            012 odd. finanční kontroly 
+
+            020 Odbor bezpečnosti a krizového řízení – Ing. Jiří Bednář
+            021 odd. bezpečnosti 
+            022 odd. krizového řízení
+    
+    
+    
+    
+    
           </section>
         </main>
-        <div id="page-sidebars">
-          <aside class="col-md-3 col-md-pull-6 sidebar">
-          <article id="minister">
-            <h3 class="green1">Ministr</h3>
-            <figure>
-              <img src="img/richard-brabec.jpg" width="203" height="174" alt="Richard Brabec" />
-              <figcaption>Mgr. Richard Brabec <small>ministr životního prostředí</small></figcaption>
-            </figure>
-            <ul>
-              <li><a href="#"><span class="icon-gt"></span>Životopis</a></li>
-              <li><a href="#"><span class="icon-gt"></span>V médiích</a></li>
-            </ul>
+        <aside id="left-sidebar">
+          <article class="sidebar-box">
+            
+            
+            
+            
+            
+            
+            
           </article>
-          <nav id="tagcloud-nav">
-            <h3>Oblíbené odkazy</h3>
-            <ol>
-              <li><a class="level1" href="#">Nejdůležitější</a></li>
-              <li><a class="level1" href="#">Legislativa</a></li>
-              <li><a class="level2" href="#">Velmi důležité</a></li>
-              <li><a class="level2" href="#">Úřední deska</a></li>
-              <li><a class="level2" href="#">Granty</a></li>
-              <li><a class="level3" href="#">Důležité</a></li>
-              <li><a class="level3" href="#">Kontakty</a></li>
-              <li><a class="level3" href="#">Média</a></li>
-              <li><a class="level4" href="#">Méně důležité</a></li>
-              <li><a class="level4" href="#">Volná místa</a></li>
-              <li><a class="level4" href="#">Organizační struktura</a></li>
-              <li><a class="level4" href="#">Odpady</a></li>
-              <li><a class="level5" href="#">Informační strategie</a></li>
-              <li><a class="level5" href="#">Ministr</a></li>
-              <li><a class="level5" href="#">Zcela nedůležité</a></li>
-            </ol>
-          </nav>
-          <nav id="service-nav" class="side-nav">
+          <nav class="sidebar-box">
             <h3>Služby</h3>
-            <ul>
+            <ul class="side-nav">
               <li><a href="#">Úřední deska</a></li>
               <li><a href="#">Knihovnické a informační služby</a></li>
               <li class="active"><a href="#">Jednotný informační systém životního prostředí</a>
@@ -248,32 +209,32 @@
               <li><a href="#">Odkazy</a></li>
             </ul>
           </nav>
-          <section class="banner-list">
+          <section class="sidebar-box">
             <h3 class="sr-only">Bannery</h3>
-            <ul>
+            <ul class="banner-list">
               <li>
                 <figure>
-                  <a href="#"><img src="http://ima.gs/cee5b8/none/000/261x96.png" width="261" height="96" class="img-responsive" alt="Banner na akci AAA" /></a>
+                  <a href="#"><img src="http://ima.gs/7bc143/none/000/261x96.png" width="261" height="96" class="img-responsive" alt="Banner na akci AAA" /></a>
                   <figcaption>Akce AAA popisek</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
-                  <a href="#"><img src="http://ima.gs/cee5b8/none/000/200x75.png" width="200" height="75" class="img-responsive" alt="Banner na akci BBB" /></a>
+                  <a href="#"><img src="http://ima.gs/7bc143/none/000/200x75.png" width="200" height="75" class="img-responsive" alt="Banner na akci BBB" /></a>
                   <figcaption>Akce BBB popisek</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
-                  <a href="#"><img src="http://ima.gs/transparent/cee5b8/000/187x81%20transparent-187x81.png" width="160" height="80" class="img-responsive" alt="Banner na akci CCC" /></a>
+                  <a href="#"><img src="http://ima.gs/transparent/7bc143/000/187x81%20transparent-187x81.png" width="160" height="80" class="img-responsive" alt="Banner na akci CCC" /></a>
                   <figcaption>Akce CCC popisek</figcaption>
                 </figure>
               </li>
             </ul>
           </section>
         </aside>
-          <aside class="col-md-3 sidebar">
-          <section id="events">
+        <aside id="right-sidebar">
+          <section id="events" class="sidebar-box">
             <h3 class="green3">Kalendář akcí</h3>
             <div class="event-list">
               <article itemscope itemtype="http://schema.org/Event">
@@ -308,145 +269,243 @@
                   <div class="date"><time datetime="2014-07-22" itemprop="startDate">22.7.2014</time>–<time datetime="2014-07-24" itemprop="endDate">24.7.2014</time></div>
                 </a>
               </article>
-              <p class="read-more"><a href="">Další akce</a></p>
+              <p class="read-more"><a class="btn" href="">Další akce</a></p>
             </div>
           </section>
           <nav id="social-nav">
             <h3 class="sr-only">Sociální sítě</h3>
-            <ul>
-              <li class="facebook"><a href="" target="_blank"><span class="icon-fb"></span><abbr title="Ministerstvo životního prostředí">MŽP</abbr> na Facebooku<span class="sr-only"> (otevře nové okno)</span></a></li>
+            <ul class="ico-nav">
+              <li class="facebook"><a href="" target="_blank"><span class="icon-facebook"></span><abbr title="Ministerstvo životního prostředí">MŽP</abbr> na Facebooku<span class="sr-only"> (otevře nové okno)</span></a></li>
             </ul>
           </nav>
-          <section class="banner-list">
+          <section class="sidebar-box">
             <h3 class="sr-only">Bannery</h3>
-            <ul>
+            <ul class="banner-list">
               <li>
                 <figure>
-                  <a href="#"><img src="http://ima.gs/cee5b8/none/000/261x96.png" width="261" height="96" class="img-responsive" alt="Banner na akci AAA" /></a>
+                  <a href="#"><img src="http://ima.gs/7bc143/none/000/261x96.png" width="261" height="96" class="img-responsive" alt="Banner na akci AAA" /></a>
                   <figcaption>Akce AAA popisek</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
-                  <a href="#"><img src="http://ima.gs/cee5b8/none/000/200x75.png" width="200" height="75" class="img-responsive" alt="Banner na akci BBB" /></a>
+                  <a href="#"><img src="http://ima.gs/7bc143/none/000/200x75.png" width="200" height="75" class="img-responsive" alt="Banner na akci BBB" /></a>
                   <figcaption>Akce BBB popisek</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
-                  <a href="#"><img src="http://ima.gs/transparent/cee5b8/000/187x81%20transparent-187x81.png" width="160" height="80" class="img-responsive" alt="Banner na akci CCC" /></a>
+                  <a href="#"><img src="http://ima.gs/transparent/7bc143/000/187x81%20transparent-187x81.png" width="160" height="80" class="img-responsive" alt="Banner na akci CCC" /></a>
                   <figcaption>Akce CCC popisek</figcaption>
                 </figure>
               </li>
             </ul>
           </section>
         </aside>
-        </div>
       </div>
     </div>
   </div>
-  <div class="fluid-bg4">
+  <div id="bg-4">
     <div class="container">
       <div class="row">
-        <aside id="mzp-organizations">
+        <aside id="organizations">
           <h3>Rezortní organizace</h3>
-          <div class="owl-carousel mzp-carousel">
-            <br />
-          </div>
+          <div class="carousel-wrap">
+            <ul class="owl-carousel">
+              <li>
+                <a href="http://www.nature.cz/">
+                  <strong>Agentura ochrany přírody a krajiny České republiky</strong>
+                  <abbr title="Agentura ochrany přírody a krajiny České republiky">AOPKČR</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.cenia.cz/">
+                  <strong>Česká informační agentura životního prostředí</strong>
+                  <abbr title="Česká informační agentura životního prostředí">CENIA</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.geology.cz/">
+                  <strong>Česká geologická služba</strong>
+                  <abbr title="Česká geologická služba">ČGS</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.geofond.cz/">
+                  <strong>Česká geologická služba - Geofond</strong>
+                  <abbr title="Česká geologická služba - Geofond">ČGS Genofond</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.cizp.cz/">
+                  <strong>Česká inspekce životního prostředí</strong>
+                  <abbr title="Česká inspekce životního prostředí">ČIŽP</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://portal.chmi.cz">
+                  <strong>Český hydrometeorologický ústav</strong>
+                  <abbr title="Český hydrometeorologický ústav">ČHMÚ</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.jeskynecr.cz/">
+                  <strong>Správa jeskyní České republiky</strong>
+                  <abbr title="Správa jeskyní České republiky">SJ ČR</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.krnap.cz/">
+                  <strong>Správa Krkonošského národního parku</strong>
+                  <abbr title="Správa Krkonošského národního parku">KRNAP</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.npsumava.cz/">
+                  <strong>Správa Národního parku a chráněné krajinné oblasti Šumava</strong>
+                  <abbr title="Správa Národního parku a chráněné krajinné oblasti Šumava">NP Šumava</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.npcs.cz/">
+                  <strong>Správa Národního parku České Švýcarsko</strong>
+                  <abbr title="Správa Národního parku České Švýcarsko">NP ČS</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.nppodyji.cz/">
+                  <strong>Správa Národního parku Podyjí</strong>
+                  <abbr title="Správa Národního parku Podyjí">NPP</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.sfzp.cz/">
+                  <strong>Státní fond životního prostředí České republiky</strong>
+                  <abbr title="Státní fond životního prostředí České republiky">SFŽP</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.vuv.cz/">
+                  <strong>Výzkumný ústav vodohospodářský T. G. Masaryka</strong>
+                  <abbr title="Výzkumný ústav vodohospodářský T. G. Masaryka">VÚV</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.vukoz.cz/">
+                  <strong>Výzkumný ústav Silva Taroucy pro krajinu a okrasné zahradnictví, v.v.i.</strong>
+                  <abbr title="Výzkumný ústav Silva Taroucy pro krajinu a okrasné zahradnictví, v.v.i.">VÚKOZ</abbr>
+                  <span class="sr-only">(otevře nové okno)</span>
+                </a>
+              </li>
+             </ul>
+           </div>
         </aside>
       </div>
     </div>
   </div>
-  <div class="fluid-bg5">
-      <div class="container">
-        <div class="row">
-          <aside>
-            <nav id="footer-nav1" class="footer-nav col-md-3 col-md-push-3">
-              <h3>Navigace A</h3>
-              <ul>
-                <li><a href="#">Stránka 1</a></li>
-                <li><a href="#">Stránka 2</a></li>
-                <li><a href="#">Stránka 3</a></li>
-                <li><a href="#">Stránka 4</a></li>
-                <li><a href="#">Stránka 5</a></li>
-                <li><a href="#">Stránka 6</a></li>
-                <li><a href="#">Stránka 7</a></li>
-              </ul>
-            </nav>
-            <nav id="footer-nav2" class="footer-nav col-md-3 col-md-push-3">
-              <h3>Navigace B</h3>
-              <ul>
-                <li><a href="#">Stránka 8</a></li>
-                <li><a href="#">Stránka 9</a></li>
-                <li><a href="#">Stránka 10</a></li>
-                <li><a href="#">Stránka 11</a></li>
-                <li><a href="#">Stránka 12</a></li>
-                <li><a href="#">Stránka 13</a></li>
-                <li><a href="#">Stránka 14</a></li>
-              </ul>
-            </nav>
-            <section id="footer-contact" class="col-md-3 col-md-push-3" itemscope itemtype="http://schema.org/Organization">
-              <h3 class="sr-only">Kontakt</h3>
-              <p class="h3" itemprop="name"><strong>Ministerstvo životního prostředí</strong></p>
-              <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="streetAddress">Vršovická 1442/65</span><br />
-                <span itemprop="addressLocality">Praha&nbsp;10</span>
-                <span itemprop="postalCode">100&nbsp;10</span><br />
-              </address>
-              <div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
-                <p itemprop="hoursAvailable" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
-                  Úřední hodiny: 
-                  <span itemprop="dayOfWeek" content="Monday">pondělí</span> a <span itemprop="dayOfWeek" content="Wednesday">středa</span>
-                  <time itemprop="opens" datetime="08:00">8.00</time>–<time itemprop="closes" datetime="17:00">17.00</time> hod.
-                </p>
-                <p>Ústředna: <span itemprop="telephone">+420&nbsp;267&nbsp;121&nbsp;111</span></p>
-              </div>
-              <a href="#" class="read-more">více</a>
-            </section>
-          </aside>
-          <hr class="print-only" />
-          <footer id="footer" class="col-md-3 col-md-pull-9" role="contentinfo">
-            <nav class="no-print">
-              <ul>
-                <li id="print">
-                  <a title="Vytiskne stránku">
-                    <span class="icon-print"></span>
-                    <span class="sr-only">Tisk stránky</span>
-                  </a>
-                </li>
-                <li id="sitemap">
-                  <a href="#" title="Přejít na mapu webu">
-                    <span class="icon-sitemap"></span>
-                    <span class="sr-only">Mapa webu</span>
-                  </a> 
-                </li>
-                <li id="accessibility"><a href="#">Prohlášení o přístupnosti</a></li>
-                <li id="gotop">
-                  <a href="#top" title="Přeskočit na začátek stránky">
-                    <span class="icon-caret"></span>
-                    <span class="sr-only">Nahoru</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <p><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/cz/" target="_blank" title="Celý text licenčního ujednání"><img src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" width="80" height="15" alt="Licence CC BY-NC-ND 3.0 CZ" /><span class="sr-only"> (otevře nové okno)</span></a></p>
-            <p>&copy; 2008–2014 Ministerstvo životního prostředí</p>
-          </footer>
-        </div>
+  <div id="bg-5">
+    <div class="container">
+      <div class="row">
+        <aside>
+          <nav id="footer-nav1" class="footer-box">
+            <h3>Navigace A</h3>
+            <ul class="footer-nav">
+              <li><a href="#">Stránka 1</a></li>
+              <li><a href="#">Stránka 2</a></li>
+              <li><a href="#">Stránka 3</a></li>
+              <li><a href="#">Stránka 4</a></li>
+              <li><a href="#">Stránka 5</a></li>
+              <li><a href="#">Stránka 6</a></li>
+              <li><a href="#">Stránka 7</a></li>
+            </ul>
+          </nav>
+          <nav id="footer-nav2" class="footer-box">
+            <h3>Navigace B</h3>
+            <ul class="footer-nav">
+              <li><a href="#">Stránka 8</a></li>
+              <li><a href="#">Stránka 9</a></li>
+              <li><a href="#">Stránka 10</a></li>
+              <li><a href="#">Stránka 11</a></li>
+              <li><a href="#">Stránka 12</a></li>
+              <li><a href="#">Stránka 13</a></li>
+              <li><a href="#">Stránka 14</a></li>
+            </ul>
+          </nav>
+          <section id="footer-contact" class="footer-box" itemscope itemtype="http://schema.org/Organization">
+            <h3 class="sr-only">Kontakt</h3>
+            <p class="h3" itemprop="name"><strong>Ministerstvo životního prostředí</strong></p>
+            <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="streetAddress">Vršovická 1442/65</span><br />
+              <span itemprop="addressLocality">Praha&nbsp;10</span>
+              <span itemprop="postalCode">100&nbsp;10</span><br />
+            </address>
+            <div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+              <p itemprop="hoursAvailable" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                Úřední hodiny: 
+                <span itemprop="dayOfWeek" content="Monday">pondělí</span> a <span itemprop="dayOfWeek" content="Wednesday">středa</span>
+                <time itemprop="opens" datetime="08:00">8.00</time>–<time itemprop="closes" datetime="17:00">17.00</time> hod.
+              </p>
+              <p>Ústředna: <span itemprop="telephone">+420&nbsp;267&nbsp;121&nbsp;111</span></p>
+            </div>
+            <a href="#" class="btn btn-inverted">více</a>
+          </section>
+        </aside>
+        <hr class="print-only" />
+        <footer id="footer" class="footer-box" role="contentinfo">
+          <nav>
+            <ul>
+              <li id="print">
+                <a title="Vytiskne stránku">
+                  <span class="icon-print"></span>
+                  <span class="sr-only">Tisk stránky</span>
+                </a>
+              </li>
+              <li id="sitemap">
+                <a href="#" title="Přejít na mapu webu">
+                  <span class="icon-sitemap"></span>
+                  <span class="sr-only">Mapa webu</span>
+                </a> 
+              </li>
+              <li id="accessibility"><a href="#">Prohlášení o přístupnosti</a></li>
+              <li id="gotop">
+                <a href="#top" title="Přeskočit na začátek stránky">
+                  <span class="icon-caret"></span>
+                  <span class="sr-only">Nahoru</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <p><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/cz/" target="_blank" title="Celý text licenčního ujednání"><img src="img/licence.svg" width="80" height="28" alt="Licence CC BY-NC-ND 3.0 CZ" /><span class="sr-only"> (otevře nové okno)</span></a></p>
+          <p>&copy; 2008–2014 Ministerstvo životního prostředí</p>
+        </footer>
       </div>
     </div>
+  </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
   <script src="js/site.min.js"></script>
   <script>
   /*TODO
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-1168933-1', 'auto');
-    ga('send', 'pageview');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-1168933-1', 'auto');
+  ga('send', 'pageview');
   */
   </script>
-  </body>
+</body>
 </html>

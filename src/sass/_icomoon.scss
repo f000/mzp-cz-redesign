@@ -31,6 +31,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-crumb:before {
+	content: "\e60e";
+}
 .icon-lt2:before {
 	content: "\e602";
 }
@@ -73,4 +77,3 @@
 .icon-facebook:before {
 	content: "\e60d";
 }
-
