@@ -54,17 +54,22 @@
 }
 
 // Special headings
-.bg-1 h2, .bg-1 h3,
-.bg-2 h2, .bg-2 h3,
-.bg-4 h2, .bg-4 h3,
-.bg-6 h2, .bg-6 h3,
-#page-sidebars h2, #page-sidebars h3,
+.sidebar-box h3,
+#organizations h3,
 #content h1{
   @extend .fancy-header;
 }
 
+// Top navigation block
+#header-nav{
+  @extend .col-md-12;
+  text-align:right;
+
+}
+
 // Logo
 #header-logo{
+  @extend .col-md-3;
   margin:30px 0 0;
   a{
     display: block;
@@ -86,11 +91,6 @@
   a{
     background-image: none;
   }
-}
-
-// Top navigation block
-#header-nav{
-  text-align:right;
 }
 
 // Search form
@@ -140,66 +140,13 @@
   float:right;
   margin: 14px $grid-gutter-width/2 0 $grid-gutter-width;
   ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  li{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    a{
-      text-decoration: none;
-      span,abbr{
-        @include single-transition(color, $transition-duration);
-      }
-      span{
-        color: $text-color;
-        font-size: 31px;
-        display: inline-block;
-      }
-      abbr{
-        color: $text-color-inverted;
-        display: inline-block;
-        text-align: center;
-        padding: 0;
-        font-size: $font-size-small;
-        text-decoration: none;
-        border:0;
-        position: relative;
-        top: -14px;
-        left: -26px;
-        &:hover,&:focus{
-          cursor: pointer;
-        }
-      }
-      &:hover,&:focus{
-        outline:0;
-        span{
-          color: $brand-green1;
-        }
-        abbr{
-          color: $text-color;
-        }
-      }
-    }
-    &.active a, &.active a:hover{
-      cursor: default;
-      span{
-        color: $brand-green1;
-      }
-      abbr{
-        color: $text-color;
-        &:hover{
-          cursor: default;
-        }
-      }
-    }
+    @extend .bubble-nav;
   }
 }    
 
 // Main navigation
 #main-nav{
+  @extend .col-md-6;
   text-align:right;
   padding: 40px 0 50px 0;
   > ul{
@@ -252,92 +199,57 @@
   ul ul{display: none;}
 }
 
-
+// Main content
 #content{
-  @include make-md-column(6);
-  @include make-md-column-push(3);
+  @extend .col-md-6;
+  @extend .col-md-push-3;
 }
 
+// Left sidebar
 #left-sidebar{
-  @include make-md-column(3);
-  @include make-md-column-pull(6);
-}
-#right-sidebar{
-  @include make-md-column(3);
+  @extend .col-md-3;
+  @extend .col-md-pull-6;
 }
 
+// Right sidebar
+#right-sidebar{
+  @extend .col-md-3;
+}
 
 //Footer
+#footer-nav1,
+#footer-nav2,
+#footer-contact{
+  @extend .col-md-3;
+  @extend .col-md-push-3;
+}
+#footer{
+  @extend .col-md-3;
+  @extend .col-md-pull-9;
+}
+
 #footer-nav1,
 #footer-nav2,
 #footer-contact,
 #footer{
   padding-left: $grid-gutter-width;
   border-left: 1px solid $gray;
-  color:$text-color-inverted;
-  font-size:$font-size-small;
   padding-bottom:$grid-gutter-width/3;
-  h3,.h3{
-    font-size:$font-size-h2;
-    color:$text-color-inverted;
-    margin:0 0 $line-height-computed/2 0;
-    strong{
-        font-weight:normal;
-    }
-  }
-  a,a:visited{
-    color:$text-color-inverted;
-    &:hover,&:focus{
-      color:$gray-lighter;
-    }
-  }
-  a.read-more{
-    @extend .btn;
-    @extend .btn-sm;
-    @extend .btn-inverted;
-  }
-  ul{
-    list-style: none;
-    padding-left:0;
-  }
-  li{
-    margin:0 0 $line-height-computed/3 0;
-    a{
-      font-size:$font-size-small;
-    }
-  }
-  address{
-    font-style:normal;
-  }
 }
 #footer{
   padding-left: $grid-gutter-width/2;
   border-left: 0;  
 }
-#print,#sitemap{
-  display:inline-block;
-  padding:0 10px;
-  border-left:1px solid $gray;
-  a{
-    display:block;
-    cursor:pointer;
-    span{
-      color: $gray-light;
-      font-size:$font-size-base;
-    }
-    &:hover{
-      text-decoration:none;
-      span{
-        color:$text-color-inverted;
-      }
-    }
-  }
+#print,
+#sitemap{
+  @extend .icon-li;
 }
 #print{
   padding-left:0;
   border:0;
 }
-#accessibility, #gotop{
+#accessibility,
+#gotop{
   display:block;
 }
 #accessibility{
@@ -345,10 +257,11 @@
 }
 
 // MZP carousel
-#mzp-organizations{
+#organizations{
+  @extend .col-md-12;
   > h3{
     position:absolute;
-    margin-top:-$grid-gutter-width*2 + 10;
+    top:-$font-size-h3 - $line-height-computed*3;
   }
 }
 
@@ -356,8 +269,6 @@
 #social-nav{
   margin-bottom:$grid-gutter-width;
 }
-
-
 
 // Homepage event list
 #events{

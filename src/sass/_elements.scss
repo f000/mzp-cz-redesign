@@ -27,10 +27,12 @@
 }
 
 // Buttons
-.btn,.btn:visited{
+.btn, .btn:visited{
   display:inline-block;
-  padding:5px 20px;
-  font-size:$font-size-base;
+  padding:3px 9px;
+  font-size:$font-size-small;
+  font-style:normal;
+  font-weight:400;
   color:$text-color;
   text-decoration:none;
   background-color:$gray-lighter;
@@ -40,10 +42,7 @@
     @include opacity($opacity-hover);
   }
 }
-.btn-sm, .btn-sm:visited{
-  padding:3px 9px;
-  font-size:$font-size-small;
-}
+
 .btn-inverted, .btn-inverted:visited{
   //TODO
   padding:3px 9px;
@@ -86,16 +85,18 @@
     }
 }
 
+
 // Homepage Topics (sprites)
 @import "hp-nav/*.png";
 .mzp-topics{
-  ul{
-    padding:0;
-    list-style-type: none;
-    height:72px + 12px + $line-height-computed + 2px;
-  }
+  padding:0;
+  list-style-type: none;
+  height:72px + 12px + $line-height-computed + 2px;
   li{
     padding-bottom:36px;
+    @extend .col-xs-6;
+    @extend .col-sm-5;
+    @extend .col-md-3;
     @media (min-width: $screen-md-min) {
       background: url('../img/bg-hp-nav.svg') no-repeat scroll center bottom;
       background-size:90%;
@@ -113,16 +114,16 @@
       @include opacity($opacity-hover);
     }
   }
-  .ovzdusi{
+  .ovzdusi a{
     @include hp-nav-sprite(ovzdusi); 
   }
-  .priroda{
+  .priroda a{
     @include hp-nav-sprite(priroda); 
   }
-  .voda{
+  .voda a{
     @include hp-nav-sprite(voda); 
   }
-  .odpady{
+  .odpady a{
     @include hp-nav-sprite(odpady); 
   }
   span{
@@ -144,27 +145,30 @@
     }
   }
 }
-
-// News list
 .news-list{
   @include clearfix();
-  article{
-    &:nth-child(odd){
-      clear:both;
-    }
-    margin-bottom:$grid-gutter-width/2;
-    border-bottom:1px solid $gray-border;
-    > a, > a:visited{
-      display:block;
-      @include clearfix();
-      color:$text-color;
-      text-decoration:none;
-      &:hover,&:focus{
-        outline:0;
-        background-color:$gray-xlighter;
-        .photo{
-          @include opacity($opacity-hover);
-        }
+  .news-item{
+    @extend .col-md-6;
+  }  
+}
+
+// News list
+.news-item{
+  &:nth-child(odd){
+    clear:both;
+  }
+  margin-bottom:$grid-gutter-width/2;
+  border-bottom:1px solid $gray-border;
+  > a, > a:visited{
+    display:block;
+    @include clearfix();
+    color:$text-color;
+    text-decoration:none;
+    &:hover,&:focus{
+      outline:0;
+      background-color:$gray-xlighter;
+      .photo{
+        @include opacity($opacity-hover);
       }
     }
   }
@@ -191,10 +195,6 @@
     @include single-transition(opacity, $transition-duration);
   }
   .read-more{
-    small{
-      @extend .btn;
-      @extend .btn-sm;
-    }
     text-align:right;
   }
 }
@@ -267,10 +267,6 @@
     font-size:$font-size-small;
   }
   .read-more{
-    a{
-      @extend .btn;
-      @extend .btn-sm;
-    }
     margin:0;
     text-align:right;
     padding-right:10px;
@@ -279,20 +275,17 @@
 
 // Banners
 .banner-list{
-  margin:$grid-gutter-width 0;
-  ul{
-    padding-left: 0;
-    list-style: none;
-    display:table;
-    border-collapse:collapse;
-    li{
-      text-align:center;
-      margin:0;
-      margin-bottom: $grid-gutter-width/2 + 2;
-      padding-top: $grid-gutter-width/2 + 2;
-      border-top: 2px solid $gray-border;
-     }
-  }
+  padding-left: 0;
+  list-style: none;
+  display:table;
+  border-collapse:collapse;
+  li{
+    text-align:center;
+    margin:0;
+    margin-bottom: $grid-gutter-width/2 + 2;
+    padding-top: $grid-gutter-width/2 + 2;
+    border-top: 2px solid $gray-border;
+   }
   figure{    
     width:261px;
     height:96px;
@@ -333,6 +326,7 @@
 // Profile box
 .profile-box{
   figcaption{
+    clear:both;
     margin-top:0.4em;
     small{
       display:block;
@@ -379,6 +373,65 @@
    .level3{font-size:  $font-size-large;}
    .level4{font-size:  $font-size-base;}
    .level5{font-size:  $font-size-xsmall;}
+}
+
+// Footer box
+.footer-box{
+  color:$text-color-inverted;
+  font-size:$font-size-small;
+  h3,.h3{
+    font-size:$font-size-h2;
+    color:$text-color-inverted;
+    margin:0 0 $line-height-computed/2 0;
+    strong{
+        font-weight:normal;
+    }
+  }
+  a,a:visited{
+    color:$text-color-inverted;
+    &:hover,&:focus{
+      color:$gray-lighter;
+    }
+  }
+  address{
+    font-style:normal;
+  }
+}
+
+// Icon <li>
+.icon-li{
+  display:inline-block;
+  padding:0 10px;
+  border-left:1px solid $gray;
+  a{
+    display:block;
+    cursor:pointer;
+    span{
+      color: $gray-light;
+      font-size:$font-size-base;
+    }
+    &:hover{
+      text-decoration:none;
+      span{
+        color:$text-color-inverted;
+      }
+    }
+  }
+}
+
+// Footer nav list
+.footer-nav{
+  list-style: none;
+  padding-left:0;
+  li{
+    margin:0 0 $line-height-computed/3 0;
+    a,a:visited{
+      color:$text-color-inverted;
+      &:hover,&:focus{
+        color:$gray-lighter;
+      }
+    }
+  }
 }
 
 // Side nav list
@@ -455,6 +508,73 @@
   }
 }
 
-.profile-box{
-  margin-bottom:$grid-gutter-width;
+// Bubble nav
+.bubble-nav{
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    &.active{
+      a, a:hover, a:focus{
+        cursor: default;
+        span{
+          color: $brand-green1;
+        }
+        abbr{
+          color: $text-color;
+          &:hover{
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+  a{
+    text-decoration: none;
+    &:hover,&:focus{
+      outline:0;
+      span{
+        color: $brand-green1;
+      }
+      abbr{
+        color: $text-color;
+      }
+    }
+  }
+  span,abbr{
+    @include single-transition(color, $transition-duration);
+  }
+  span{
+    color: $text-color;
+    font-size: 31px;
+    display: inline-block;
+  }
+  abbr{
+    color: $text-color-inverted;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    font-size: $font-size-small;
+    text-decoration: none;
+    border:0;
+    position: relative;
+    top: -14px;
+    left: -26px;
+    &:hover,&:focus{
+      cursor: pointer;
+    }
+  }
 }
+
+.carousel{
+  strong{
+    display:none;
+  }
+}
+
+

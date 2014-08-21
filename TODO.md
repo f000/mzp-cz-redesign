@@ -1,8 +1,9 @@
 # MŽP.CZ Redesign – ToDo List
 
-## Zbyva dopracovat
+## Zbývá dopracovat
 
 - odladeni IE, atd
+- odladeni responzivity
 - nekonzistentni pouzivani image- span a aplikovani primo na prvky... doresit dle kompatibility
 - qtip2
 - carousel organizaci
