@@ -477,7 +477,9 @@
       }
     }
   }
-  ul ul{
+  ul{
+    list-style: none;
+    padding-left:0;
     a,a:visited{
       background-color:$brand-green1;
       padding-left:$grid-gutter-width;
