@@ -6,17 +6,17 @@
 // --------------------------------------------------
 
 // Full width backgrounds
-.fluid-bg1{
+.bg-1{
   background-color: $bg-gray1;
   @include background-image(linear-gradient(top, $bg-gray1 0%, $bg-gray2 90%, $bg-gray3 100%));
   border-bottom: 1px solid $gray-lighter;
 }
-.fluid-bg2{
+.bg-2{
   background-color: $bg-white;
   @include background-image(linear-gradient(top, $bg-gray3 0%, $bg-gray2 10%, $bg-white 60%));
   border-top: 1px solid $gray-xlighter;
 }
-.fluid-bg3{
+.bg-3{
   background-color: $bg-white;
   border-top: 1px solid $gray-lighter;
   @include background-image(
@@ -29,21 +29,21 @@
   }
   padding-bottom:$grid-gutter-width * 4;
 }
-.fluid-bg4{ //orgs
+.bg-4{ //orgs
   background-color: $bg-white;
   border-top: 1px solid #e9e9ea;
   padding: 0;
 }
-.fluid-bg5{
+.bg-5{
   background-color: $gray-darker;
   padding:($grid-gutter-width+5) 0;
 }
-.fluid-bg6{
+.bg-6{
   background-color: $bg-white;
   padding:($grid-gutter-width+5) 0 0;
   border-top: 1px solid $gray-lighter;
 }
-.fluid-bgline1{
+.bg-line-1{
   height:1px;
   background-color: $bg-white;
 }
@@ -54,40 +54,13 @@
 }
 
 // Special headings
-.fluid-bg1 h2, .fluid-bg1 h3,
-.fluid-bg2 h2, .fluid-bg2 h3,
-.fluid-bg4 h2, .fluid-bg4 h3,
-.fluid-bg6 h2, .fluid-bg6 h3,
+.bg-1 h2, .bg-1 h3,
+.bg-2 h2, .bg-2 h3,
+.bg-4 h2, .bg-4 h3,
+.bg-6 h2, .bg-6 h3,
 #page-sidebars h2, #page-sidebars h3,
-#content h1,
-.fancy-header{
-    font-size:$font-size-h3;
-    font-weight:600;
-    color:$gray-medium;
-    margin-top: $line-height-computed*2;
-    margin-bottom: $line-height-computed ;
-    @extend .icomoon;
-    @extend .icon-bar;
-    font-family: $font-family-sans-serif;
-    color:#80807e;
-    &:before {
-    	font-family: 'icomoon';
-      font-size:$icomoon-bar-fontsize;
-    	position: absolute;
-      margin-top:-33px;
-      font-weight:400;
-      color:$gray-lighter;
-    }
-    &.green1:before {
-      color: $brand-green1;
-    }
-    &.green2:before {
-      color: $brand-green2;
-    }
-    &.green3:before {
-      color: $brand-green3;
-      
-    }
+#content h1{
+  @extend .fancy-header;
 }
 
 // Logo
@@ -184,7 +157,6 @@
         color: $text-color;
         font-size: 31px;
         display: inline-block;
-        
       }
       abbr{
         color: $text-color-inverted;
@@ -225,8 +197,6 @@
     }
   }
 }    
-
-   
 
 // Main navigation
 #main-nav{
@@ -282,108 +252,20 @@
   ul ul{display: none;}
 }
 
-// Minister box
-#minister{
-  figcaption{
-    margin-top:0.4em;
-    small{
-      display:block;
-    }
-  }
-  ul{
-    position:relative;
-    list-style: none;
-    padding-left:0;
-    top:-155px;
-    left:160px;
-    li{
-      color:$brand-green3;
-      &:before{
-        font-size:$font-size-xsmall;
-        padding-right:5px;
-      }
-    }
-    a{
-      @extend a.green3;
-      font-size:$font-size-small;
-    }
-    span{
-      padding-right:5px;
-      font-size:$font-size-xsmall;
-    }
-  }
-}
-// Tag Cloud Nav
-#tagcloud-nav{
- // margin-top:$grid-gutter-width*1.5;
-  margin-bottom:$grid-gutter-width*1.5;
-  ol{
-    list-style: none;
-    padding-left:0;
-  }
-  li{
-    display:inline-block;
-    margin:0 1em 0 0;
-  }
-  a{
-    @extend a.gray;
-  }
-  .level1{font-size:  $font-size-xxlarge;}
-  .level2{font-size:  $font-size-xlarge;}
-  .level3{font-size:  $font-size-large;}
-  .level4{font-size:  $font-size-base;}
-  .level5{font-size:  $font-size-xsmall;}
+
+#content{
+  @include make-md-column(6);
+  @include make-md-column-push(3);
 }
 
-// Site navigation – service menu and section menu
-#service-nav{
-  margin-top:$grid-gutter-width;
-  margin-bottom:$grid-gutter-width;
+#left-sidebar{
+  @include make-md-column(3);
+  @include make-md-column-pull(6);
 }
-.side-nav{
-  ul{
-    list-style: none;
-    padding-left:0;
-  }
-  li{
-    font-size: $font-size-small;
-  }
-  a,a:visited{
-    display:block;
-    padding:$grid-gutter-width/3 $grid-gutter-width/2;
-    background-color:$bg-gray4;
-    font-size: $font-size-small;
-    color:$text-color;
-    border-bottom:1px solid #fff;
-    &:hover,&:focus{
-      background-color:$brand-green3;
-      color:$text-color-inverted;
-      text-decoration:none;
-    }
-  }
-  li.active{
-    > a, > a:visited{
-      background-color:$brand-green3;
-      color:$text-color-inverted;
-      text-decoration:none;
-      &:hover,&:focus{
-        cursor:default;
-      }
-    }
-  }
-  ul ul{
-    a,a:visited{
-      background-color:$brand-green1;
-      padding-left:$grid-gutter-width;
-      &:hover,&:focus{
-        outline:0;
-        background-color:$brand-green3;
-        color:$text-color-inverted;
-        text-decoration:none;
-      }
-    }
-  }
+#right-sidebar{
+  @include make-md-column(3);
 }
+
 
 //Footer
 #footer-nav1,
@@ -473,284 +355,15 @@
 //Social navigation
 #social-nav{
   margin-bottom:$grid-gutter-width;
-  ul{
-    padding:0;
-    list-style-type: none;
-  }
-  a,a:visited{
-    display:block;
-    line-height:28px;
-    color:$text-color;
-    font-weight:600;
-    abbr{
-      text-decoration:none;
-      border:0;
-    }
-    &:hover{
-      color:$gray;
-    }
-  }
-  .icon-fb{
-    font-weight:400;
-    padding-right:11px;
-    position:relative;
-    top:6px;
-    font-size:28px;
-    color:$facebook-blue;
-    &:before{
-
-    }
-  }
 }
 
-// Homepage Topics (sprites)
-@import "hp-nav/*.png";
-.mzp-topics{
-  ul{
-    padding:0;
-    list-style-type: none;
-    height:72px + 12px + $line-height-computed + 2px;
-  }
-  li{
-    padding-bottom:36px;
-    @media (min-width: $screen-md-min) {
-      background: url('../img/bg-hp-nav.svg') no-repeat scroll center bottom;
-      background-size:90%;
-      padding-bottom:12px;
-    }
-  }
-  a{
-    text-decoration:none;
-    display:block;
-    height:62px;
-    @media (min-width: $screen-md-min) {
-      height:72px;
-    }
-    &:hover{
-      @include opacity($opacity-hover);
-    }
-  }
-  .ovzdusi{
-    @include hp-nav-sprite(ovzdusi); 
-  }
-  .priroda{
-    @include hp-nav-sprite(priroda); 
-  }
-  .voda{
-    @include hp-nav-sprite(voda); 
-  }
-  .odpady{
-    @include hp-nav-sprite(odpady); 
-  }
-  span{
-    color:$gray-dark;
-    position:relative;
-    top:66px;
-    left:$grid-gutter-width/2;
-    text-transform:lowercase;
-    @media (min-width: $screen-md-min) {
-      left:$grid-gutter-width;
-      top:78px;
-    }
-  }
-  em{
-    padding-right:0.5em;
-    &:before{
-      color:$gray;
-      font-size:$font-size-xsmall;
-    }
-  }
-}
 
-// Banners
-.banner-list{
-  margin:$grid-gutter-width 0;
-  ul{
-    padding-left: 0;
-    list-style: none;
-    display:table;
-    border-collapse:collapse;
-    li{
-      text-align:center;
-      margin:0;
-      margin-bottom: $grid-gutter-width/2 + 2;
-      padding-top: $grid-gutter-width/2 + 2;
-      border-top: 2px solid $gray-border;
-     }
-  }
-  figure{    
-    width:261px;
-    height:96px;
-    @media (min-width: $screen-sm-min) {
-      width:210px;
-      height:77px;
-    }
-    @media (min-width: $screen-md-min) {
-      width:261px;
-      height:96px;
-    }
-    border:1px solid $gray-border;
-    display:table-cell;
-    text-align:center;
-    vertical-align: middle;
-    font-size:0;
-    background-color:$bg-white;
-    @include background-image(linear-gradient(left top, $bg-white 80%, $bg-gray2 90%, $bg-gray3 100%)); 
-  }
-  
-  img{
-    text-align:center;
-    margin:0 auto;
-  }
-  figcaption{
-    display:none;
-  }
-  a{
-    display:block;
-    text-decoration:none;
-    font-size:0;
-    &:hover,&:focus{
-      outline:0;
-       @include opacity($opacity-hover);
-    }
-  }
-}
 
 // Homepage event list
 #events{
   margin-bottom:$grid-gutter-width/2;
 }
-.event-list{
-  border:1px solid $gray-border;
-  padding: 10px 8px 20px 8px;
-  @include clearfix();
-  @include background-image(linear-gradient(bottom, $bg-gray4 0%, rgba(255,255,255,0) 25%));
-  article{
-    clear:both;
-    margin-bottom:$grid-gutter-width/2 - 6;
-    > a, > a:visited{
-      display:block;
-      @include clearfix();
-      color:$text-color;
-      text-decoration:none;
-      padding:3px 0;
-      &:hover,&:focus{
-        outline:0;
-        background-color:$gray-lighter;
-      }
-    }
-  }
-  .fancy-date{ //TODO experiment with em units
-    float:left;
-    width:50px;
-    margin-right:8px;
-    text-align:center;
-    span{
-      display:block;
-      text-align:center;
-      &.d{
-        font-weight:600;
-        font-size:38px;
-        line-height:38px;
-        height:38px;
-
-        padding-top:0.45em;
-      }
-      &.m{
-        position:relative;
-        font-size:$font-size-small;
-        top:-3em;
-      }
-      &.y{
-       
-        font-size:$font-size-base;
-        margin-top:-0.3em;
-      }
-    }
-  }
-  small{
-    display:block;
-    font-size:$font-size-small;
-    font-style:italic;
-  }
-  h4{
-    color:$brand-green3;
-    font-size:$font-size-base;
-    font-weight:600;
-    margin:0 0 0 58px;
-    min-height:1.7em;
-  }
-  .date{
-    margin-left:58px;
-  }
-  time{
-    font-size:$font-size-small;
-  }
-  .read-more{
-    a{
-      @extend .btn;
-      @extend .btn-sm;
-    }
-    margin:0;
-    text-align:right;
-    padding-right:10px;
-  }
-}
 
 
-// Homepage News list
-.news-list{
-  @include clearfix();
-  article{
-    &:nth-child(odd){
-      clear:both;
-    }
-    margin-bottom:$grid-gutter-width/2;
-    border-bottom:1px solid $gray-border;
-    > a, > a:visited{
-      display:block;
-      @include clearfix();
-      color:$text-color;
-      text-decoration:none;
-      &:hover,&:focus{
-        outline:0;
-        background-color:$gray-xlighter;
-        .photo{
-          @include opacity($opacity-hover);
-        }
-      }
-    }
-  }
-  h2{
-    color:$brand-green2;
-    margin:0;
-  }
-  time{
-    display:block;
-    margin:0.5em 0 0.25em;
-    color:$brand-green2;
-    span{
-      padding-right:6px;
-      color:$text-color;
-    }
-  }
-  blockquote{
-    padding: 0;
-    margin: $line-height-computed/3 0 ;
-    font-size: $font-size-base;
-    border:0;
-  }
-  .photo{
-    @include single-transition(opacity, $transition-duration);
-  }
-  .read-more{
-    small{
-      @extend .btn;
-      @extend .btn-sm;
-    }
-
-    text-align:right;
-  }
-}
 
 

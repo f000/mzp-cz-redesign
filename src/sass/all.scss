@@ -22,7 +22,8 @@
 @import "bootstrap/scaffolding";
 //@import "bootstrap/type";
 //@import "bootstrap/code";
-@import "bootstrap/grid";
+//@import "bootstrap/grid";
+@import "grid";
 //@import "bootstrap/tables";
 //@import "bootstrap/forms";
 //@import "bootstrap/buttons";
@@ -70,7 +71,5 @@
 @import "icomoon";
 @import "common";
 @import "layout";
+@import "elements";
 @import "content";
-
-
-
