@@ -5,13 +5,10 @@
 // @licence CC BY-NC-ND 3.0 CZ
 // --------------------------------------------------
 
-//TODO
 
-
-
-//nav
+// Organizations carousel
 .carousel-wrap{
-    margin:0 $grid-gutter-width;
+  margin:0 $grid-gutter-width;
 }
 
 .owl-carousel{
@@ -34,13 +31,12 @@
   abbr{
     border:0;
   }
-  
   .owl-controls {
     margin-top: 10px;
     text-align: center;
     -webkit-tap-highlight-color: transparent;
     .owl-nav {
-       div{
+      div{
         color: $gray-darker;
         font-size: $font-size-xxlarge;
         display: inline-block;
@@ -58,7 +54,6 @@
       }
     }
   }
-  
   .owl-prev{
     float:left;
     position:relative;
@@ -67,8 +62,5 @@
   .owl-next{
     float:right;
     margin-right:-$grid-gutter-width;
-
   }
-
-  
 }

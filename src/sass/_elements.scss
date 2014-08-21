@@ -158,9 +158,9 @@
     clear:both;
   }
   margin-bottom:$grid-gutter-width/2;
-  border-bottom:1px solid $gray-border;
   > a, > a:visited{
     display:block;
+    border-bottom:1px solid $gray-border;
     @include clearfix();
     color:$text-color;
     text-decoration:none;
@@ -181,6 +181,7 @@
     margin:0.5em 0 0.25em;
     color:$brand-green2;
     span{
+      font-size:$font-size-small;
       padding-right:6px;
       color:$text-color;
     }
