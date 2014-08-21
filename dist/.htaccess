@@ -1,0 +1,17 @@
+# Set proper content type and encoding for gzipped html.
+
+<FilesMatch "\.js\.gzip$">
+ AddType "text/javascript" .gzip
+</FilesMatch>
+
+<FilesMatch "\.css\.gzip$">
+  AddType "text/css" .gzip
+</FilesMatch>
+AddEncoding gzip .gzip
+
+<Files *.html.gz>
+	ForceType text/html
+	<IfModule mod_headers.c>
+		Header set Content-Encoding gzip
+	</IfModule>
+</Files>
