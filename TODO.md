@@ -9,7 +9,6 @@
 - carousel organizaci
 - doladit styly ze stareho webu
 - dopracovat sablonu pro tisk
-- doporucit prepinac velikosti textu
 - zjistit zda se da modifikovat element s dokumenty ke stazeni - minimalne odstranit target a title
 - ikona na rss?
 - probrat gzip
