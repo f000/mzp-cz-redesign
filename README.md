@@ -27,4 +27,4 @@ Autor: [Lukáš Vorlíček](mailto:lukas.vorlicek@codeart.cz)
 
 Copyright (c) 2014 [Ministerstvo životního prostředí](http://www.mzp.cz/)
 
-Licence [CC BY-NC-ND 3.0 CZ](http://creativecommons.org/licenses/by-nc-nd/3.0/cz/)
+[<img src="http://f000.github.io/mzp-cz-redesign/dist/img/licence.svg" alt="Licence CC BY-NC-ND 3.0 CZ" />](http://creativecommons.org/licenses/by-nc-nd/3.0/cz/)
