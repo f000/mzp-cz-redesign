@@ -17,6 +17,29 @@
   }
 }
 
+// Links
+.gray{
+  color: $gray;
+  text-decoration: none;
+  //TODO &:visited{  color:$gray-darker; }
+  &:hover,
+  &:focus {
+    color: $gray-darker;
+    text-decoration: none;
+  }
+}
+
+.green3{
+  color: $brand-green3;
+  text-decoration: none;
+  //TODO &:visited{  color:$gray-darker; }
+  &:hover,
+  &:focus {
+    color: $brand-green2;
+    text-decoration: none;
+  }
+}
+
 // List with arrows
 .arrows{
   list-style: none;
@@ -153,6 +176,7 @@
   }
 }
 .news-list{
+
   @include clearfix();
   .news-item{
     @extend .col-md-6;
@@ -359,7 +383,7 @@
       }
     }
     a{
-      @extend a.green3;
+      @extend .green3;
       font-size:$font-size-small;
     }
     span{
@@ -379,7 +403,7 @@
      margin:0 1em 0 0;
    }
    a{
-     @extend a.gray;
+     @extend .gray;
    }
    .level1{font-size:  $font-size-xxlarge;}
    .level2{font-size:  $font-size-xlarge;}
@@ -588,8 +612,8 @@
 
 // Breadcrumb nav
 .breadcrumb-nav{
-  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
-  margin-bottom: $line-height-computed;
+  padding: 15px 0 0;
+  margin: 0;
   list-style: none;
   > li {
     display: inline-block;
@@ -599,10 +623,10 @@
     &:before {
       font-family: "icomoon";
       font-size:$font-size-xsmall * 2;
-      color: $gray;
+      color: $gray-x;
       content: "\e603\00a0"; //home + space
       position:relative;
-      top: $font-size-xsmall/2 -1px;
+      top: 4px;
     }
     + li:before {
       font-size:$font-size-small * 2;
@@ -611,7 +635,15 @@
       top: $font-size-small/2;
     }
   }
-  > .active {
-    color: $breadcrumb-active-color;
+  a{
+    @extend .green3;
   }
+}
+
+// Content boxes
+.content-box{
+  padding-top: $line-height-computed / 2;
+}
+.content-box-hp{
+  
 }

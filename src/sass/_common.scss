@@ -28,27 +28,6 @@ a{
     @include tab-focus();
   }
 }
-a.gray {
-  color: $gray;
-  text-decoration: none;
-  //TODO &:visited{  color:$gray-darker; }
-  &:hover,
-  &:focus {
-    color: $gray-darker;
-    text-decoration: none;
-  }
-}
-
-a.green3 {
-  color: $brand-green3;
-  text-decoration: none;
-  //TODO &:visited{  color:$gray-darker; }
-  &:hover,
-  &:focus {
-    color: $brand-green2;
-    text-decoration: none;
-  }
-}
 
 // Headings
 h1, h2, h3, h4, h5, h6,
