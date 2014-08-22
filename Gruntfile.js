@@ -239,16 +239,16 @@ module.exports = function(grunt) {
         src: ['<%=dirs.dist%>/*.html'],
         overwrite: true,
         replacements: [{
-          from: /NCMARKER[0-9]{0,12}/g,
-          to: "NCMARKER<%= grunt.template.today('yyyymmddHHMMss') %>"
+          from: /NCMARK[0-9]{0,12}/g,
+          to: "NCMARK<%= grunt.template.today('yymmddHHMMss') %>"
         }]
       },
       css: {
         src: ['<%=dirs.dist%>/css/*.css'],
         overwrite: true,
         replacements: [{
-          from: /NCMARKER[0-9]{0,12}/g,
-          to: "NCMARKER<%= grunt.template.today('yyyymmddHHMMss') %>"
+          from: /NCMARK[0-9]{0,12}/g,
+          to: "NCMARK<%= grunt.template.today('yymmddHHMMss') %>"
         }]
       },     
     },

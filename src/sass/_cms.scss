@@ -44,7 +44,7 @@
   //Lists
   ul{
     list-style-type:square;
-    list-style:square url('../img/li-square.svg?NCMARKER');
+    list-style:square url('../img/li-square.svg?NCMARK');
   }
   
   // File download
@@ -86,7 +86,7 @@
 	}
 }
 .no-svg ul{
-  list-style:square url('../img/li-square.png?NCMARKER');
+  list-style:square url('../img/li-square.png?NCMARK');
 }
 
 /* Old cms content styles from ILIKETHIS! www.ilikethis.cz
@@ -158,7 +158,7 @@
 						margin: 0; padding: 0;
 					}
 					.contentMainText div.perex  p.date {
-						background-image: url(../img/icons/date.png?NCMARKER);
+						background-image: url(../img/icons/date.png?NCMARK);
 						background-position: 0 4px;
 						background-repeat: no-repeat;
 						padding: 0 0 0 15px;
@@ -176,13 +176,13 @@
 						color: #000 !important;
 					}
 					.textFooter a.print {
-						background-image: url(../img/icons/print.png?NCMARKER);
+						background-image: url(../img/icons/print.png?NCMARK);
 						background-repeat: no-repeat;
 						background-position: 0 4px;
 						padding: 0 20px 0 20px;
 					}
 					.textFooter a.sendMessage {
-						background-image: url(../img/icons/send-message.png?NCMARKER);
+						background-image: url(../img/icons/send-message.png?NCMARK);
 						background-repeat: no-repeat;
 						background-position: 0 6px;
 						padding: 0 20px 0 24px;
@@ -256,7 +256,7 @@
 						margin: 1px 0;
 					}
 					.topNewsBox .text p.date {
-						background-image: url(../img/icons/date.png?NCMARKER);
+						background-image: url(../img/icons/date.png?NCMARK);
 						background-position: 0 4px;
 						background-repeat: no-repeat;
 						padding: 0 0 0 15px;
@@ -269,7 +269,7 @@
 						display: -moz-inline-box;
 						vertical-align: middle;
 						font-size: 0;
-						background: url(../img/icons/more-info.png?NCMARKER) no-repeat 0 center;
+						background: url(../img/icons/more-info.png?NCMARK) no-repeat 0 center;
 						text-indent: -5000px;
 						margin-left:7px;
 					}
@@ -306,7 +306,7 @@
 						margin: 0; padding: 0;
 					}
 					.newsBox p.date {
-						background-image: url(../img/icons/date.png?NCMARKER);
+						background-image: url(../img/icons/date.png?NCMARK);
 						background-position: 0 4px;
 						background-repeat: no-repeat;
 						padding: 0 0 0 15px;
@@ -336,19 +336,19 @@
 					background-color: #f7dad1;
 					border: 1px solid #e48383;
 					color: #b63333;
-					background-image: url(../img/icons/error.png?NCMARKER);
+					background-image: url(../img/icons/error.png?NCMARK);
 				}
 			    .notice {
 			    	background-color: #d1edf7;
 					border: 1px solid #89c1e8;
 					color: #2092e1;
-					background-image: url(../img/icons/notice.png?NCMARKER);
+					background-image: url(../img/icons/notice.png?NCMARK);
 			    }
 		 	   .success {
 		 	   		background-color: #f3ffd2;
 					  border: 1px solid #bcd67f;
 					  color: #93b633;
-					  background-image: url(../img/icons/success.png?NCMARKER);
+					  background-image: url(../img/icons/success.png?NCMARK);
 		 	   }
 				/* ----- table form */
 			  		table.form {
@@ -437,7 +437,7 @@
 					list-style-type: none;
 				}
 				.wysiwyg ul li {
-					background-image: url(../img/icons/list.png?NCMARKER);
+					background-image: url(../img/icons/list.png?NCMARK);
 					background-repeat: no-repeat;
 					background-position: 0 5px;
 					padding: 0 0 0 15px;
@@ -467,7 +467,7 @@
 					background-color: #93b633;
 					color: #fff;
 					padding: 0 2px;
-					background-image: url(../img/icons/months.png?NCMARKER);
+					background-image: url(../img/icons/months.png?NCMARK);
 					background-position: center 110%;
 					background-repeat: no-repeat;
 				}
@@ -499,7 +499,7 @@
 				}
 				/* ----- contactTop */
 					.contact .contactTop {
-						background-image: url(../img/bg/contact.png?NCMARKER);
+						background-image: url(../img/bg/contact.png?NCMARK);
 						background-repeat: no-repeat;
 						background-position: 100% 0;
 						border-bottom: 1px solid $brand-light-g1;
@@ -532,7 +532,7 @@
 						width: 160px;
 					}
 					.search input.button {
-						background-image: url(../img/buttons/search.png?NCMARKER);
+						background-image: url(../img/buttons/search.png?NCMARK);
 						font-size: 12px;
 						width: 89px;
 						height: 22px;
@@ -556,7 +556,7 @@
 						text-align: left;
 					}
 					.pages .arrowLeft a {
-						background-image: url(../img/icons/pages-arrowleft.png?NCMARKER);
+						background-image: url(../img/icons/pages-arrowleft.png?NCMARK);
 						background-repeat: no-repeat;
 						background-position: 0 4px;
 						padding: 0 0 0 15px;
@@ -582,7 +582,7 @@
 						text-align: right;
 					}
 					.pages .arrowRight a {
-						background-image: url(../img/icons/pages-arrowright.png?NCMARKER);
+						background-image: url(../img/icons/pages-arrowright.png?NCMARK);
 						background-repeat: no-repeat;
 						background-position: 100% 4px;
 						padding: 0 15px 0 0;
@@ -623,7 +623,7 @@
 						border-top: 1px solid $brand-green1;
 						line-height: 24px;
 						clear: both;
-						background-image: url(../img/bg/contacttel.png?NCMARKER);
+						background-image: url(../img/bg/contacttel.png?NCMARK);
 						background-position: bottom;
 						background-repeat: repeat-x;					
 						padding: 0; margin: 0;
@@ -631,12 +631,12 @@
 						position: position;
 					}
 					ul.contactTel li.act a {
-						background-image: url(../img/icons/contacttel-arrow-act.png?NCMARKER);
+						background-image: url(../img/icons/contacttel-arrow-act.png?NCMARK);
 						background-position: 463px 50%;
 					}
 					ul.contactTel li a {
 						display: block;
-						background-image: url(../img/icons/contacttel-arrowleft.png?NCMARKER);
+						background-image: url(../img/icons/contacttel-arrowleft.png?NCMARK);
 						background-repeat: no-repeat;
 						background-position: 465px 50%;
 						padding: 0 10px;
@@ -740,7 +740,7 @@
 			  margin-right: 0;
 			}
 			.actionBox h4 {
-				background-image: url(../img/bg/actionbox.png?NCMARKER);
+				background-image: url(../img/bg/actionbox.png?NCMARK);
 				background-position: 0 0;
 				font-size: 135%;
 				padding: 16px 20px;
@@ -751,7 +751,7 @@
 				color: $brand-green3 !important;
 				text-decoration: none;
 				display: block;
-				/*background-image: url(../img/icons/actionbox-unpack.png?NCMARKER);
+				/*background-image: url(../img/icons/actionbox-unpack.png?NCMARK);
 				background-repeat: no-repeat;
 				background-position: 175px 0;*/
 			}
@@ -759,7 +759,7 @@
 				margin-bottom: 5px;
 			}
 			.actionBox h4.pack a {
-				/*background-image: url(../img/icons/actionbox-pack.png?NCMARKER);
+				/*background-image: url(../img/icons/actionbox-pack.png?NCMARK);
 				background-position: 172px 4px;*/
 			}
 			.actionBox h4 a:hover {
@@ -836,18 +836,18 @@
 				}
 				table.calendar .top td {
 					padding: 15px 0 4px 0;
-					background-image: url(../img/icons/calendar-border.png?NCMARKER);
+					background-image: url(../img/icons/calendar-border.png?NCMARK);
 					background-repeat: repeat-x;
 				}
 				table.calendar td.none {
 					background-color: #FFF;
 				}
 				table.calendar td.action {
-					background-image: url(../img/bg/calenda-action.png?NCMARKER);
+					background-image: url(../img/bg/calenda-action.png?NCMARK);
 					background-position: 0 bottom;		
 				}
 				table.calendar td.act {
-			/*		background-image: url(../img/bg/calenda-action_act.png?NCMARKER);	*/
+			/*		background-image: url(../img/bg/calenda-action_act.png?NCMARK);	*/
 					color:#AC0900;
 					font-weight:$weight-bold-sans-serif;
 				}
@@ -873,7 +873,7 @@
 					margin: 0px 20px 10px 20px;
 					padding: 10px 0 0 15px;
 					border-top: 1px solid $brand-light-g1;
-					background-image: url(../img/icons/aktualaction.png?NCMARKER);
+					background-image: url(../img/icons/aktualaction.png?NCMARK);
 					background-repeat: no-repeat;
 					background-position: 0 14px;
 					font-size: 90%;
