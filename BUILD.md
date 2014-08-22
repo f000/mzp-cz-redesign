@@ -30,13 +30,17 @@ _Je možné, že provedení kroku 1 a 3 bude vyžadovat sudo (pro OSX, *nix, BSD
 
 ##  Update
 
-Update systém zaktualizuje všechny moduly a komponenty na nejnovější kompatibilní verze. 
+1. Updatujte si zdrojové kódy projektu::
+
+        git pull
+
+2. Zaktualizuje všechny moduly a komponenty na nejnovější kompatibilní verze:
 
 * Updatujte Node.js moduly pomocí `npm update`
 
 * Updatujte css/js komponenty pomocí `bower update`
 
-_Je možné, že provedení těchto příkazů bude vyžadovat sudo (pro OSX, *nix, BSD...) nebo spuštění command shellu s pravomocemi administrátora (pro Windows)._
+_Je možné, že provedení těchto 2 příkazů bude vyžadovat sudo (pro OSX, *nix, BSD...) nebo spuštění command shellu s pravomocemi administrátora (pro Windows)._
 
 ##   Build
 
@@ -48,13 +52,17 @@ Jednoduchý build systém (Grunt Task Runner) má nastaveny následující úloh
 – vygeneruje nové sprites z podadresářů `src/img/` do `dist/img/`
 - validuje, sloučí a zkomprimuje skripty z `src/js/` do `dist/js/` (pomocí UglifyJS)
 
-Spusťte kompletní task set:
+1. Updatujte si zdrojové kódy projektu:
 
-    grunt
+        git pull
+
+2. Po provedení úprav spusťte kompletní task set:
+
+        grunt
 
 nebo nechte kompilaci změněných souborů provádět kontinuálně:
 
-    grunt watch
+        grunt watch
         
 ## Jednoduchý webserver
 
