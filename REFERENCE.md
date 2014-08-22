@@ -35,7 +35,7 @@ Editaci těchto elementů nebude pravděpodobně přes CMS možná.
 
 Projekt obsahuje stylesheet `print.css` pro automatickou změnu layoutu stránky při tisku. 
 
-Pro explicitní definice byla zavedena CSS třída `.print-only` (viditelnost pouze při tisku) a  `.no-print` (skrytí prvku při tisku).
+Pro explicitní definice byla zavedena CSS třída `.print-only` (viditelnost pouze při tisku) a  `.no-print` (skrytí prvku při tisku). 
 
 ## Pokyny pro implementaci
 
@@ -43,11 +43,17 @@ Pro explicitní definice byla zavedena CSS třída `.print-only` (viditelnost po
 
 Pro HTML soubory doporučujeme posílat HTTP hlavičku `X-UA-Compatible" s hodnotou `IE=edge,chrome=1`. 
 
-HTML, Javascript, CSS a ostatni nekomprimované soubory (TODO)
+Zavést kompresi HTTP spojení pro nekomprimované formáty (HTML, Javascript, CSS...) `gzip` a příp. `deflate`. V případě možnosti negativních dopadů na rychlost serveru bude doplněn Grunt task na vygenerovaní gzipovaných produkčních JS a CSS. Možné řešení pro Apache naleznete v souboru [.htaccess](https://github.com/f000/mzp-cz-redesign/blob/master/dist/.htaccess).
 
-### Zabezpečení
+### Bezpečnost (doporučení)
 
-V produkční verzi nedoporučujeme používání externích zdrojů, jako např. jQuery z Google CND a Google Analytics. Vhodná náhrada za Analytics je např. provozování lokální instalace [Piwik](http://piwik.org).
+Zprovoznit možnost šifrovaného připojení přes SSL – možnosti:
+
+1. vlastní SSL certifikát vydaný certifikační autoritou MVŽ
+2. [certifikát od autority akreditované MVČR pro Elektronický podpis](http://www.mvcr.cz/clanek/prehled-udelenych-akreditaci.aspx)
+3. [běžný komerční SSL certifikát](https://www.ssls.cz)
+
+V produkční verzi nepoužívat externí zdroje skriptů, jako např. jQuery z Google CND a Google Analytics. Vhodná náhrada za Analytics je např. provozování lokální instalace [Piwik](http://piwik.org).
 
 ### Externí odkazy
 
