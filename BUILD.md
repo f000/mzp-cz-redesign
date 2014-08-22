@@ -46,11 +46,19 @@ _Je možné, že provedení těchto 2 příkazů bude vyžadovat sudo (pro OSX, 
 
 Jednoduchý build systém (Grunt Task Runner) má nastaveny následující úlohy:
 
-- validuje HTML5 šablony `dist/*.html`
-– zkopíruje  `dist/*.html` do `src/*.html`
-- pomocí Compass zkompiluje SAAS skripty z `src/sass/` do `dist/css/` vč. minifikace a 
-– vygeneruje nové sprites z podadresářů `src/img/` do `dist/img/`
-- validuje, sloučí a zkomprimuje skripty z `src/js/` do `dist/js/` (pomocí UglifyJS)
+1. validuje HTML5 šablony `dist/*.html` (pomcí htmlhint)
+2. zkopíruje `dist/*.html` do `src/*.html`
+3. zkopíruje nejnovější veze jQuery, html5shiv a respond.js z `bower_components/` do `dist/js/`
+4. zkopíruje fonty `src/fonts/icomoon/fonts/*` do `dist/fonts/`
+5. pomocí Compass zkompiluje SAAS skripty z `src/sass/*.scss` do `dist/css/` vč. minifikace a vygeneruje nové sprites z podadresářů `src/img/` do `dist/img/`
+6. validuje skripty `dist/js/*.js` (pomcí jshint)
+7. sloučí JS skripty `bower_components/` Colorbox, qTip2, OwlCarousel2 a `dist/js/*.js` do souboru `tmp/final.js`
+8. validuje `tmp/final.js` (pomcí jshint)
+9. provede minifikaci a kompresi `tmp/final.js` do `dist/js/site.min.js` pomocí (pomocí UglifyJS)
+10. provede nahrazení značek NCMARK[0-9]{0,12} v souborech `dist/*.html` a `dist/css/*` za aktuální časovou značkou
+11. vymaže dočasné soubory z `tmp/`
+
+### Postup
 
 1. Updatujte si zdrojové kódy projektu:
 
