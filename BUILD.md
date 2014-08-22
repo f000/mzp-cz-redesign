@@ -1,3 +1,4 @@
+<img src="http://f000.github.io/mzp-cz-redesign/dist/img/logo-mzp-cs.svg" alt="Logo MŽP"/>
 # MŽP.CZ Redesign – Pokyny k sestavení
 
 Součást projektu [MŽP.CZ Redesign](http://f000.github.io/mzp-cz-redesign/).
@@ -8,16 +9,20 @@ Můžete modifikovat zdrojové soubory tohoto projektu, umístěné v adresáři
 
 Je nutno mít nainstalovaný Git a [Node.js ~0.10.0](http://nodejs.org/download/)
 
-1. Nainstalujte Bower a Grunt-cli pomocí Node.js Package Manager jako globální balíky:
+1. Naklonujte si repozitář projektu
+
+        git clone git@github.com:f000/mzp-cz-redesign.git
+
+2. Nainstalujte Bower a Grunt-cli pomocí Node.js Package Manager jako globální balíky:
 
         npm install -g bower grunt-cli
 
-2. Změnte aktuální adresář na root tohoto projektu pomocí `cd mzp-cz-redesign`
-3. Nainstalujte lokální závislosti Node.js:
+3. Změnte aktuální adresář na root tohoto projektu pomocí `cd mzp-cz-redesign`
+4. Nainstalujte lokální závislosti Node.js:
 
         npm install
 
-4. Nainstalujte lokální css/js frameworky a knihovny pomocí Bower 
+5. Nainstalujte lokální css/js frameworky a knihovny pomocí Bower 
 
         bower install
 

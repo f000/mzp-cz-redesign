@@ -1,3 +1,4 @@
+<img src="http://f000.github.io/mzp-cz-redesign/dist/img/logo-mzp-cs.svg" alt="Logo MŽP"/>
 # MŽP.CZ Redesign – Referenční příručka
 
 Obsahuje Specifikace, Pokyny pro implementaci a přehled Prvků pro editory.

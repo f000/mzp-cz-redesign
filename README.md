@@ -1,3 +1,4 @@
+<img src="http://f000.github.io/mzp-cz-redesign/dist/img/logo-mzp-cs.svg" alt="Logo MŽP"/>
 # MŽP.CZ Redesign
 
 Balík šablon a zdrojových kódů pro projekt Redesignu stránek [http://www.mzp.cz/](http://www.mzp.cz/) vč. jednoduchého build systému.
