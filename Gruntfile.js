@@ -234,6 +234,24 @@ module.exports = function(grunt) {
         '<%= uglify.dev.dest %>'
       ]
     },
+    replace: {
+      html: {
+        src: ['<%=dirs.dist%>/*.html'],
+        overwrite: true,
+        replacements: [{
+          from: /NCMARKER[0-9]{0,12}/g,
+          to: "NCMARKER<%= grunt.template.today('yyyymmddHHMMss') %>"
+        }]
+      },
+      css: {
+        src: ['<%=dirs.dist%>/css/*.css'],
+        overwrite: true,
+        replacements: [{
+          from: /NCMARKER[0-9]{0,12}/g,
+          to: "NCMARKER<%= grunt.template.today('yyyymmddHHMMss') %>"
+        }]
+      },     
+    },
     watch: {
       html: {
         files: ['<%=dirs.src%>/*.html'],
@@ -241,11 +259,11 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['<%=dirs.src%>/js/*'],
-        tasks: ['jshint:src','concat', 'jshint:tmp', 'uglify']
+        tasks: ['jshint:src','concat', 'jshint:tmp', 'uglify', 'replace:html']
       },
       css: {
         files: ['<%=dirs.src%>/sass/*'],
-        tasks: ['compass:dev']
+        tasks: ['compass:dev', 'replace:css', 'replace:html']
       }
     }
   });
@@ -258,6 +276,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-htmlhint');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-text-replace');
 
-  grunt.registerTask('default', ['htmlhint', 'copy',  'compass:dist', 'jshint:src', 'concat', 'jshint:tmp', 'uglify', 'clean']);
+  grunt.registerTask('default', ['htmlhint', 'copy',  'compass:dist', 'jshint:src', 'concat', 'jshint:tmp', 'uglify', 'replace', 'clean']);
 };
