@@ -211,9 +211,14 @@ module.exports = function(grunt) {
         src: '<%=dirs.libs%>/respond/dest/respond.min.js',
         dest: '<%=dirs.dist%>/js/respond.min.js'
       },
+      fonts: {
+        nonull: true,
+        src: '<%=dirs.src%>/fonts/icomoon/fonts/*',
+        dest: '<%=dirs.src%>/fonts/'
+      },
       htmlTemplates: {
         files: [
-          {expand: true, cwd: '<%=dirs.src%>/', src: ['*.html'], dest: '<%=dirs.dist%>/', filter: 'isFile'}
+          {nonull: true, expand: true, cwd: '<%=dirs.src%>/', src: ['*.html'], dest: '<%=dirs.dist%>/', filter: 'isFile'}
         ]
       }
     },
