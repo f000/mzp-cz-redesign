@@ -5,24 +5,94 @@
 // @licence CC BY-NC-ND 3.0 CZ
 // --------------------------------------------------
 
+.contentMainText{
+
+  //Old table
+  table{
+    margin: 0 0 $line-height-computed/2;
+    td,th{
+    	padding: $table-cell-padding;
+    }
+    th{
+      text-align:left;
+    }
+    td strong{
+      color:$brand-green2;
+    }
+    > tbody{
+      > tr:nth-child(odd) {
+        > td,
+        > th {
+          background-color: $table-bg-accent;
+        }
+      }
+      tr:hover {
+        > td,
+        > th {
+          background-color: $table-bg-hover;
+        }
+      }
+      tr:last-child{
+        > td,
+        > th {
+          border-bottom:1px solid $table-bg-accent;
+        }
+      }
+    } 
+  }
+  
+  //Lists
+  ul{
+    list-style-type:square;
+    list-style:square url('../img/li-square.svg');
+  }
+  
+  // File download
+	#filesList h5 {
+		color: $brand-green3;
+    @extend .fancy-header;
+    margin-bottom:0;
+	}
+	#filesList ul {
+    padding-left:0;
+		list-style: none none;
+	}
+	#filesList ul li {
+    padding: 3px 0 3px 26px;
+		margin: $line-height-computed/3;
+		background-repeat: no-repeat;
+		background-position: 0 3px;
+    a{
+      padding-right:0.5em;
+    }
+	}
+	#filesList ul li.pdf {
+		background-image: url(../img/icons/file-pdf.gif);
+	}
+	#filesList ul li.doc {
+		background-image: url(../img/icons/file-doc.gif);
+	}
+	#filesList ul li.xls {
+		background-image: url(../img/icons/file-xls.gif);
+	}
+	#filesList ul li.gen {
+		background-image: url(../img/icons/file-gen.gif);
+	}
+	#filesList ul li.jpg {
+		background-image: url(../img/icons/file-jpg.gif);
+	}
+	#filesList ul li a {
+		text-decoration: underline;
+	}
+}
+.no-svg ul{
+  list-style:square url('../img/li-square.png');
+}
+
 /* Old cms content styles from ILIKETHIS! www.ilikethis.cz
 // TODO cleaning and grep -o '\/img\/icons\/[a-zA-Z0-9/.:_-]*' _content.scss > ../../tmp/old-images.txt
 	
 	/* ----- content */
-		img#fbico {
-			float: right;
-			margin: 0 -5px 0 0;
-			padding-top: 8px;
-			
-		}
-		.contentMain {
-			width: 528px;
-			float: left;
-			min-height: 650px;
-		}
-		.contentMainText {
-			padding: 10px 20px 20px 20px;
-		}
 		.contentRight {
 			width: 243px;
 			float: right;
@@ -44,27 +114,10 @@
 		
 		/* ---- contentMain */
 			/* ----- contentMainText */
-				.contentMainText {
-					color: #4f4f4f;
-				}
-				.contentMainText h1 {
-					margin: 0 0 1em 0;
-					line-height: 1.4em;
-					font-size: 130%;	
-					color: #ac0900;
-				}
-				.contentMainText h2 {
-					margin: 2em 0 0.5em 0;
-					line-height: 1.4em;
-					font-size: 130%;	
-					color: #93b633;
-				}
-				.contentMainText p {
-					/* margin: 1.5em 0;*/
-				}
+
 				.contentMainText .line {
 
-					border-top: 1px solid #DCE6BB;
+					border-top: 1px solid $brand-green1;
 					margin: 1.5em 0 0.5em 0;
 				}
 				.contentMainText .view p {
@@ -73,22 +126,6 @@
 				.contentMainText .view h4 {
 					font-size: 100%;
 				}
-				/* ----- table */
-					.contentMainText table {
-						margin: 0.5em 0;
-						/* width: 100%; */
-						border-collapse: collapse;
-					}
-					.contentMainText table td,
-					.contentMainText table th {
-						padding: 10px;
-						border: 1px solid #93b633;
-					}
-					.contentMainText table th {
-						background-color: #edf2dc;
-						text-align: center;
-					}
-				/* end. table */
 				.contentMainText p.source,
 				.contentMainText p.source a {
 					color: #969696;
@@ -133,7 +170,7 @@
 					.textFooter {
 						margin: 3em 0 0 0;
 						padding: 0.2em 0 0 0;
-						border-top: 1px solid #edf2dc;
+						border-top: 1px solid $brand-light-g1;
 					}
 					.textFooter a {
 						color: #000 !important;
@@ -285,9 +322,9 @@
 				text-decoration: none;
 			}
 			/* ----- form */
-				.contentMain div.error,
-			    .contentMain div.notice,
-				.contentMain div.success {
+				.error,
+			   .notice,
+				.success {
 		 	   		padding: 1em 1em 1em 4em;
 					margin: 1em 0;
 					line-height: 1.2em;
@@ -295,23 +332,23 @@
 					background-repeat: no-repeat;
 					background-position: 0 center;
 		 	   }
-				.contentMain div.error {
+				.error {
 					background-color: #f7dad1;
 					border: 1px solid #e48383;
 					color: #b63333;
 					background-image: url(../img/icons/error.png);
 				}
-			    .contentMain div.notice {
+			    .notice {
 			    	background-color: #d1edf7;
 					border: 1px solid #89c1e8;
 					color: #2092e1;
 					background-image: url(../img/icons/notice.png);
 			    }
-		 	   .contentMain div.success {
+		 	   .success {
 		 	   		background-color: #f3ffd2;
-					border: 1px solid #bcd67f;
-					color: #93b633;
-					background-image: url(../img/icons/success.png);
+					  border: 1px solid #bcd67f;
+					  color: #93b633;
+					  background-image: url(../img/icons/success.png);
 		 	   }
 				/* ----- table form */
 			  		table.form {
@@ -335,7 +372,7 @@
 						padding: 0 3px 0 0;
 					}
 					table.form .required {
-						background-color: #edf2dc;
+						background-color: $brand-light-g1;
 					}
 					table.form input.error {
 						border: 1px solid #e48383;
@@ -413,17 +450,17 @@
 			
 			/* ---- archive */
 				.archive select {
-					color: #617a27;
+					color: $brand-green3;
 				}
 				.archive .months {
 					margin: 15px 0;
 					padding: 8px 0;
-					border-top: 1px solid #edf2dc;
-					border-bottom: 1px solid #edf2dc;
+					border-top: 1px solid $brand-light-g1;
+					border-bottom: 1px solid $brand-light-g1;
 					font-size: 90%;
 				}
 				.archive .months a {
-					color: #617a27;
+					color: $brand-green3;
 					padding: 0 2px;
 				}
 				.archive .months span {
@@ -465,7 +502,7 @@
 						background-image: url(../img/bg/contact.png);
 						background-repeat: no-repeat;
 						background-position: 100% 0;
-						border-bottom: 1px solid #edf2dc;
+						border-bottom: 1px solid $brand-light-g1;
 						font-weight: $weight-bold-sans-serif;
 						color: #000;
 					}
@@ -508,7 +545,7 @@
 				
 				/* ----- pages */
 					.pages {
-						background-color: #edf2dc;
+						background-color: $brand-light-g1;
 						padding: 6px 10px 4px 10px;
 						_padding: 6px 10px 0px 10px;
 						margin: 2em 0;
@@ -523,7 +560,7 @@
 						background-repeat: no-repeat;
 						background-position: 0 4px;
 						padding: 0 0 0 15px;
-						color: #617a27;
+						color: $brand-green3;
 					}
 					.pages .numbers {
 						float: left;
@@ -531,7 +568,7 @@
 						width: 280px;
 					}
 					.pages .numbers a {
-						color: #617a27;
+						color: $brand-green3;
 						padding: 0 5px;
 					}
 					.pages .numbers a.act {
@@ -549,7 +586,7 @@
 						background-repeat: no-repeat;
 						background-position: 100% 4px;
 						padding: 0 15px 0 0;
-						color: #617a27;
+						color: $brand-green3;
 					}
 				/* end. pages */
 				
@@ -579,11 +616,11 @@
 						margin: 0;
 						padding: 0;
 						list-style-type: none;
-						border: 1px solid #dce6bb;
+						border: 1px solid $brand-green1;
 						border-top: none;
 					}
 					ul.contactTel li {
-						border-top: 1px solid #dce6bb;
+						border-top: 1px solid $brand-green1;
 						line-height: 24px;
 						clear: both;
 						background-image: url(../img/bg/contacttel.png);
@@ -603,7 +640,7 @@
 						background-repeat: no-repeat;
 						background-position: 465px 50%;
 						padding: 0 10px;
-						color: #617a27;
+						color: $brand-green3;
 					}
 					* html ul.contactTel li a {
 						height: 1%;
@@ -627,14 +664,14 @@
 					}
 					ul.contactTel li ul li span.fleft {
 						color: #ac0900;
-						border-bottom: 1px solid #dce6bb;
+						border-bottom: 1px solid $brand-green1;
 						width: 350px;
 						font-weight: $weight-bold-sans-serif;
 						overflow: hidden;
 					}
 					ul.contactTel li ul li span.fright {
 						color: #000;
-						border-bottom: 1px solid #dce6bb;
+						border-bottom: 1px solid $brand-green1;
 						width: 116px;
 						text-align: right;
 						font-weight: $weight-bold-sans-serif;
@@ -646,48 +683,7 @@
 				/* end. contactTel */
 
 			/* end. contact */
-			
-			/* ----- filesList */
-				#filesList {
-					margin: 1em 0;
-					background-color: #edf2dc;
-	
-				}
-				#filesList h5 {
-					background-color: #dce6bb;
-					padding: 3px 10px;
-					color: #617a27;
-				}
-				#filesList ul {
-					margin: 0; padding: 10px 13px;
-					list-style-type: none;
-				}
-				#filesList ul li {
-					padding: 3px 0 3px 26px;
-					background-repeat: no-repeat;
-					background-position: 0 3px;
-				}
-				#filesList ul li.pdf {
-					background-image: url(../img/icons/file-pdf.gif);
-				}
-				#filesList ul li.doc {
-					background-image: url(../img/icons/file-doc.gif);
-				}
-				#filesList ul li.xls {
-					background-image: url(../img/icons/file-xls.gif);
-				}
-				#filesList ul li.gen {
-					background-image: url(../img/icons/file-gen.gif);
-				}
-				#filesList ul li.jpg {
-					background-image: url(../img/icons/file-jpg.gif);
-				}
-				#filesList ul li a {
-					text-decoration: underline;
-				}
-			/* end. filesList */
-			
-			/* ----- linksList */
+				/* ----- linksList */
 				#linksList {
 					margin: 1em 0;
 
@@ -737,7 +733,7 @@
 			.actionBox {
 				margin: 0 0 20px 0;
 				width: 241px;
-				border: 1px solid #dce6bb;
+				border: 1px solid $brand-green1;
 			}
 			.contentRight img {
 			  padding: 0;
@@ -748,11 +744,11 @@
 				background-position: 0 0;
 				font-size: 135%;
 				padding: 16px 20px;
-				 /* border-top: 1px solid #dce6bb; */
+				 /* border-top: 1px solid $brand-green1; */
 				margin: 0 0 0 0;
 			}
 			.actionBox h4 a {
-				color: #617a27 !important;
+				color: $brand-green3 !important;
 				text-decoration: none;
 				display: block;
 				/*background-image: url(../img/icons/actionbox-unpack.png);
@@ -803,11 +799,11 @@
 				font-size: 125%;
 				/* font-style: italic; */
 				padding: 16px 20px;
-				 /* border-top: 1px solid #dce6bb; */
+				 /* border-top: 1px solid $brand-green1; */
 				margin: 0 0 0 0;
 			}
 			.actionBox h5.akmzpext {
-				border-top: 1px solid #dce6bb;
+				border-top: 1px solid $brand-green1;
 			}
 			
 			
@@ -827,8 +823,8 @@
 				
 				table.calendar th {
 					padding: 4px 0;
-					border-bottom: 1px solid #edf2dc;
-					border-top: 1px solid #edf2dc;
+					border-bottom: 1px solid $brand-light-g1;
+					border-top: 1px solid $brand-light-g1;
 					font-size: 120%;
 					text-align: center;
 					font-weight: $weight-bold-sans-serif;
@@ -876,7 +872,7 @@
 				.actionBox .actualAction {
 					margin: 0px 20px 10px 20px;
 					padding: 10px 0 0 15px;
-					border-top: 1px solid #edf2dc;
+					border-top: 1px solid $brand-light-g1;
 					background-image: url(../img/icons/aktualaction.png);
 					background-repeat: no-repeat;
 					background-position: 0 14px;

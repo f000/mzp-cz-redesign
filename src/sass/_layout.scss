@@ -33,7 +33,7 @@
   .container{
     font-size:$font-size-base;
   }
-  padding-bottom:$grid-gutter-width * 4;
+  padding-bottom:$grid-gutter-width * 3;
   @media print {
     border:0;
     background-image: none;
@@ -254,7 +254,7 @@ li#print{
   @extend .col-md-12;
   > h3{
     position:absolute;
-    top:-$font-size-h3 - $line-height-computed*3;
+    top:-$font-size-h3*1.9 - $line-height-computed*3;
   }
 }
 

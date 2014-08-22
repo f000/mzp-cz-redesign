@@ -12,7 +12,6 @@
   }
 }
 
-
 // Fancy transitions
 button, a {
   @include single-transition(all, 0.3s);
@@ -41,14 +40,14 @@ h1, .h1,
 h2, .h2,
 h3, .h3 {
   margin-top: $line-height-computed;
-  margin-bottom: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed );
 }
 h4, .h4,
 h5, .h5,
 h6, .h6 {
   font-weight:$weight-bold-sans-serif;
-  margin-top: ($line-height-computed / 2);
-  margin-bottom: ($line-height-computed / 2);
+  margin-top: ($line-height-computed );
+  margin-bottom: ($line-height-computed );
 }
 h1, .h1 { font-size: $font-size-h1; }
 h2, .h2 { font-size: $font-size-h2; }

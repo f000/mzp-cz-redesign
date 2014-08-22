@@ -14,6 +14,7 @@
 .owl-carousel{
   list-style-type:none;
   padding-left:0;
+  margin:0;
   a, a:visited{
     text-decoration:none;
     color:$gray-xdarker;
@@ -22,7 +23,9 @@
     }
   }
   li{
-    min-height:130px;
+    min-height:136px;
+    line-height:136px;
+    @include background-image(linear-gradient(top, $bg-white 0%, $bg-gray1 50%, $bg-white 100%));
     text-align:center;
   }
   strong{
@@ -32,7 +35,7 @@
     border:0;
   }
   .owl-controls {
-    margin-top: 10px;
+    font-size:0;
     text-align: center;
     -webkit-tap-highlight-color: transparent;
     .owl-nav {
@@ -42,7 +45,7 @@
         display: inline-block;
         cursor: pointer;
         position:relative;
-        margin-top:-130px + $font-size-xxlarge + 12;
+        margin-top:-136px + $font-size-xxlarge *2;
         &:hover {
           color: $gray;
           text-decoration: none;

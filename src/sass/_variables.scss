@@ -40,6 +40,8 @@ $brand-green1: #cee5b8;
 $brand-green2: #7bc143;
 $brand-green3: #467a26;
 
+$brand-light-g1: lighten($brand-green1, 10%);
+
 $brand-gray1: lighten(#000, 35%);
 $brand-gray2: lighten(#000, 65%);
 $brand-gray3: lighten(#000, 100%);
@@ -141,20 +143,20 @@ $headings-font-weight:    400;
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
-//$table-cell-padding:            8px;
+$table-cell-padding: 2px 8px;
 //** Padding for cells in `.table-condensed`.
 //$table-condensed-cell-padding:  5px;
 
 //** Default background color used for all tables.
 //$table-bg:                      transparent;
 //** Background color used for `.table-striped`.
-//$table-bg-accent:               #f9f9f9;
+$table-bg-accent:               $bg-gray2;
 //** Background color used for `.table-hover`.
-//$table-bg-hover:                #f5f5f5;
+$table-bg-hover:                $bg-gray1;
 //$table-bg-active:               $table-bg-hover;
 
 //** Border color for table and cell borders.
-//$table-border-color:            #ddd;
+$table-border-color: $bg-gray4;
 
 
 
