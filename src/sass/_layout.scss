@@ -110,7 +110,7 @@
   a{
     background-image: url('../img/logo-mzp-cs.png?NCMARK');
   }
-} 
+}
 .no-backgroundsize #header-logo{
   .print-only{
     display: block;
@@ -139,8 +139,8 @@
     background-color: $bg-white;
     padding: 1px 24px 1px 5px;
     @include background-image(linear-gradient(top, $bg-gray-input 0%, $bg-white 20%));
-    @include single-transition(width, 0.3s);
- 
+    @include transition(width $transition-duration+0.1s);
+
   }
   button{
     border:0;
@@ -220,7 +220,7 @@
 }
 #footer{
   padding-left: $grid-gutter-width/2;
-  border-left: 0;  
+  border-left: 0;
   ul{
     padding-left:0;
     @extend .no-print;

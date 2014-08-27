@@ -121,7 +121,10 @@
   color:$text-color;
   text-decoration:none;
   background-color:$gray-lighter;
-  @include border-radius($border-radius-small);
+  @include border-top-radius($border-radius-small);
+  @include border-bottom-radius($border-radius-small);
+  @include border-left-radius($border-radius-small);
+  @include border-right-radius($border-radius-small);
   @include background-image(linear-gradient(bottom, $gray-lighter 0%,  $gray-xlighter 100%));
   &:hover,&:focus{
     @include opacity($opacity-hover);
@@ -171,7 +174,7 @@
 
 
 // Homepage Topics (sprites)
-@import "hp-nav/*.png";
+//@import "hp-nav/*.png";
 .mzp-topics{
   padding:0;
   list-style-type: none;
@@ -199,16 +202,16 @@
     }
   }
   .ovzdusi a{
-    @include hp-nav-sprite(ovzdusi);
+  //  @include hp-nav-sprite(ovzdusi);
   }
   .priroda a{
-    @include hp-nav-sprite(priroda);
+    //@include hp-nav-sprite(priroda);
   }
   .voda a{
-    @include hp-nav-sprite(voda);
+    //@include hp-nav-sprite(voda);
   }
   .odpady a{
-    @include hp-nav-sprite(odpady);
+    //@include hp-nav-sprite(odpady);
   }
   span{
     color:$gray-dark;
@@ -282,7 +285,7 @@
     border:0;
   }
   .photo{
-    @include single-transition(opacity, $transition-duration);
+    @include transition(opacity $transition-duration);
   }
   .read-more{
     text-align:right;
@@ -639,7 +642,7 @@
     }
   }
   span,abbr{
-    @include single-transition(color, $transition-duration);
+    @include transition(color $transition-duration);
   }
   span{
     color: $text-color;

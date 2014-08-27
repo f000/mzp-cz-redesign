@@ -71,7 +71,7 @@ module.exports = function(grunt) {
           banner: '<%= banner %>',
           stripBanners: true
         },
-        src: [  
+        src: [
           '<%=dirs.src%>/js/modernizr.svgasimg.js',
           '<%=dirs.src%>/js/site.js'
         ],
@@ -115,32 +115,35 @@ module.exports = function(grunt) {
         nonull: true
       }
     },
-    compass: {
+    sass: {
       options: {
-        banner: '<%= banner %>',
-        specify: '<%=dirs.src%>/sass/*',
-        sassDir: '<%=dirs.src%>/sass/',
-        cssDir: '<%=dirs.dist%>/css/',
-        imagesDir: '<%=dirs.src%>/img/',
-        generatedImagesDir: '<%=dirs.dist%>/img/',
-        importPath: [
+        includePaths: [
           '<%=dirs.libs%>/bootstrap-sass-official/assets/stylesheets/',
-          '<%=dirs.libs%>/owl-carousel2/src/scss/'
-        ],
-        relativeAssets: true
+          '<%=dirs.libs%>/owl-carousel2/src/scss/',
+          '<%=dirs.libs%>/bourbon/dist/'
+        ]
       },
       dist: {
         options: {
-          outputStyle: 'compressed',
-          noLineComments: true
-        }
-      },
-      dev: {
-        options: {
           outputStyle: 'nested',
-          noLineComments: false
+          sourceComments: 'none'
+        },
+        files: {
+          '<%=dirs.dist%>/css/all.css' : '<%=dirs.src%>/sass/all.scss' ,
+          '<%=dirs.dist%>/css/ie8.css' : '<%=dirs.src%>/sass/ie8.scss'
         }
       }
+  /* ,    dev: {
+        options: {
+          outputStyle: 'nested',
+          sourceComments: 'map'
+        },
+        files: {
+          '<%=dirs.src%>/sass/all.scss' : '<%=dirs.dist%>/css/all.css' ,
+          '<%=dirs.src%>/sass/print.scss' : '<%=dirs.dist%>/css/print.css' ,
+          '<%=dirs.src%>/sass/ie8.scss' : '<%=dirs.dist%>/css/ie8.css'
+        }
+      }*/
     },
     htmlhint: {
       all: {
@@ -153,12 +156,12 @@ module.exports = function(grunt) {
     jshint: {
       options: {
         globals: {
-					console: true, jQuery: true, '$': true, QTip: true, TRUE: true, FALSE: true, NULL: true, 
+					console: true, jQuery: true, '$': true, QTip: true, TRUE: true, FALSE: true, NULL: true,
 					WIDTH: true, HEIGHT: true, TOP: true, LEFT: true, BOTTOM: true, RIGHT: true, X: true, Y: true,
-					CENTER: true, FLIP: true, FLIPINVERT: true, SHIFT: true, QTIP: true,  PROTOTYPE: true, 
-					CORNER: true,  CHECKS: true, PLUGINS: true, NAMESPACE: true, ATTR_HAS: true, ATTR_ID: true, 
-					WIDGET: true, SELECTOR: true, INACTIVE_EVENTS: true, CLASS_FIXED: true, CLASS_DEFAULT: true, 
-					CLASS_FOCUS: true, CLASS_HOVER: true, CLASS_DISABLED: true, replaceSuffix: true, oldtitle: true, 
+					CENTER: true, FLIP: true, FLIPINVERT: true, SHIFT: true, QTIP: true,  PROTOTYPE: true,
+					CORNER: true,  CHECKS: true, PLUGINS: true, NAMESPACE: true, ATTR_HAS: true, ATTR_ID: true,
+					WIDGET: true, SELECTOR: true, INACTIVE_EVENTS: true, CLASS_FIXED: true, CLASS_DEFAULT: true,
+					CLASS_FOCUS: true, CLASS_HOVER: true, CLASS_DISABLED: true, replaceSuffix: true, oldtitle: true,
 					trackingBound: true, BROWSER: true, createWidgetClass: true, sanitizeOptions: true, cloneEvent: true
           }
       },
@@ -188,7 +191,7 @@ module.exports = function(grunt) {
           sub:true,
           eqnull:true,
           browser:true
-          
+
         },
         files: {
           src: ['<%= concat.final.dest %>']
@@ -250,7 +253,7 @@ module.exports = function(grunt) {
           from: /NCMARK[0-9]{0,12}/g,
           to: "NCMARK<%= grunt.template.today('yymmddHHMMss') %>"
         }]
-      },     
+      },
     },
     watch: {
       html: {
@@ -263,7 +266,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['<%=dirs.src%>/sass/*'],
-        tasks: ['compass:dev', 'replace:css', 'replace:html']
+        tasks: ['sass:dev', 'replace:css', 'replace:html']
       }
     }
   });
@@ -272,11 +275,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-htmlhint');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-text-replace');
 
-  grunt.registerTask('default', ['htmlhint', 'copy',  'compass:dist', 'jshint:src', 'concat', 'jshint:tmp', 'uglify', 'replace', 'clean']);
+  grunt.registerTask('default', ['htmlhint', 'copy',  'sass:dist', 'jshint:src', 'concat', 'jshint:tmp', 'uglify', 'replace', 'clean']);
 };

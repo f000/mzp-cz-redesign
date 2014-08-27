@@ -4,3 +4,9 @@
 // @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
 // @licence CC BY-NC-ND 3.0 CZ
 // --------------------------------------------------
+
+@mixin filter-gradient($start-color, $end-color, $orientation: vertical) {
+    *zoom: 1;
+    $gradient-type: if($orientation == vertical, 0, 1);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=#{$gradient-type}, startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}');
+}

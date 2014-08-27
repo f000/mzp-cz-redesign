@@ -11,9 +11,6 @@
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
-@import "compass/css3/images";
-
-
 .fluid-bg1{
   @include filter-gradient($bg-gray1, $bg-gray3, vertical);
 }

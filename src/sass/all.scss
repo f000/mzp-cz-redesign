@@ -24,11 +24,8 @@
 //@import "bootstrap/forms";
 //@import "bootstrap/buttons";
 
-// Compass
-@import "compass/css3/images";
-@import "compass/css3/border-radius";
-@import "compass/utilities/sprites";
-@import "compass/css3/transition";
+// Bourbon
+@import "bourbon";
 
 // Owl carousel
 @import "owl.carousel.scss";

@@ -14,7 +14,7 @@
 
 // Fancy transitions
 button, a {
-  @include single-transition(all, 0.3s);
+  @include transition(all $transition-duration+0.1s);
 }
 
 // Links
