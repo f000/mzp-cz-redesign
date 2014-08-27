@@ -21,7 +21,7 @@
 .gray{
   color: $gray;
   text-decoration: none;
-  //TODO &:visited{  color:$gray-darker; }
+  //TODO: &:visited{  color:$gray-darker; }
   &:hover,
   &:focus {
     color: $gray-darker;
@@ -32,7 +32,7 @@
 .green3{
   color: $brand-green3;
   text-decoration: none;
-  //TODO &:visited{  color:$gray-darker; }
+  //TODO: &:visited{  color:$gray-darker; }
   &:hover,
   &:focus {
     color: $brand-green2;
@@ -129,13 +129,12 @@
 }
 
 .btn-inverted, .btn-inverted:visited{
-  //TODO
   padding:3px 9px;
   font-size:$font-size-small;
   background-color:$gray-lighter;
   @include background-image(linear-gradient(bottom, $gray-medium 0%,  $gray-light 100%));
   color:$gray-darker;
-  &:hover{ 
+  &:hover{
     color:$gray-dark;
   }
 }
@@ -200,16 +199,16 @@
     }
   }
   .ovzdusi a{
-    @include hp-nav-sprite(ovzdusi); 
+    @include hp-nav-sprite(ovzdusi);
   }
   .priroda a{
-    @include hp-nav-sprite(priroda); 
+    @include hp-nav-sprite(priroda);
   }
   .voda a{
-    @include hp-nav-sprite(voda); 
+    @include hp-nav-sprite(voda);
   }
   .odpady a{
-    @include hp-nav-sprite(odpady); 
+    @include hp-nav-sprite(odpady);
   }
   span{
     color:$gray-dark;
@@ -239,7 +238,7 @@
       margin:0;
       padding:0;
     }
-  }  
+  }
 }
 
 // News list
@@ -311,7 +310,7 @@
       }
     }
   }
-  .fancy-date{ //TODO experiment with em units
+  .fancy-date{ //TODO: experiment with em units
     float:left;
     width:50px;
     margin-right:8px;
@@ -333,7 +332,7 @@
         top:-3em;
       }
       &.y{
-       
+
         font-size:$font-size-base;
         margin-top:-0.3em;
       }
@@ -377,7 +376,7 @@
     padding-top: $grid-gutter-width/2 + 2;
     border-top: 2px solid $gray-border;
    }
-  figure{    
+  figure{
     width:261px;
     height:96px;
     @media (min-width: $screen-sm-min) {
@@ -394,7 +393,7 @@
     vertical-align: middle;
     font-size:0;
     background-color:$bg-white;
-    @include background-image(linear-gradient(left top, $bg-white 80%, $bg-gray2 90%, $bg-gray3 100%)); 
+    @include background-image(linear-gradient(left top, $bg-white 80%, $bg-gray2 90%, $bg-gray3 100%));
   }
   img{
     text-align:center;
@@ -699,5 +698,5 @@
   padding-top: $line-height-computed / 2;
 }
 .content-box-hp{
-  
+
 }

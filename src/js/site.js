@@ -5,7 +5,6 @@
 * @licence CC BY-NC-ND 3.0 CZ
 */
 
-/*jslint todo: true */
 /*global Modernizr:false, $:false*/
 
 // SVG Fallback
@@ -23,8 +22,8 @@ function scrollToTop(sel) {
   });
 }
 
-// Shuffle Tag Cloud 
-// TODO remove for production
+// Shuffle Tag Cloud
+// TODO: remove for production
 function shuffleTagCloud(sel) {
   var cloud = $(sel),
   tags = cloud.children();
@@ -67,18 +66,15 @@ function initMZP() {
   scrollToTop('#gotop a');
   printPage('#print a');
   owlCarousel('.owl-carousel');
-  
-  //TODO qTip2 for submenu
-  //TODO qTip2 for banner figcaption
-  //TODO qTip2 title, abbr
-  //TODO OwlCarousel for Organizations
+
+  //TODO: qTip2 for submenu
+  //TODO: qTip2 for banner figcaption
+  //TODO: qTip2 title, abbr
 
 }
 
 $(document).ready(initMZP);
 
 $(window).resize(function() {
-  $('.carousel').trigger('refresh.owl.carousel'); 
+  $('.carousel').trigger('refresh.owl.carousel');
 });
-
-
