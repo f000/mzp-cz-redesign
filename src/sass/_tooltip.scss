@@ -42,54 +42,29 @@
 .tooltip {
   &.top .tooltip-arrow {
     bottom: 0;
-    left: 50%;
+    left: 55%;
     margin-left: -$tooltip-arrow-width;
-    border-width: $tooltip-arrow-width $tooltip-arrow-width 0;
-    border-top-color: $tooltip-arrow-color;
+    border-width: $tooltip-arrow-width $tooltip-arrow-width 0 0;
+    border-top-color: blue;
   }
-  &.top-left .tooltip-arrow {
-    bottom: 0;
-    left: $tooltip-arrow-width;
-    border-width: $tooltip-arrow-width $tooltip-arrow-width 0;
-    border-top-color: $tooltip-arrow-color;
-  }
-  &.top-right .tooltip-arrow {
-    bottom: 0;
-    right: $tooltip-arrow-width;
-    border-width: $tooltip-arrow-width $tooltip-arrow-width 0;
-    border-top-color: $tooltip-arrow-color;
-  }
-  &.right .tooltip-arrow {
-    top: 50%;
-    left: 0;
-    margin-top: -$tooltip-arrow-width;
-    border-width: $tooltip-arrow-width $tooltip-arrow-width $tooltip-arrow-width 0;
-    border-right-color: red;
-  }
-  &.left .tooltip-arrow {
-    top: 50%;
-    right: 0;
-    margin-top: -$tooltip-arrow-width;
-    border-width: $tooltip-arrow-width 0 0 $tooltip-arrow-width;
-    border-left-color: $tooltip-arrow-color;
-  }
-  &.bottom .tooltip-arrow {
+   &.bottom .tooltip-arrow {
     top: 0;
-    left: 50%;
+    left: 55%;
     margin-left: -$tooltip-arrow-width;
     border-width: 0 $tooltip-arrow-width $tooltip-arrow-width 0;
     border-bottom-color: $tooltip-arrow-color;
   }
-  &.bottom-left .tooltip-arrow {
-    top: 0;
-    left: $tooltip-arrow-width;
-    border-width: 0 $tooltip-arrow-width $tooltip-arrow-width;
-    border-bottom-color: $tooltip-arrow-color;
-  }
-  &.bottom-right .tooltip-arrow {
-    top: 0;
-    right: $tooltip-arrow-width;
-    border-width: 0 $tooltip-arrow-width $tooltip-arrow-width;
-    border-bottom-color: $tooltip-arrow-color;
+}
+
+#bg-5{
+  .tooltip-inner {
+    color: $gray-xdarker;
+    background-color: $gray-light;
+  }  
+  .tooltip {
+    &.top    { margin-top:  -6px;}
+    &.top .tooltip-arrow {
+      border-top-color: $gray-light;
+    }
   }
 }

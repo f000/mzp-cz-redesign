@@ -62,55 +62,27 @@ function owlCarousel(sel) {
 }
 
 function titleTooltip() {
-  $('div[id^="bg-"][id!="bg-5"] [title!=""]').tooltip({
-    placement: "bottom"
+  $('#bg-1 abbr[title!=""], #bg-2 a[title!=""], #bg-3 [title!=""], #bg-4 abbr[title!=""]').tooltip({
+    placement: "bottom",
+    delay:1000
   });
-
-  $('#bg-5 [title!=""]').tooltip();
+  $('#bg-5 [title!=""]').tooltip({
+    placement: "top",
+    delay:1000
+  }); 
 }
 
 
 function mainMenu() {   
-  
-   
      
   $('#main-nav ul li').click(function() {
-  //  $(this).children('div').toggle();
+    $(this).children('div').toggle();
   });
   
   $('#main-nav ul ul li').hover(function() {
-  //  $(this).children('ul').toggle();
+    $(this).children('ul').toggle();
   });
   
-
-  $("#main-nav ul li").each(function() {
-      var t = ["qtip-subnav"];
-      $(this).qtip({
-          suppress: false,
-          content: $(this).children("div").children("ul"),
-          position: {
-              my: "top left",
-              at: "bottom left",
-              adjust: {
-                  y: 0
-              }
-          },
-          style: {
-              classes: t.join(" "),
-              tip: false
-          },
-          show: {
-              solo: true,
-              event: "click"
-          },
-          hide: {
-              event: "click mouseleave",
-              delay: 300,
-              fixed: true
-          }
-      });
-  });
-
 }
 
 // Init

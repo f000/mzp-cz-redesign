@@ -398,6 +398,11 @@
   img{
     text-align:center;
     margin:0 auto;
+    &:hover,&:focus{
+      outline:0;
+      @include opacity($opacity-hover);
+    }
+    @include single-transition(opacity, $transition-duration);
   }
   figcaption{
     display:none;
@@ -406,10 +411,6 @@
     display:block;
     text-decoration:none;
     font-size:0;
-    &:hover,&:focus{
-      outline:0;
-       @include opacity($opacity-hover);
-    }
   }
 }
 

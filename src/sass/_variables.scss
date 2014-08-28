@@ -219,12 +219,12 @@ $table-border-color: $bg-gray4;
 //##
 
 //** Tooltip max width
-//$tooltip-max-width:           200px;
+$tooltip-max-width:           260px;
 //** Tooltip text color
 //$tooltip-color:               #fff;
 //** Tooltip background color
-//$tooltip-bg:                  #000;
-//$tooltip-opacity:             .9;
+$tooltip-bg:                  $gray-darker;
+$tooltip-opacity:             .9;
 
 //** Tooltip arrow width
 $tooltip-arrow-width:         10px;
