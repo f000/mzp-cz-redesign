@@ -448,50 +448,7 @@
 				}
 			/* end. wysiwyg */
 			
-			/* ---- archive */
-				.archive select {
-					color: $brand-green3;
-				}
-				.archive .months {
-					margin: 15px 0;
-					padding: 8px 0;
-					border-top: 1px solid $brand-light-g1;
-					border-bottom: 1px solid $brand-light-g1;
-					font-size: 90%;
-				}
-				.archive .months a {
-					color: $brand-green3;
-					padding: 0 2px;
-				}
-				.archive .months span {
-					background-color: #93b633;
-					color: #fff;
-					padding: 0 2px;
-					background-image: url(../img/icons/months.png?NCMARK);
-					background-position: center 110%;
-					background-repeat: no-repeat;
-				}
-				/* ----- archiveTable */
-					.archiveTable {
-						border-collapse: collapse;
-					}
-					table.archiveTable td, 
-					table.archiveTable th {
-						background-color: #fff;
-						border: none;
-						padding: 3px 0;
-						text-align: left;
-					}
-					table.archiveTable th {
-						width: 50px;
-						color: #93b633;
-					}
-					table.archiveTable td.icons {
-						padding: 3px 8px;
-						width: 10px;
-					}
-				/* end. archiveTable */
-			/* end. archive */
+
 			
 			/* ----- contact */
 				.contact {

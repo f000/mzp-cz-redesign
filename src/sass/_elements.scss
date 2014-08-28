@@ -292,18 +292,17 @@
 // Event list
 .event-list{
   border:1px solid $gray-border;
-  padding: 10px 8px 20px 8px;
+ 
   @include clearfix();
   @include background-image(linear-gradient(bottom, $bg-gray4 0%, rgba(255,255,255,0) 25%));
   article{
     clear:both;
-    margin-bottom:$grid-gutter-width/2 - 6;
     > a, > a:visited{
       display:block;
       @include clearfix();
       color:$text-color;
       text-decoration:none;
-      padding:3px 0;
+      padding: 8px;
       &:hover,&:focus{
         outline:0;
         background-color:$gray-lighter;
@@ -701,3 +700,84 @@
 .content-box-hp{
 
 }
+
+// Archive nav
+.archive-nav{
+  margin-bottom:$line-height-computed / 2;
+  list-style-type:none;
+  padding-left:0;
+  display:inline-block;
+  li{
+    display:inline-block;
+    border-left:1px solid $bg-gray4;
+    padding:0;
+    font-size: $font-size-small;
+    &:first-child{
+      border-left:0;
+      padding-left:0;
+    }
+  }
+  span{
+    background-color:$bg-gray4;
+    display:block;
+    padding:0 3px;
+  }
+  a{
+    font-size: $font-size-small;
+    display:block;
+    padding:0 3px;
+  }
+}
+
+// Archive list
+.archive{
+  .event-list{
+    border:0;
+    border-top:1px solid $bg-gray4;
+    padding: 0;
+    background-image:none;
+    margin-top:$line-height-computed/2;
+    article{
+      border-bottom:1px solid $bg-gray4;
+      margin:0;
+    }
+    .fancy-date{
+      width:48px;
+      padding-right:5px;
+      border-right:1px solid $bg-gray4;
+    }
+    a:hover,a:visited:hover{
+      background-color: $gray-xlighter;
+    }
+    h4{
+      margin:0 0 0 50px;
+    }
+    .date{
+      margin-left:50px;
+    }
+  }
+  .news-list{
+    @extend .row;
+    margin-top:$line-height-computed/2;
+    .news-item{
+      @extend .col-md-12;
+    }
+  }
+  .news-item{
+    margin:0;
+    > a, > a:visited{
+      border-bottom:1px solid $bg-gray4;
+      padding:$line-height-computed/2 0;
+    }
+    h2{
+      font-size:$font-size-base;
+      font-weight:600;
+      margin-left:19px;
+    }
+    time{
+      margin:0 0 0.25em;
+      color:$text-color;
+    }
+  }
+}
+
