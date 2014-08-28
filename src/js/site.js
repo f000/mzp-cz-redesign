@@ -61,26 +61,12 @@ function owlCarousel(sel) {
   });
 }
 
-function qTip2title() {
-  $('div[id^="bg-"][id!="bg-5"] [title!=""]').qtip({
-    position: {
-        my: 'top left', 
-        at: 'bottom right'
-    },
-    style: {
-        classes: 'qtip-dark'
-    }
+function titleTooltip() {
+  $('div[id^="bg-"][id!="bg-5"] [title!=""]').tooltip({
+    placement: "bottom"
   });
 
-  $('#bg-5 [title!=""]').qtip({
-    position: {
-        my: 'top left', 
-        at: 'bottom right'
-    },
-    style: {
-        classes: 'qtip-light'
-    }
-  });
+  $('#bg-5 [title!=""]').tooltip();
 }
 
 
@@ -133,8 +119,8 @@ function initMZP() {
   scrollToTop('#gotop a');
   printPage('#print a');
   owlCarousel('.owl-carousel');
-  qTip2title();
-  mainMenu();
+  titleTooltip();
+ // mainMenu();
   //TODO: qTip2 for submenu
   //TODO: qTip2 for banner figcaption
   //TODO: qTip2 title, abbr

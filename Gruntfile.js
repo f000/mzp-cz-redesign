@@ -40,31 +40,14 @@ module.exports = function(grunt) {
         dest: '<%=dirs.tmp%>/owlcarousel.js',
         nonull: true
       },
-      qtip2: {
+      tooltip: {
         options: {
           stripBanners: false
         },
         src: [
-          '<%=dirs.libs%>/qTip2/src/core/intro.js',
-          '<%=dirs.libs%>/qTip2/src/core/constants.js',
-          '<%=dirs.libs%>/qTip2/src/core/class.js',
-          '<%=dirs.libs%>/qTip2/src/core/options.js',
-          '<%=dirs.libs%>/qTip2/src/core/content.js',
-          '<%=dirs.libs%>/qTip2/src/core/position.js',
-          '<%=dirs.libs%>/qTip2/src/core/toggle.js',
-          '<%=dirs.libs%>/qTip2/src/core/focus.js',
-          '<%=dirs.libs%>/qTip2/src/core/disable.js',
-          '<%=dirs.libs%>/qTip2/src/core/button.js',
-          '<%=dirs.libs%>/qTip2/src/core/style.js',
-          '<%=dirs.libs%>/qTip2/src/core/events.js',
-          '<%=dirs.libs%>/qTip2/src/core/jquery_methods.js',
-          '<%=dirs.libs%>/qTip2/src/core/jquery_overrides.js',
-          '<%=dirs.libs%>/qTip2/src/core/defaults.js',
-          '<%=dirs.libs%>/qTip2/src/position/viewport.js',
-          '<%=dirs.libs%>/qTip2/src/tips/tips.js',
-          '<%=dirs.libs%>/qTip2/src/core/outro.js'
+          '<%=dirs.libs%>/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js',
         ],
-        dest: '<%=dirs.tmp%>/qtip2.js',
+        dest: '<%=dirs.tmp%>/tooltip.js',
         nonull: true
       },
       mzp:{
@@ -83,7 +66,7 @@ module.exports = function(grunt) {
         src: [
           '<%= concat.colorbox.dest %>',
           '<%= concat.owlcarousel.dest %>',
-          '<%= concat.qtip2.dest %>',
+          '<%= concat.tooltip.dest %>',
           '<%= concat.mzp.dest %>'
         ],
         dest: '<%=dirs.tmp%>/final.js',
@@ -179,17 +162,18 @@ module.exports = function(grunt) {
           strict: false,
           immed: true,
           latedef: false,
-          curly: true,
+          curly: false,
           undef: false,
           asi: true,
           laxbreak: true,
+          laxcomma: true,
           expr: true,
           validthis: true,
           boss:true,
           sub:true,
           eqnull:true,
-          browser:true
-          
+          browser:true,
+          immed: false
         },
         files: {
           src: ['<%= concat.final.dest %>']
@@ -197,11 +181,6 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      qtip: {
-        nonull: true,
-        src: '<%=dirs.libs%>/qTip2/src/core.css',
-        dest: '<%=dirs.src%>/sass/_qtip.core.scss'
-      },
       jquery: {
         nonull: true,
         src: '<%=dirs.libs%>/jquery/dist/jquery.min.js',
@@ -232,7 +211,7 @@ module.exports = function(grunt) {
       concat: [
         '<%= concat.colorbox.dest %>',
         '<%= concat.owlcarousel.dest %>',
-        '<%= concat.qtip2.dest %>',
+        '<%= concat.tooltip.dest %>',
         '<%= concat.mzp.dest %>',
         '<%= concat.final.dest %>'
       ],

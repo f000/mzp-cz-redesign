@@ -24,6 +24,10 @@
 //@import "bootstrap/forms";
 //@import "bootstrap/buttons";
 
+// Tooltip
+@import "bootstrap/tooltip";
+@import "tooltip";
+
 // Compass
 @import "compass/css3/images";
 @import "compass/css3/border-radius";
@@ -33,11 +37,6 @@
 // Owl carousel
 @import "owl.carousel.scss";
 @import "carousel";
-
-//qTip
-@import "qtip.core";
-@import "qtip";
-
 
 // MZP styles
 @import "icomoon";
