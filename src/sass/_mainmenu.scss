@@ -11,7 +11,7 @@
   padding-left: 0;
   > li{
     display: inline-block;
-    a,a:visited{
+    > a, > a:visited{
       color:$gray-dark;
       display:block;
       border-right:1px solid $green-border;
@@ -20,6 +20,7 @@
       @extend .icomoon;
       @extend .icon-bar;
       font-family: $font-family-sans-serif;
+
       &:before {
         font-family: 'icomoon';
         font-size:$icomoon-bar-fontsize;
@@ -52,7 +53,57 @@
     }
   }
   div{
-    display: none;
-    ul{}
+    position:absolute;
+    display:none;
+    z-index:100;
+    border:1px solid blue;
+    text-align:left;
+    a,a:visited{
+      white-space:nowrap;
+      color:$gray-medium;
+      display:block;
+      padding:3px $grid-gutter-width/2;
+      font-weight:400;
+      &:hover{
+        background-color:$bg-gray3;
+        color:$brand-green3;
+      }
+    }
+    li:hover{
+      background-color:$bg-gray3;
+      color:$brand-green3;
+    }
+    ul{
+      list-style-type: none;
+      background-color:$bg-white;
+      padding-left: 0;
+      ul{
+        position:absolute;
+        display:none;
+        top: 0; 
+        background-color:$bg-gray3;
+        
+      }
+
+    }
   }
 }
+
+.no-js .main-menu{
+  > li:hover{
+    div{
+      display:block;
+    }
+  }
+  div{
+    ul{
+      li:hover ul{
+        display:block;
+        position:absolute;
+        left:100%;
+        top:0;
+      }
+    }
+  }
+}
+

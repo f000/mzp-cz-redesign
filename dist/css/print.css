@@ -1,7 +1,0 @@
-/*!
- * Part of MZP.CZ Redesign Project - v0.2.0 - 2014-08-21
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-@media print{.no-print,.bg-1,.bg-4,.bg-6,#main-nav,#left-sidebar,#right-sidebar,.bg-5 aside,.bg-5 section,#footer nav,#footer ul,small.btn,.read-more{display:none !important}.bg-2,.bg-3,.bg-5,#header-logo a{border:0;background-image:none;background-color:transparent}.bg-2 #header-logo,.bg-3 #content,.bg-5 #footer{display:block}.footer-box,#content{color:#000}.print-only{display:block}#page-header{background:none}*{text-shadow:none !important;color:#000 !important;background:transparent !important;box-shadow:none !important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}#header-logo a:after,#header-logo a:visited:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}.label{border:1px solid #000}.table{border-collapse:collapse !important}}

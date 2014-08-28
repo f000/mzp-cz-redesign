@@ -14,6 +14,6 @@ var connect = require('connect'),
     serveStatic = require('serve-static'),
     util = require('util');
 
-connect().use(serveStatic(ROOT)).listen(PORT);
+connect().use(serveStatic(ROOT)).listen(PORT, "192.168.1.2");
 
 util.puts('> server running at http://localhost:' + PORT + ' from ./' + ROOT + '/' );

@@ -61,6 +61,7 @@ module.exports = function(grunt) {
           '<%=dirs.libs%>/qTip2/src/core/jquery_overrides.js',
           '<%=dirs.libs%>/qTip2/src/core/defaults.js',
           '<%=dirs.libs%>/qTip2/src/position/viewport.js',
+          '<%=dirs.libs%>/qTip2/src/tips/tips.js',
           '<%=dirs.libs%>/qTip2/src/core/outro.js'
         ],
         dest: '<%=dirs.tmp%>/qtip2.js',
@@ -196,6 +197,11 @@ module.exports = function(grunt) {
       }
     },
     copy: {
+      qtip: {
+        nonull: true,
+        src: '<%=dirs.libs%>/qTip2/src/core.css',
+        dest: '<%=dirs.src%>/sass/_qtip.core.scss'
+      },
       jquery: {
         nonull: true,
         src: '<%=dirs.libs%>/jquery/dist/jquery.min.js',

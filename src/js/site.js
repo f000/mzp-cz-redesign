@@ -5,7 +5,7 @@
 * @licence CC BY-NC-ND 3.0 CZ
 */
 
-/*global Modernizr:false, $:false*/
+/*global Modernizr:false, $:false, alert:false*/
 
 // SVG Fallback
 if(!Modernizr.svgasimg) {
@@ -61,12 +61,80 @@ function owlCarousel(sel) {
   });
 }
 
+function qTip2title() {
+  $('div[id^="bg-"][id!="bg-5"] [title!=""]').qtip({
+    position: {
+        my: 'top left', 
+        at: 'bottom right'
+    },
+    style: {
+        classes: 'qtip-dark'
+    }
+  });
+
+  $('#bg-5 [title!=""]').qtip({
+    position: {
+        my: 'top left', 
+        at: 'bottom right'
+    },
+    style: {
+        classes: 'qtip-light'
+    }
+  });
+}
+
+
+function mainMenu() {   
+  
+   
+     
+  $('#main-nav ul li').click(function() {
+  //  $(this).children('div').toggle();
+  });
+  
+  $('#main-nav ul ul li').hover(function() {
+  //  $(this).children('ul').toggle();
+  });
+  
+
+  $("#main-nav ul li").each(function() {
+      var t = ["qtip-subnav"];
+      $(this).qtip({
+          suppress: false,
+          content: $(this).children("div").children("ul"),
+          position: {
+              my: "top left",
+              at: "bottom left",
+              adjust: {
+                  y: 0
+              }
+          },
+          style: {
+              classes: t.join(" "),
+              tip: false
+          },
+          show: {
+              solo: true,
+              event: "click"
+          },
+          hide: {
+              event: "click mouseleave",
+              delay: 300,
+              fixed: true
+          }
+      });
+  });
+
+}
+
+// Init
 function initMZP() {
   shuffleTagCloud('.tag-cloud');
   scrollToTop('#gotop a');
   printPage('#print a');
   owlCarousel('.owl-carousel');
-
+  qTip2title();
+  mainMenu();
   //TODO: qTip2 for submenu
   //TODO: qTip2 for banner figcaption
   //TODO: qTip2 title, abbr
