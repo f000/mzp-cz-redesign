@@ -7,8 +7,8 @@ Balík šablon a zdrojových kódů pro projekt Redesignu stránek [http://www.m
 
 * [Úvodní stránka](http://f000.github.io/mzp-cz-redesign/dist/index.html)
 * [Podstránka](http://f000.github.io/mzp-cz-redesign/dist/subpage.html)
-* Archiv akcí
-* Archiv aktualit
+* [Archiv akcí](http://f000.github.io/mzp-cz-redesign/dist/events.html)
+* [Archiv aktualit](http://f000.github.io/mzp-cz-redesign/dist/news.html)
 
 ## Dokumentace
 
