@@ -2,16 +2,17 @@
 
 ## Zbývá dopracovat
 
+- hlavni horni menu
 - odladeni IE, atd
 - odladeni responzivity
 - nekonzistentni pouzivani image- span a aplikovani primo na prvky... doresit dle kompatibility
-- qtip2
-- carousel organizaci
+- carousel organizaci - doplnit svg sprites
 - doladit styly ze stareho webu
 - dopracovat sablonu pro tisk
 - zjistit zda se da modifikovat element s dokumenty ke stazeni - minimalne odstranit target a title
 - ikona na rss?
 - probrat gzip
+- opravit padding hlavnihou sloupce s novinkami na HP
 
 ---
 
