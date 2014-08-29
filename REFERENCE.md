@@ -15,7 +15,7 @@ Zastaralé prohlížeče nebo prohlížeče s omezenou funkcionalitou jsou podpo
 
 ### Responsivní varianty
 
-Jsou vytvořeny varianty pro velmi malé obrazovky (mobily), malé obrazovky (tablety a mobily) a dvě varianty šířky  monitory. Na základě statistik návštěvnosti by v Q2 2014 využívalo nejširší variantu cca 70% návštěvníků.
+Jsou vytvořeny varianty pro velmi malé obrazovky (mobily), malé obrazovky (tablety a mobily) a dvě varianty šířky pro klasické monitory. Na základě statistik návštěvnosti by v Q2 2014 využívalo nejširší variantu cca 70% návštěvníků.
 
 ### Přístupnost
 
@@ -30,13 +30,13 @@ Mikrodata splňují normu [http://www.w3.org/TR/microdata/](http://www.w3.org/TR
 * Element `#footer-contact` obsahuje mikrodata typu [Organisation](http://schema.org/Organization) 
 * Element `.event-list` obsahuji mikrodata typu [Event](http://schema.org/Event)
 
-Editaci těchto elementů nebude pravděpodobně přes CMS možná.
+Editaci těchto elementů nebude pravděpodobně přes CMS MŽP možná.
 
 ### Tisk
 
-Projekt obsahuje stylesheet `print.css` pro automatickou změnu layoutu stránky při tisku. 
+Projekt obsahuje stylesheet pro automatickou změnu layoutu stránky při tisku. 
 
-Pro explicitní definice byla zavedena CSS třída `.print-only` (viditelnost pouze při tisku) a  `.no-print` (skrytí prvku při tisku). 
+Pro možnost explicitní definice byla zavedena CSS třída `.print-only` (viditelnost pouze při tisku) a  `.no-print` (skrytí prvku při tisku). 
 
 ## Pokyny pro implementaci
 
@@ -44,13 +44,13 @@ Pro explicitní definice byla zavedena CSS třída `.print-only` (viditelnost po
 
 Pro HTML soubory doporučujeme posílat HTTP hlavičku `X-UA-Compatible" s hodnotou `IE=edge,chrome=1`. 
 
-Zavést kompresi HTTP spojení pro nekomprimované formáty (HTML, Javascript, CSS...) `gzip` a příp. `deflate`. V případě možnosti negativních dopadů na rychlost serveru bude doplněn Grunt task na vygenerovaní gzipovaných produkčních JS a CSS. Možné řešení pro Apache naleznete v souboru [.htaccess](https://github.com/f000/mzp-cz-redesign/blob/master/dist/.htaccess).
+Zavést kompresi HTTP spojení pro nekomprimované formáty (HTML, Javascript, CSS...) `gzip`/`deflate`. V případě možnosti negativních dopadů na rychlost serveru bude doplněn Grunt task na vygenerovaní gzipovaných produkčních JS a CSS. Možné řešení pro Apache naleznete v souboru [.htaccess](https://github.com/f000/mzp-cz-redesign/blob/master/dist/.htaccess).
 
 ### Bezpečnost (doporučení)
 
 Zprovoznit možnost šifrovaného připojení přes SSL – možnosti:
 
-1. vlastní SSL certifikát vydaný certifikační autoritou MVŽ
+1. vlastní SSL certifikát vydaný certifikační autoritou MŽP
 2. [certifikát od autority akreditované MVČR pro Elektronický podpis](http://www.mvcr.cz/clanek/prehled-udelenych-akreditaci.aspx)
 3. [běžný komerční SSL certifikát](https://www.ssls.cz)
 
@@ -97,8 +97,8 @@ Ostatní skripty se musí nacházet těsně před `</body>`:
 
 ### Oblíbené odkazy
 
-Tagcloud obsahuje 16 odkazů s přiřazenou prioritou 1-5. Redakční systém by měl umožnit změnu pořadí, nebo alespoň při ukládání tohoto prvku vygenerovat náhodné pořadí, které zůstane až do další editace.
-
+Tagcloud obsahuje 16 odkazů s přiřazenou prioritou 1-5. Redakční systém by měl umožnit nastavení priority a generovat `<ol>` list sestupně dle priority. Pseudonáhodné promíchání pro tagcloud je zajištěno JavaScriptem.
+  
 ### Bannery
 
 Bannery pro levou a pravou sekci stránky se zobrazují v orámovaných boxech o vnitřním rozměru 261x96px. Pokud vložíte obrázek s menším rozměrem, bude vertikálně i horizontálne vycentrován uvnitř tohoto boxu. Lze vkládat obrázky s průhledností a využít tak defaulního designu podkladu boxu.
@@ -117,7 +117,7 @@ Titulek akce by neměl být delší než cca 60 znaků. Kategorie akce max. 20 z
 
 ### Rezortní organizace
 
-TODO Dodat finální stav, kvůli optimalizaci a použití Sprites nebude zřejmě možná úprava přes redakční systém.
+Kvůli optimalizaci – použití SVG sprites nebude zřejmě možná úprava přes redakční systém MŽP.
 
 ### Navigace v patičce
 

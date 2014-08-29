@@ -5,7 +5,7 @@
 - hlavni horni menu
 - odladeni IE, atd
 - odladeni responzivity
-- nekonzistentni pouzivani image- span a aplikovani primo na prvky... doresit dle kompatibility
+- nekonzistentni pouzivani image/span a aplikovani primo na prvky... doresit dle kompatibility
 - carousel organizaci - doplnit svg sprites
 – nahradit generator sprites z Compass za neco s podporou JPG a SVG
 - doladit styly ze stareho webu
