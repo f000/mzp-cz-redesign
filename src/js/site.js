@@ -72,8 +72,13 @@ function titleTooltip() {
   }); 
 }
 
+function colorboxLightbox() {
+  $('a[rel^="lightbox"]').colorbox({
+    rel:'gallery'
+  });  
+}
 
-function mainMenu() {   
+function mainMenu() {
      
   $('#main-nav ul li').click(function() {
     $(this).children('div').toggle();
@@ -85,6 +90,8 @@ function mainMenu() {
   
 }
 
+
+
 // Init
 function initMZP() {
   shuffleTagCloud('.tag-cloud');
@@ -92,11 +99,8 @@ function initMZP() {
   printPage('#print a');
   owlCarousel('.owl-carousel');
   titleTooltip();
- // mainMenu();
-  //TODO: qTip2 for submenu
-  //TODO: qTip2 for banner figcaption
-  //TODO: qTip2 title, abbr
-
+  colorboxLightbox();
+  // mainMenu();
 }
 
 $(document).ready(initMZP);
