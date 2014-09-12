@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="192px" height="13px" viewBox="0 0 192 13" enable-background="new 0 0 192 13" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0.0903" y1="6.543" x2="191.9097" y2="6.543">
-	<stop  offset="0" style="stop-color:#FEFEFE"/>
-	<stop  offset="0.5" style="stop-color:#DBDBDB"/>
-	<stop  offset="1" style="stop-color:#FEFEFE"/>
-</linearGradient>
-<path fill="url(#SVGID_1_)" d="M15.859,0.086C12.047,4.107,7.456,7.388,2.754,10.281c-0.88,0.542-1.77,1.069-2.664,1.588
-	c0.403-0.049,0.687-0.398,0,0c19.947-2.415,39.929-4.006,59.994-4.99c20.383-0.694,40.765-0.977,61.148-0.082
-	c20.115,0.688,40.219,2.454,60.197,4.856c3.496,0.421,6.99,0.87,10.479,1.347c-5.218-3.086-10.342-6.593-14.616-10.919
-	c-0.639-0.639-1.263-1.303-1.862-1.992"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="13" viewBox="0 0 192 13"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1=".09" y1="6.543" x2="191.91" y2="6.543"><stop offset="0" stop-color="#FEFEFE"/><stop offset=".5" stop-color="#DBDBDB"/><stop offset="1" stop-color="#FEFEFE"/></linearGradient><path fill="url(#a)" d="M15.86.086C12.046 4.106 7.455 7.388 2.753 10.28c-.88.543-1.77 1.07-2.664 1.59.403-.05.687-.4 0 0 19.947-2.416 39.93-4.007 59.994-4.99 20.383-.695 40.765-.978 61.148-.083 20.115.688 40.22 2.454 60.197 4.856 3.495.42 6.99.87 10.478 1.347-5.218-3.086-10.342-6.593-14.616-10.92-.64-.638-1.263-1.302-1.862-1.99"/></svg>
