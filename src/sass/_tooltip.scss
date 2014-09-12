@@ -10,9 +10,8 @@
   display: block;
   visibility: visible;
   font-size: $font-size-small;
-  line-height: 1.4;
-  @include opacity(0);
 
+  @include opacity(0);
   &.in     { @include opacity($tooltip-opacity); }
   &.top    { margin-top:  -3px; padding: $tooltip-arrow-width 0; }
   &.right  { margin-left:  3px; padding: 0 $tooltip-arrow-width; }
@@ -56,22 +55,3 @@
   }
 }
 
-#bg-5{
-  .tooltip-inner {
-    color: $gray-xdarker;
-    background-color: $gray-light;
-  }  
-  .tooltip {
-    &.top    { margin-top:  -6px;}
-    &.top .tooltip-arrow {
-      border-top-color: $gray-light;
-    }
-  }
-}
-
-#bg-4{
-  .tooltip {
-
-
-  }
-}

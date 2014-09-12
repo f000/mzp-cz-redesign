@@ -17,7 +17,7 @@
   margin:0;
   a, a:visited{
     display:block;
-    background-position:50% 25%;
+    background-position:50% 20%;
     min-height:136px;
     text-decoration:none;
     color:$gray-xdarker;
@@ -71,5 +71,12 @@
   .owl-next{
     float:right;
     margin-right:-$grid-gutter-width;
+  }
+  .tooltip-inner {
+      max-width: initial;
+  }
+  .tooltip {
+    white-space:nowrap;
+    &.bottom    { margin-top:  -54px}
   }
 }

@@ -62,13 +62,21 @@ function owlCarousel(sel) {
 }
 
 function titleTooltip() {
-  $('#bg-1 abbr[title!=""], #bg-2 a[title!=""], #bg-3 [title!=""]').tooltip({
-    placement: "bottom",
+  $('#bg-1 abbr[title!=""], #bg-3 [title!=""]').tooltip({
+    placement: 'bottom',
     delay:1000
   });
-  $('#bg-5 [title!=""], #bg-4 abbr[title!=""]').tooltip({
-    placement: "top",
+  $('#bg-5 [title!=""]').tooltip({
+    placement: 'top',
     delay:1000
+  });
+  $('#bg-4 a').tooltip({
+    placement: 'bottom',
+    delay:1000,
+    title: function() {
+      return $(this).children('abbr').attr('title');
+    },
+    viewport: '.owl-stage-outer'
   });
 }
 

@@ -148,64 +148,62 @@
         <main id="content" role="main">
           <section class="content-box contentMainText">
             <h1>Kalendář akcí</h1>
-            <div class="archive">
-              <nav>
-                <h3 class="sr-only">Filtr</h3>
-                <ul class="archive-nav years" title="Zvolte rok">
-                  <li><a href="SpecialCalendar/archive?p=0111">2011</a></li>
-                  <li><a href="SpecialCalendar/archive?p=0112">2012</a></li>
-                  <li><a href="SpecialCalendar/archive?p=0113">2013</a></li>
-                  <li><span>2014</span></li>
-                </ul>
-                <ul class="archive-nav months" title="Zvolte měsíc">
-                  <li><a href="SpecialCalendar/archive?p=0114">Leden</a></li>
-                  <li><a href="SpecialCalendar/archive?p=0214">Únor</a></li>
-                  <li><a href="SpecialCalendar/archive?p=0314">Březen</a></li>
-                  <li><a href="SpecialCalendar/archive?p=0414">Duben</a></li>
-                  <li><a href="SpecialCalendar/archive?p=0514">Květen</a></li>
-                  <li><span>Červen</span></li>
-                  <li><a href="SpecialCalendar/archive?p=0714">Červenec</a></li>
-                  <li><a href="SpecialCalendar/archive?p=0814">Srpen</a></li>
-                  <li><a href="SpecialCalendar/archive?p=0914">Září</a></li>
-                  <li><a href="SpecialCalendar/archive?p=1014">Říjen</a></li>
-                  <li><a href="SpecialCalendar/archive?p=1114">Listopad</a></li>
-                  <li><a href="SpecialCalendar/archive?p=1214">Prosinec</a></li>
-                </ul>
-              </nav>
-              <div class="event-list">
-                <article itemscope itemtype="http://schema.org/Event">
-                  <a href="#" itemprop="url">
-                    <div class="fancy-date"><span class="d">16</span><span class="m">srpen</span><span class="y">2014</span></div>
-                    <small itemprop="description">Akce</small>
-                    <h4 itemprop="name">Projekt EMISE</h4>
-                    <div class="date"><time datetime="2014-08-16" itemprop="startDate">16.8.2014</time>–<time datetime="2014-08-17" itemprop="endDate">17.8.2014</time></div>
-                  </a>
-                </article>
-                <article itemscope itemtype="http://schema.org/Event">
-                  <a href="#" itemprop="url">
-                    <div class="fancy-date"><span class="d">14</span><span class="m">srpen</span><span class="y">2014</span></div>
-                    <small itemprop="description">Konference</small>
-                    <h4 itemprop="name">Konference Doprava, zdraví a životní prostředí</h4>
-                    <div class="date"><time datetime="2014-08-14" itemprop="startDate">14.8.2014</time></div>
-                  </a>
-                </article>
-                <article itemscope itemtype="http://schema.org/Event">
-                  <a href="#" itemprop="url">
-                    <div class="fancy-date"><span class="d">07</span><span class="m">srpen</span><span class="y">2014</span></div>
-                    <small itemprop="description">Akce</small>
-                    <h4 itemprop="name">Cena ministra životního prostředí na České zemědělské univerzite v Praze</h4>
-                    <div class="date"><time datetime="2014-08-16" itemprop="startDate">16.8.2014</time></div>
-                  </a>
-                </article>
-                <article itemscope itemtype="http://schema.org/Event">
-                  <a href="#" itemprop="url">
-                    <div class="fancy-date"><span class="d">22</span> <span class="m">červen</span> <span class="y">2014</span></div>
-                    <small itemprop="description">Konference</small>
-                    <h4 itemprop="name">Konference Doprava, zdraví a životní prostředí</h4>
-                    <div class="date"><time datetime="2014-07-22" itemprop="startDate">22.7.2014</time>–<time datetime="2014-07-24" itemprop="endDate">24.7.2014</time></div>
-                  </a>
-                </article>
-              </div>
+            <nav>
+              <h3 class="sr-only">Filtr</h3>
+              <ul class="archive-nav years" title="Zvolte rok">
+                <li><a href="SpecialCalendar/archive?p=0111">2011</a></li>
+                <li><a href="SpecialCalendar/archive?p=0112">2012</a></li>
+                <li><a href="SpecialCalendar/archive?p=0113">2013</a></li>
+                <li><span>2014</span></li>
+              </ul>
+              <ul class="archive-nav months" title="Zvolte měsíc">
+                <li><a href="SpecialCalendar/archive?p=0114">Leden</a></li>
+                <li><a href="SpecialCalendar/archive?p=0214">Únor</a></li>
+                <li><a href="SpecialCalendar/archive?p=0314">Březen</a></li>
+                <li><a href="SpecialCalendar/archive?p=0414">Duben</a></li>
+                <li><a href="SpecialCalendar/archive?p=0514">Květen</a></li>
+                <li><span>Červen</span></li>
+                <li><a href="SpecialCalendar/archive?p=0714">Červenec</a></li>
+                <li><a href="SpecialCalendar/archive?p=0814">Srpen</a></li>
+                <li><a href="SpecialCalendar/archive?p=0914">Září</a></li>
+                <li><a href="SpecialCalendar/archive?p=1014">Říjen</a></li>
+                <li><a href="SpecialCalendar/archive?p=1114">Listopad</a></li>
+                <li><a href="SpecialCalendar/archive?p=1214">Prosinec</a></li>
+              </ul>
+            </nav>
+            <div class="event-list archive-list">
+              <article itemscope itemtype="http://schema.org/Event">
+                <a href="#" itemprop="url">
+                  <div class="fancy-date"><span class="d">16</span><span class="m">srpen</span><span class="y">2014</span></div>
+                  <small itemprop="description">Akce</small>
+                  <h4 itemprop="name">Projekt EMISE</h4>
+                  <div class="date"><time datetime="2014-08-16" itemprop="startDate">16.8.2014</time>–<time datetime="2014-08-17" itemprop="endDate">17.8.2014</time></div>
+                </a>
+              </article>
+              <article itemscope itemtype="http://schema.org/Event">
+                <a href="#" itemprop="url">
+                  <div class="fancy-date"><span class="d">14</span><span class="m">srpen</span><span class="y">2014</span></div>
+                  <small itemprop="description">Konference</small>
+                  <h4 itemprop="name">Konference Doprava, zdraví a životní prostředí</h4>
+                  <div class="date"><time datetime="2014-08-14" itemprop="startDate">14.8.2014</time></div>
+                </a>
+              </article>
+              <article itemscope itemtype="http://schema.org/Event">
+                <a href="#" itemprop="url">
+                  <div class="fancy-date"><span class="d">07</span><span class="m">srpen</span><span class="y">2014</span></div>
+                  <small itemprop="description">Akce</small>
+                  <h4 itemprop="name">Cena ministra životního prostředí na České zemědělské univerzite v Praze</h4>
+                  <div class="date"><time datetime="2014-08-16" itemprop="startDate">16.8.2014</time></div>
+                </a>
+              </article>
+              <article itemscope itemtype="http://schema.org/Event">
+                <a href="#" itemprop="url">
+                  <div class="fancy-date"><span class="d">22</span> <span class="m">červen</span> <span class="y">2014</span></div>
+                  <small itemprop="description">Konference</small>
+                  <h4 itemprop="name">Konference Doprava, zdraví a životní prostředí</h4>
+                  <div class="date"><time datetime="2014-07-22" itemprop="startDate">22.7.2014</time>–<time datetime="2014-07-24" itemprop="endDate">24.7.2014</time></div>
+                </a>
+              </article>
             </div>
           </section>
         </main>
@@ -490,7 +488,7 @@
               </li>
             </ul>
           </nav>
-          <p><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/cz/" target="_blank" title="Celý text licenčního ujednání"><img src="img/licence.svg?NCMARK" width="80" height="28" alt="Licence CC BY-NC-ND 3.0 CZ" /><span class="sr-only"> (otevře nové okno)</span></a></p>
+          <p><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/cz/" target="_blank" title="Licenční ujednání"><img src="img/licence.svg?NCMARK" width="80" height="28" alt="Licence CC BY-NC-ND 3.0 CZ" /><span class="sr-only"> (otevře nové okno)</span></a></p>
           <p>&copy; 2008–2014 Ministerstvo životního prostředí</p>
         </footer>
       </div>

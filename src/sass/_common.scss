@@ -13,7 +13,7 @@
 }
 
 // Fancy transitions
-button, a {
+button, a{
   @include single-transition(all, 0.3s);
 }
 
