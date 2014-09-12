@@ -99,6 +99,10 @@ Ostatní skripty se musí nacházet těsně před `</body>`:
 
 Tagcloud obsahuje 16 odkazů s přiřazenou prioritou 1-5. Redakční systém by měl umožnit nastavení priority a generovat `<ol>` list sestupně dle priority. Pseudonáhodné promíchání pro tagcloud je zajištěno JavaScriptem.
   
+### Box Ministr
+
+Fotka ministra musí mít rozměr 203×174 a formát PNG 24-bit + 8-bit alpha.  
+
 ### Bannery
 
 Bannery pro levou a pravou sekci stránky se zobrazují v orámovaných boxech o vnitřním rozměru 261×96px. Pokud vložíte obrázek s menším rozměrem, bude vertikálně i horizontálne vycentrován uvnitř tohoto boxu. Lze vkládat obrázky s průhledností a využít tak default designu podkladu boxu. Ve Firefoxu budou bannery roztaženy vždy na celou šířku boxu (neopravený bug Firefoxu).
