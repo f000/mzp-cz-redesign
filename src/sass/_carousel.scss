@@ -16,6 +16,9 @@
   padding-left:0;
   margin:0;
   a, a:visited{
+    display:block;
+    background-position:50% 25%;
+    min-height:136px;
     text-decoration:none;
     color:$gray-xdarker;
     &:hover,&:focus{
@@ -24,15 +27,18 @@
   }
   li{
     min-height:136px;
-    line-height:136px;
-    @include background-image(linear-gradient(top, $bg-white 0%, $bg-gray1 50%, $bg-white 100%));
     text-align:center;
+    &:hover{
+      @include background-image(linear-gradient(top, $bg-white 0%, $bg-gray1 50%, $bg-white 100%));
+    }
   }
   strong{
     display:none;
   }
   abbr{
     border:0;
+    position:relative;
+    top:90px;
   }
   .owl-controls {
     font-size:0;

@@ -5,7 +5,7 @@
 * @licence CC BY-NC-ND 3.0 CZ
 */
 
-/*global Modernizr:false, $:false, alert:false*/
+/*global Modernizr:false, $:false, alert:false, grunticon:false*/
 
 // SVG Fallback
 if(!Modernizr.svgasimg) {
@@ -42,34 +42,34 @@ function printPage(sel) {
 // Owl carousel
 function owlCarousel(sel) {
   $(sel).owlCarousel({
-    loop:true,
+    loop:false,
     margin:10,
     nav:true,
     dots:false,
     navText: ['<span class="icon-lt2"></span>','<span class="icon-gt2"></span>'],
     responsive:{
       0:{
-        items:1
+        items:3
       },
       600:{
-        items:4
+        items:6
       },
       1000:{
-        items:6
+        items:8
       }
     }
   });
 }
 
 function titleTooltip() {
-  $('#bg-1 abbr[title!=""], #bg-2 a[title!=""], #bg-3 [title!=""], #bg-4 abbr[title!=""]').tooltip({
+  $('#bg-1 abbr[title!=""], #bg-2 a[title!=""], #bg-3 [title!=""]').tooltip({
     placement: "bottom",
     delay:1000
   });
-  $('#bg-5 [title!=""]').tooltip({
+  $('#bg-5 [title!=""], #bg-4 abbr[title!=""]').tooltip({
     placement: "top",
     delay:1000
-  }); 
+  });
 }
 
 function colorboxLightbox() {
@@ -79,7 +79,6 @@ function colorboxLightbox() {
 }
 
 function mainMenu() {
-     
   $('#main-nav ul li').click(function() {
     $(this).children('div').toggle();
   });
@@ -87,10 +86,7 @@ function mainMenu() {
   $('#main-nav ul ul li').hover(function() {
     $(this).children('ul').toggle();
   });
-  
 }
-
-
 
 // Init
 function initMZP() {
@@ -101,6 +97,7 @@ function initMZP() {
   titleTooltip();
   colorboxLightbox();
   // mainMenu();
+  grunticon(['../css/organizations/icons.data.svg.css', '../css/organizations/icons.data.png.css', '../css/organizations/icons.fallback.css']);
 }
 
 $(document).ready(initMZP);

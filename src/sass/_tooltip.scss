@@ -45,7 +45,7 @@
     left: 55%;
     margin-left: -$tooltip-arrow-width;
     border-width: $tooltip-arrow-width $tooltip-arrow-width 0 0;
-    border-top-color: blue;
+    border-top-color: $tooltip-arrow-color;
   }
    &.bottom .tooltip-arrow {
     top: 0;
@@ -66,5 +66,12 @@
     &.top .tooltip-arrow {
       border-top-color: $gray-light;
     }
+  }
+}
+
+#bg-4{
+  .tooltip {
+
+
   }
 }

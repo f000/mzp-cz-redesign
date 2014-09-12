@@ -50,13 +50,15 @@ Jednoduchý build systém (Grunt Task Runner) má nastaveny následující úloh
 2. zkopíruje `dist/*.html` do `src/*.html`
 3. zkopíruje nejnovější veze jQuery, html5shiv a respond.js z `bower_components/` do `dist/js/`
 4. zkopíruje fonty `src/fonts/icomoon/fonts/*` do `dist/fonts/`
-5. pomocí Compass zkompiluje SAAS skripty z `src/sass/*.scss` do `dist/css/` vč. minifikace a vygeneruje nové sprites z podadresářů `src/img/` do `dist/img/`
-6. validuje skripty `dist/js/*.js` (pomcí jshint)
-7. sloučí JS skripty `bower_components/` Colorbox, qTip2, OwlCarousel2 a `dist/js/*.js` do souboru `tmp/final.js`
-8. validuje `tmp/final.js` (pomcí jshint)
-9. provede minifikaci a kompresi `tmp/final.js` do `dist/js/site.min.js` pomocí (pomocí UglifyJS)
-10. provede nahrazení značek NCMARK[0-9]{0,12} v souborech `dist/*.html` a `dist/css/*` za aktuální časovou značkou
-11. vymaže dočasné soubory z `tmp/`
+5. vytvoří optimalizované dočasné verze obrázků `src/img/organizations/*.svg` (pomocí svgmin/SVGO)
+6. z optimalizovaných SVG vygeneruje datové a fallback styly `dist/css/organizations/` a fallback PNG obrázky `dist/img/organizations/` 
+7. pomocí Compass zkompiluje SAAS skripty z `src/sass/*.scss` do `dist/css/` vč. minifikace a vygeneruje nové sprites z podadresářů `src/img/` do `dist/img/`
+8. validuje skripty `dist/js/*.js` (pomcí jshint)
+9. sloučí JS skripty `bower_components/` Colorbox, qTip2, OwlCarousel2 a `dist/js/*.js` do souboru `tmp/final.js`
+10. validuje `tmp/final.js` (pomcí jshint)
+11. provede minifikaci a kompresi `tmp/final.js` do `dist/js/site.min.js` pomocí (pomocí UglifyJS)
+12. provede nahrazení značek NCMARK[0-9]{0,12} v souborech `dist/*.html` a `dist/css/*` za aktuální časovou značkou
+13. vymaže dočasné soubory z `tmp/`
 
 ### Postup
 

@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       ' * @copyright Copyright (c) <%= grunt.template.today("yyyy") %> Ministry of the Environment of the Czech Republic\n' +
       ' * @licence <%= _.pluck(pkg.licenses, "type").join(", ") %>\n' +
       ' */',
-    dirs: { src: 'src', dist: 'dist', libs: 'bower_components', tmp: 'tmp' },
+    dirs: { src: 'src', dist: 'dist', libs: 'bower_components', modules: 'node_modules', tmp: 'tmp' },
     concat: {
       colorbox: {
         options: {
@@ -50,6 +50,17 @@ module.exports = function(grunt) {
         dest: '<%=dirs.tmp%>/tooltip.js',
         nonull: true
       },
+      grunticon: {
+        options: {
+          stripBanners: false
+        },
+        src: [
+          '<%=dirs.modules%>/grunt-grunticon/tasks/grunticon/static/grunticon.loader.banner.js',
+          '<%=dirs.modules%>/grunt-grunticon/tasks/grunticon/static/grunticon.loader.js',
+        ],
+        dest: '<%=dirs.tmp%>/grunticon.js',
+        nonull: true
+      },
       mzp:{
         options: {
           banner: '<%= banner %>',
@@ -67,6 +78,7 @@ module.exports = function(grunt) {
           '<%= concat.colorbox.dest %>',
           '<%= concat.owlcarousel.dest %>',
           '<%= concat.tooltip.dest %>',
+          '<%= concat.grunticon.dest %>',
           '<%= concat.mzp.dest %>'
         ],
         dest: '<%=dirs.tmp%>/final.js',
@@ -160,7 +172,7 @@ module.exports = function(grunt) {
       tmp: {
         options: {
           strict: false,
-          immed: true,
+          immed: false,
           latedef: false,
           curly: false,
           undef: false,
@@ -172,8 +184,7 @@ module.exports = function(grunt) {
           boss:true,
           sub:true,
           eqnull:true,
-          browser:true,
-          immed: false
+          browser:true
         },
         files: {
           src: ['<%= concat.final.dest %>']
@@ -207,18 +218,6 @@ module.exports = function(grunt) {
         ]
       }
     },
-    clean: {
-      concat: [
-        '<%= concat.colorbox.dest %>',
-        '<%= concat.owlcarousel.dest %>',
-        '<%= concat.tooltip.dest %>',
-        '<%= concat.mzp.dest %>',
-        '<%= concat.final.dest %>'
-      ],
-      uglify: [
-        '<%= uglify.dev.dest %>'
-      ]
-    },
     replace: {
       html: {
         src: ['<%=dirs.dist%>/*.html'],
@@ -235,7 +234,51 @@ module.exports = function(grunt) {
           from: /NCMARK[0-9]{0,12}/g,
           to: "NCMARK<%= grunt.template.today('yymmddHHMMss') %>"
         }]
-      },     
+      },
+    },
+    svgmin: {
+      organizations: {
+        files: [{
+          expand: true,
+          cwd: '<%=dirs.src%>/img/organizations',
+          src: ['*.svg'],
+          dest: '<%=dirs.tmp%>/organizations'
+        }]
+      }
+    },
+    grunticon: {
+      organizations: {
+        files: [{
+          expand: true,
+          cwd: '<%=dirs.tmp%>/organizations',
+          src: ['*.svg', '*.png'],
+          dest: '<%=dirs.dist%>/css/organizations'
+        }],
+        options: {
+          cssprefix: '.org-',
+          pngfolder: '../../img/organizations'
+        }
+      }
+    },
+    clean: {
+      concat: [
+        '<%= concat.colorbox.dest %>',
+        '<%= concat.owlcarousel.dest %>',
+        '<%= concat.tooltip.dest %>',
+        '<%= concat.grunticon.dest %>',
+        '<%= concat.mzp.dest %>',
+        '<%= concat.final.dest %>'
+      ],
+      uglify: [
+        '<%= uglify.dev.dest %>'
+      ],
+      svgmin: [
+        '<%=dirs.tmp%>/organizations'
+      ],
+      grunticon: [
+        '<%=dirs.dist%>/css/organizations/grunticon.loader.js',
+        '<%=dirs.dist%>/css/organizations/preview.html'
+      ]
     },
     watch: {
       html: {
@@ -262,6 +305,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-htmlhint');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-grunticon');
 
-  grunt.registerTask('default', ['htmlhint', 'copy',  'compass:dist', 'jshint:src', 'concat', 'jshint:tmp', 'uglify', 'replace', 'clean']);
+  grunt.registerTask('default', ['htmlhint', 'copy', 'svgmin', 'grunticon', 'compass:dist', 'jshint:src', 'concat', 'jshint:tmp', 'uglify', 'replace', 'clean']);
 };
