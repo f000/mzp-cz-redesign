@@ -171,8 +171,8 @@
 
 
 // Homepage Topics (sprites)
-@import "hp-nav/*.png";
-.mzp-topics{
+@import "topics/*.png";
+.topics{
   padding:0;
   list-style-type: none;
   height:72px + 12px + $line-height-computed + 2px;
@@ -182,7 +182,7 @@
     @extend .col-sm-5;
     @extend .col-md-3;
     @media (min-width: $screen-md-min) {
-      background: url('../img/bg-hp-nav.svg?NCMARK') no-repeat scroll center bottom;
+      background: url('../img/bg-topics.svg?NCMARK') no-repeat scroll center bottom;
       background-size:90%;
       padding-bottom:12px;
     }
@@ -199,16 +199,16 @@
     }
   }
   .ovzdusi a{
-    @include hp-nav-sprite(ovzdusi);
+    @include topics-sprite(ovzdusi);
   }
   .priroda a{
-    @include hp-nav-sprite(priroda);
+    @include topics-sprite(priroda);
   }
   .voda a{
-    @include hp-nav-sprite(voda);
+    @include topics-sprite(voda);
   }
   .odpady a{
-    @include hp-nav-sprite(odpady);
+    @include topics-sprite(odpady);
   }
   span{
     color:$gray-dark;
@@ -229,6 +229,8 @@
     }
   }
 }
+
+// News list
 .news-list{
   @extend .row;
   @include clearfix();
@@ -242,7 +244,7 @@
   }
 }
 
-// News list
+// News item
 .news-item{
   &:nth-child(odd){
     clear:both;
