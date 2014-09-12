@@ -25,7 +25,7 @@ V adresáři `dist/` se nachází *distribuční verze* projektu, určená k dal
 
 ## Kontakt
 
-Autor: [Lukáš Vorlíček](mailto:lukas.vorlicek@codeart.cz)
+Autor: [Lukáš Vorlíček](http://www.codeart.cz)
 
 Copyright (c) 2014 [Ministerstvo životního prostředí](http://www.mzp.cz/)
 

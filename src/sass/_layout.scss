@@ -33,7 +33,7 @@
   .container{
     font-size:$font-size-base;
   }
-  padding-bottom:$grid-gutter-width * 3;
+  padding-bottom:$grid-gutter-width * 1;
   @media print {
     border:0;
     background-image: none;
@@ -195,6 +195,7 @@
 #content{
   @extend .col-md-6;
   @extend .col-md-push-3;
+  margin-bottom:$grid-gutter-width;
 }
 
 // Left sidebar
