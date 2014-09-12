@@ -117,7 +117,7 @@ Titulek akce by neměl být delší než cca 60 znaků. Kategorie akce max. 20 z
 
 ### Rezortní organizace
 
-Loga organizací jsou implementována jako Data URLs v souboru `css/organizations/icons.data.svg.css` s fallbackem pro prohlížeče bez SVG (`css/organizations/icons.data.png.css`) a Javascriptu (`css/organizations/icons.fallback.css`).
+Loga organizací jsou implementována jako Data URLs v souboru `css/organizations/icons.data.svg.css` (async) s fallbackem pro prohlížeče bez SVG (`css/organizations/icons.data.png.css`) a Javascriptu (`css/organizations/icons.fallback.css`).
 
 ### Navigace v patičce
 
