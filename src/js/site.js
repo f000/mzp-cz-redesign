@@ -82,7 +82,8 @@ function titleTooltip() {
 
 function colorboxLightbox() {
   $('a[rel^="lightbox"]').colorbox({
-    rel:'gallery'
+    rel:'gallery',
+    opacity:0.7
   });  
 }
 

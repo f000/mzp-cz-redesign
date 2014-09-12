@@ -18,7 +18,7 @@
 }
 
 // Links
-.gray{
+a.gray{
   color: $gray;
   text-decoration: none;
   //TODO: &:visited{  color:$gray-darker; }
@@ -29,7 +29,7 @@
   }
 }
 
-.green3{
+a.green3{
   color: $brand-green3;
   text-decoration: none;
   //TODO: &:visited{  color:$gray-darker; }
@@ -273,11 +273,10 @@
   time{
     display:block;
     margin:0.5em 0 0.25em;
-    color:$brand-green2;
+    color:$text-color;
     span{
       font-size:$font-size-small;
       padding-right:6px;
-      color:$text-color;
     }
   }
   blockquote{
@@ -373,17 +372,17 @@
   li{
     text-align:center;
     margin:0;
-    margin-bottom: $grid-gutter-width/2;
-    padding-top: $grid-gutter-width/2;
+    margin-bottom:$grid-gutter-width;
+    padding-top:0;
   }
   figure{
     width:261px;
     height:96px;
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       width:210px;
       height:77px;
     }
-    @media (min-width: $screen-md-min) {
+    @media (min-width: $screen-lg-min) {
       width:261px;
       height:96px;
     }
@@ -396,13 +395,8 @@
     @include background-image(linear-gradient(left top, $bg-white 80%, $bg-gray2 90%, $bg-gray3 100%));
   }
   img{
-    text-align:center;
+    text-align:center;display:table-column;
     margin:0 auto;
-    &:hover,&:focus{
-      outline:0;
-      @include opacity($opacity-hover);
-    }
-    @include single-transition(opacity, $transition-duration);
   }
   figcaption{
     display:none;
@@ -411,6 +405,21 @@
     display:block;
     text-decoration:none;
     font-size:0;
+    &:hover,&:focus{
+      outline:0;
+      img{
+        @include opacity($opacity-hover);
+      }
+    }
+    img{
+      @include single-transition(opacity, $transition-duration);
+    }
+  }
+}
+@-moz-document url-prefix() { 
+  //Hack related to http://bugzilla.mozilla.org/show_bug.cgi?id=504622
+  .banner-list img {
+      width:100%;
   }
 }
 
@@ -424,15 +433,15 @@
     }
   }
   ul{
-    position:relative;
+    position:absolute;
     list-style: none;
     padding-left:0;
-    top:-155px;
-    left:160px;
+    margin-top:-155px;
+    margin-left:160px;
     li{
       color:$brand-green3;
       &:before{
-        font-size:$font-size-xsmall;
+        font-size:$font-size-small;
         padding-right:5px;
       }
     }
@@ -442,7 +451,7 @@
     }
     span{
       padding-right:5px;
-      font-size:$font-size-xsmall;
+      font-size:$font-size-xxsmall;
     }
   }
 }
@@ -475,7 +484,7 @@
     color:$text-color-inverted;
     margin:0 0 $line-height-computed/2 0;
     strong{
-        font-weight:normal;
+      font-weight:normal;
     }
   }
   a,a:visited{
@@ -584,6 +593,7 @@
 .ico-nav{
   padding:0;
   list-style: none none;
+  margin-bottom:0;
   a,a:visited{
     display:block;
     line-height:28px;
@@ -783,8 +793,19 @@
 
 // Image in text right
 .std-img{
-    @extend .col-md-6;
-    padding-bottom:$grid-gutter-width;
+  @extend .col-md-6;
+  padding-bottom:$grid-gutter-width/2;
+  img{
+    @include single-transition(opacity, $transition-duration);
+  }
+  a,a:visited{
+    &:hover,&:focus{
+      outline:0;
+      img{
+        @include opacity($opacity-hover);
+      }
+    }
+  }
 }
 
 // Gallery
@@ -802,12 +823,15 @@
   time{
     display:block;
     margin:0.5em 0 0.25em;
-    color:$brand-green2;
+    color:$text-color;
     span{
       font-size:$font-size-small;
       padding-right:6px;
-      color:$text-color;
     }
   }
 }
 
+// Sidebar box
+.sidebar-box{
+  margin-bottom:$grid-gutter-width;
+}

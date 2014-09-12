@@ -76,11 +76,13 @@
 }
 
 // Special headings
-.sidebar-box h3,
+
 #organizations h3,
-#content h1.green2{
+#content h1.green2,
+.sidebar-box h3{
   @extend .fancy-header;
 }
+
 
 // Logo
 #header-logo{
@@ -274,7 +276,7 @@ li#print{
 
 // Homepage event list
 #events{
-  margin-bottom:$grid-gutter-width/2;
+  margin-bottom:$grid-gutter-width;
 }
 
 // Breadcrumb navigation
