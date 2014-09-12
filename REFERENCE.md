@@ -101,11 +101,11 @@ Tagcloud obsahuje 16 odkazů s přiřazenou prioritou 1-5. Redakční systém by
   
 ### Bannery
 
-Bannery pro levou a pravou sekci stránky se zobrazují v orámovaných boxech o vnitřním rozměru 261x96px. Pokud vložíte obrázek s menším rozměrem, bude vertikálně i horizontálne vycentrován uvnitř tohoto boxu. Lze vkládat obrázky s průhledností a využít tak defaulního designu podkladu boxu.
+Bannery pro levou a pravou sekci stránky se zobrazují v orámovaných boxech o vnitřním rozměru 261×96px. Pokud vložíte obrázek s menším rozměrem, bude vertikálně i horizontálne vycentrován uvnitř tohoto boxu. Lze vkládat obrázky s průhledností a využít tak default designu podkladu boxu. Ve Firefoxu budou bannery roztaženy vždy na celou šířku boxu (neopravený bug Firefoxu).
 
 ### List novinek
 
-Úvodní fotografie by měla mít poměr stran 4:3 a systém by ji měl generovat pro tento prvek v rozměru 263x197.
+Úvodní fotografie by měla mít poměr stran 4:3 a systém by ji měl generovat pro tento prvek v rozměru 263×197.
 
 Úryvek textu nesmí obsahovat žádné HTML značky a by měl by být systémem zkracován na cca 300 znaků a doplněn znakem trojtečky. Titulek zkracovat na maximálně cca 60 znaků.
 
@@ -117,7 +117,7 @@ Titulek akce by neměl být delší než cca 60 znaků. Kategorie akce max. 20 z
 
 ### Rezortní organizace
 
-Loga organizací jsou implementována jako Data URLs v souboru `css/organizations/icons.data.svg.css` (async) s fallbackem pro prohlížeče bez SVG (`css/organizations/icons.data.png.css`) a Javascriptu (`css/organizations/icons.fallback.css`).
+Loga organizací jsou implementována jako Data URLs v souboru `css/organizations/icons.data.svg.css` (async) s fallbackem pro prohlížeče bez SVG (`css/organizations/icons.data.png.css`) a Javascriptu (`css/organizations/icons.fallback.css`). Vkládaná loga musí být vč. pozadí vycentrovaná ve čtverci 100×100px.
 
 ### Navigace v patičce
 
