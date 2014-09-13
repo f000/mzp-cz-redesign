@@ -9,11 +9,12 @@
 
 const PORT =  8088;
 const ROOT = 'dist';
+const SERVER = process.argv[2] ? process.argv[2] : 'localhost';
 
 var connect = require('connect'),
     serveStatic = require('serve-static'),
     util = require('util');
+    
+connect().use(serveStatic(ROOT)).listen(PORT, SERVER);
 
-connect().use(serveStatic(ROOT)).listen(PORT); //PORT, "192.168.1.2"
-
-util.puts('> server running at http://localhost:' + PORT + ' from ./' + ROOT + '/' );
+util.puts('> server running at http://' + SERVER + ':' + PORT + ' from ./' + ROOT + '/' );
