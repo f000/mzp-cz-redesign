@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-yrbcqj');
-	src:url('fonts/icomoon.eot?#iefix-yrbcqj') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-yrbcqj') format('woff'),
-		url('fonts/icomoon.ttf?-yrbcqj') format('truetype'),
-		url('fonts/icomoon.svg?-yrbcqj#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-ilxulz');
+	src:url('fonts/icomoon.eot?#iefix-ilxulz') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-ilxulz') format('woff'),
+		url('fonts/icomoon.ttf?-ilxulz') format('truetype'),
+		url('fonts/icomoon.svg?-ilxulz#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -24,25 +24,25 @@
 }
 
 .icon-crumb:before {
-	content: "\e60e";
+	content: "\2f";
 }
 .icon-lt2:before {
-	content: "\e602";
+	content: "\3c";
 }
 .icon-gt2:before {
-	content: "\e60b";
+	content: "\3e";
 }
 .icon-lt:before {
-	content: "\e60c";
+	content: "\ab";
 }
 .icon-caret:before {
-	content: "\e609";
+	content: "\5e";
 }
 .icon-gt:before {
-	content: "\e608";
+	content: "\bb";
 }
 .icon-bar:before {
-	content: "\e60a";
+	content: "\2013";
 }
 .icon-search:before {
 	content: "\e607";
@@ -51,7 +51,7 @@
 	content: "\e600";
 }
 .icon-clock:before {
-	content: "\e601";
+	content: "\25ef";
 }
 .icon-home:before {
 	content: "\e603";

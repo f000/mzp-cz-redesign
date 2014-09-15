@@ -4,6 +4,7 @@
 * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
 * @licence CC BY-NC-ND 3.0 CZ
 */
+/*global $:false*/
 
 // Ugly glyph-font render hack for IE8
 $(document).ready(function() {

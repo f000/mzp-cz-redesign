@@ -88,9 +88,9 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         options: {
-          compress: true,
+          compress: false,
           beautify: false,
-          mangle: true,
+          mangle: false,
           report: 'gzip',
           preserveComments:'some'
         },
@@ -101,7 +101,7 @@ module.exports = function(grunt) {
       dev: {
         options: {
           compress: false,
-          beautify: true,
+          beautify: false,
           mangle: false,
           report: 'min',
           preserveComments:'all'
@@ -206,6 +206,11 @@ module.exports = function(grunt) {
         nonull: true,
         src: '<%=dirs.libs%>/respond/dest/respond.min.js',
         dest: '<%=dirs.dist%>/js/respond.min.js'
+      },
+      boxsizing: {
+        nonull: true,
+        src: '<%=dirs.libs%>/box-sizing-polyfill/boxsizing.htc',
+        dest: '<%=dirs.dist%>/js/boxsizing.htc'
       },
       fonts: {
         nonull: true,

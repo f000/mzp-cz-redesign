@@ -136,7 +136,7 @@ a.green3{
 .btn-inverted, .btn-inverted:visited{
   padding:3px 9px;
   font-size:$font-size-small;
-  background-color:$gray-lighter;
+  background-color:$gray-medium;
   @include background-image(linear-gradient(bottom, $gray-medium 0%,  $gray-light 100%));
   color:$gray-darker;
   &:hover{
@@ -263,6 +263,7 @@ a.green3{
     text-decoration:none;
     &:hover,&:focus{
       outline:0;
+      background-color:#fff;
       @include opacity($opacity-hover);
     }
   }
@@ -395,7 +396,7 @@ a.green3{
     @include background-image(linear-gradient(left top, $bg-white 80%, $bg-gray2 90%, $bg-gray3 100%));
   }
   img{
-    text-align:center;display:table-column;
+    text-align:center;
     margin:0 auto;
   }
   figcaption{
@@ -704,7 +705,7 @@ a.green3{
     }
     + li:before {
       font-size:$font-size-small * 2;
-      content: "\e60e";
+      content: "\2f";
       position:relative;
       top: $font-size-small/2;
     }
@@ -724,7 +725,7 @@ a.green3{
   margin-bottom:$line-height-computed / 2;
   list-style-type:none;
   padding-left:0;
-  display:inline-block;
+  display:block;
   li{
     display:inline-block;
     border-left:1px solid $bg-gray4;
