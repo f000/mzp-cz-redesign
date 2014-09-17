@@ -266,6 +266,40 @@ module.exports = function(grunt) {
         }
       }
     },
+    modernizr: {
+      dist:{
+        devFile: 'components/modernizr/modernizr.min.js',
+        outputFile: '<%=dirs.dist%>/js/modernizr.min.js',
+        matchCommunityTests: false,
+        extra: {
+          'shiv' : false,
+          'printshiv' : false,
+          'load' : false,
+          'mq' : true,
+          'cssclasses' : true,
+          'csstransitions': true,
+          'csstransforms' : false,
+          'csstransforms3d' : false,
+          'inlinesvg': true,
+          'svg': true,
+          'backgroundsize': true,
+          'fontface': true,
+          'opacity': true,
+          'cssgradients': true
+        },
+        extensibility: {
+          'testallprops': true,
+          'prefixes': true,
+          'hasevents': false,
+          'addtest' : true,
+          'prefixed' : true,
+          'teststyles' : false,
+          'testprops' : true,
+          'domprefixes' : true
+        },
+        "parseFiles" : false,
+      }
+    },
     clean: {
       concat: [
         '<%= concat.colorbox.dest %>',
@@ -313,6 +347,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-grunticon');
+  grunt.loadNpmTasks("grunt-modernizr");
 
-  grunt.registerTask('default', ['htmlhint', 'copy', 'svgmin', 'grunticon', 'compass:dist', 'jshint:src', 'concat', 'jshint:tmp', 'uglify', 'replace', 'clean']);
+  grunt.registerTask('default', ['htmlhint', 'copy', 'modernizr', 'svgmin', 'grunticon', 'compass:dist', 'jshint:src', 'concat', 'jshint:tmp', 'uglify', 'replace', 'clean']);
 };
