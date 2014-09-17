@@ -5,9 +5,10 @@
 * @licence CC BY-NC-ND 3.0 CZ
 */
 
-/*global module:false*/
+/*global module:false,require:false*/
 
 module.exports = function(grunt) {
+  require('time-grunt')(grunt);
   grunt.util.linefeed = '\n';
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -300,7 +301,7 @@ module.exports = function(grunt) {
       }
     }
   });
-
+   
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');

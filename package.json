@@ -32,7 +32,8 @@
     "grunt-htmlhint": "^0.4.1",
     "grunt-markdown-pdf": "^2.1.1",
     "grunt-svgmin": "^1.0.0",
-    "grunt-text-replace": "^0.3.12"
+    "grunt-text-replace": "^0.3.12",
+    "time-grunt": "^1.0.0"
   },
   "scripts": {
     "postinstall": "bower install",
