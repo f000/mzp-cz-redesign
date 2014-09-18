@@ -106,7 +106,7 @@ function initMZP() {
   titleTooltip();
   colorboxLightbox();
   // mainMenu();
-  grunticon(['../css/organizations/icons.data.svg.css', '../css/organizations/icons.data.png.css', '../css/organizations/icons.fallback.css']);
+  grunticon(['css/organizations/icons.data.svg.css', 'css/organizations/icons.data.png.css', 'css/organizations/icons.fallback.css']);
 }
 
 $(document).ready(initMZP);
