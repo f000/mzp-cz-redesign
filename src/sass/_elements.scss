@@ -834,3 +834,23 @@ a.green3{
   margin-bottom:$grid-gutter-width * 2;
 }
 
+// Text with image content type
+
+.imgtext-box{
+  @extend p;
+  @include clearfix();
+}
+.imgtext-img{
+  float:right;
+  margin: 0 0 $grid-gutter-width/2 $grid-gutter-width/2;
+  &.left{
+    float:left;
+    margin: 0 $grid-gutter-width/2 $grid-gutter-width/2 0;
+  }
+}
+.imgtext-text{
+  h1,h2,h3,h4,h5,h6{
+    margin-top:0;
+  }
+}
+
