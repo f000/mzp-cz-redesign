@@ -573,6 +573,8 @@
 						margin: 0;
 						padding: 0;
 						list-style-type: none;
+						list-style-image: none;
+
 						border: 1px solid $brand-green1;
 						border-top: none;
 					}
@@ -580,23 +582,24 @@
 						border-top: 1px solid $brand-green1;
 						line-height: 24px;
 						clear: both;
-						background-image: url(../img/bg/contacttel.png?NCMARK);
+						background-image: url(../img/icons/contacttel.png?NCMARK);
 						background-position: bottom;
-						background-repeat: repeat-x;					
+						background-repeat: repeat-x;
 						padding: 0; margin: 0;
 						width: 100%;
 						position: position;
 					}
 					ul.contactTel li.act a {
 						background-image: url(../img/icons/contacttel-arrow-act.png?NCMARK);
-						background-position: 463px 50%;
+						background-position: right 50%;
 					}
 					ul.contactTel li a {
 						display: block;
 						background-image: url(../img/icons/contacttel-arrowleft.png?NCMARK);
 						background-repeat: no-repeat;
-						background-position: 465px 50%;
+						background-position: right 50%;
 						padding: 0 10px;
+            margin-right:15px;
 						color: $brand-green3;
 					}
 					* html ul.contactTel li a {
@@ -605,6 +608,7 @@
 
 					ul.contactTel li ul {
 						list-style-type: none;
+            list-style-image: none;
 						padding: 3px 0 0 0;
 						margin: 0 10px;
 						border: none;
@@ -617,17 +621,24 @@
 						border-top: none;
 						line-height: 20px;
 						position: relative;
+            &.end{
+              padding-bottom:15px;
+            }
 						
 					}
 					ul.contactTel li ul li span.fleft {
-						color: #ac0900;
+						color: $brand-green3;
 						border-bottom: 1px solid $brand-green1;
 						width: 350px;
 						font-weight: $weight-bold-sans-serif;
 						overflow: hidden;
+            a{
+              background-image: none;
+            }
+            float:left;
 					}
 					ul.contactTel li ul li span.fright {
-						color: #000;
+						color: $text-color;
 						border-bottom: 1px solid $brand-green1;
 						width: 116px;
 						text-align: right;

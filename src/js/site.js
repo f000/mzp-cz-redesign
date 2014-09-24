@@ -97,6 +97,18 @@ function mainMenu() {
   });
 }
 
+function contactTelCollapsing() {
+	var $main_list = $('.contactTel');
+	var $triggers = $main_list.children('li:has(ul)').children('a');
+
+	$triggers.siblings('ul').hide();
+	$triggers.click(function() {
+		var $node = $(this).parent();
+		$node.siblings('li.act').andSelf().toggleClass('act').children('ul').toggle();
+		return false;
+	});
+}
+
 // Init
 function initMZP() {
   shuffleTagCloud('.tag-cloud');
@@ -105,6 +117,7 @@ function initMZP() {
   owlCarousel('.owl-carousel');
   titleTooltip();
   colorboxLightbox();
+  contactTelCollapsing();
   // mainMenu();
   grunticon(['css/organizations/icons.data.svg.css', 'css/organizations/icons.data.png.css', 'css/organizations/icons.fallback.css']);
 }
