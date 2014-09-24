@@ -125,3 +125,8 @@ ul,li{
     @include filter-gradient($bg-white, $bg-gray2, vertical);
   }
 }
+
+//CMS
+.pages .numbers a {
+  width:1.2em;
+}
