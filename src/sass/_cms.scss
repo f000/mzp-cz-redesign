@@ -456,12 +456,16 @@
 				}
 				/* ----- contactTop */
 					.contact .contactTop {
-						background-image: url(../img/bg/contact.png?NCMARK);
+						background-image: url(../img/lion.svg?NCMARK);
 						background-repeat: no-repeat;
-						background-position: 100% 0;
-						border-bottom: 1px solid $brand-light-g1;
+						background-position: right 40px;
 						font-weight: $weight-bold-sans-serif;
 						color: #000;
+					}
+          
+					.no-svg .contact .contactTop {
+						background-image: url(../img/lion.png?NCMARK);
+
 					}
 					.contact .contactTop address {
 						font-style: normal;
@@ -473,7 +477,6 @@
 						text-decoration: underline;
 					}
 					.contact .contactTop h1 {
-						margin: 0;
 					}
 				/* end. contactTop */
 				/* ----- searchBox */
@@ -610,6 +613,9 @@
 						padding: 0; margin: 0;
 						width: 100%;
 						position: position;
+            &:hover,&:focus{
+              opacity:$opacity-hover;
+            }
 					}
 					ul.contactTel li.act a {
 						background-image: url(../img/icons/contacttel-arrow-act.png?NCMARK);
@@ -623,6 +629,10 @@
 						padding: 0 10px;
             margin-right:15px;
 						color: $brand-green3;
+            &:hover,&:focus{
+              outline:0;
+              color:$text-color;
+            }
 					}
 					* html ul.contactTel li a {
 						height: 1%;
@@ -643,14 +653,14 @@
 						border-top: none;
 						line-height: 20px;
 						position: relative;
+            border-bottom: 1px solid $brand-green1;
             &.end{
               padding-bottom:15px;
+              border-bottom: none;
             }
-						
 					}
 					ul.contactTel li ul li span.fleft {
 						color: $brand-green3;
-						border-bottom: 1px solid $brand-green1;
 						width: 350px;
 						font-weight: $weight-bold-sans-serif;
 						overflow: hidden;
@@ -661,7 +671,7 @@
 					}
 					ul.contactTel li ul li span.fright {
 						color: $text-color;
-						border-bottom: 1px solid $brand-green1;
+						
 						width: 116px;
 						text-align: right;
 						font-weight: $weight-bold-sans-serif;
