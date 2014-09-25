@@ -842,10 +842,10 @@ a.green3{
 }
 .imgtext-img{
   float:right;
-  margin: 0 0 $grid-gutter-width/2 $grid-gutter-width/2;
+  margin: 0 0 $grid-gutter-width/4 $grid-gutter-width/2;
   &.left{
     float:left;
-    margin: 0 $grid-gutter-width/2 $grid-gutter-width/2 0;
+    margin: 0 $grid-gutter-width/2 $grid-gutter-width/4 0;
   }
 }
 .imgtext-text{
