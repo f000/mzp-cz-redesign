@@ -102,7 +102,7 @@
 			padding: 0px 15px;
 		}
 		.calendarItem h3 {
-			font-size: 90%;
+//			font-size: 90%;
 			margin: 0;
 			padding: 0;
 			line-height: 1.4em;
@@ -413,14 +413,14 @@
 					margin: 0.6em 0;
 				}
 				.wysiwyg h2 {
-					color: #ac0900;
+					color: $brand-green3;
 					font-size: 120%;
 					margin: 1.5em 0 0.5em;
 				}
 				.wysiwyg h3 {
-					color: #ac0900;
+					color: $brand-green3;
 					font-size: 100%;
-					margin: 1.5em 0 0.5em;
+//					margin: 1.5em 0 0.5em;
 				}
 				.wysiwyg h4 {
 					color: #000000;
@@ -505,8 +505,8 @@
 				
 				/* ----- pages */
           
-          .pages h2,h3,h4{
-            margin-bottom:5px;
+          .pages h2,.pages h3,.pages h4{ 
+//            margin-bottom:5px;
           }
 					.pages {
 						background-color: $brand-light-g1;
@@ -689,9 +689,9 @@
 
 				}
 				#linksList h3 {
-					padding: 1em 0 0 0;
-					color: #AC0900;
-					font-size: 120%;
+
+					color: $brand-green3;
+					//font-size: 120%;
 				}
 				#linksList ul {
 					margin: 0; padding: 0;
@@ -849,7 +849,7 @@
 				}
 				table.calendar td.act {
 			/*		background-image: url(../img/bg/calenda-action_act.png?NCMARK);	*/
-					color:#AC0900;
+					color:$brand-green3;
 					font-weight:$weight-bold-sans-serif;
 				}
 				table.calendar td.action  a {
@@ -858,7 +858,7 @@
 					font-weight: $weight-bold-sans-serif;
 				}
 				table.calendar td.act  a {
-					color: #AC0900;
+					color: $brand-green3;
 				}
 				table.calendar tr.mounth td {
 					background-color: #FFF;
