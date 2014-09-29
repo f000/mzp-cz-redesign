@@ -9,6 +9,7 @@
 - dopracovat sablonu pro tisk
 - ikona na rss?
 - probrat gzip
+- probrat nepovinne SSL
 
 ---
 
