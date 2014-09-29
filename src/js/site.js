@@ -88,10 +88,13 @@ function colorboxLightbox() {
 }
 
 function mainMenu() {
+  $('#main-nav ul li a').click(function(e) {
+    e.preventDefault(); 
+  });
+  
   $('#main-nav ul li').click(function() {
     $(this).children('div').toggle();
   });
-  
   $('#main-nav ul ul li').hover(function() {
     $(this).children('ul').toggle();
   });
