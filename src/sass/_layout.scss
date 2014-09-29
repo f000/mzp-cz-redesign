@@ -226,12 +226,23 @@
 #footer-nav2,
 #footer-contact,
 #footer{
-  padding-left: $grid-gutter-width;
-  border-left: 1px solid $gray;
   padding-bottom:$grid-gutter-width/3;
+  @media (min-width: $screen-md-min) {
+    padding-left: $grid-gutter-width;
+    border-left: 1px solid $gray;
+  }
 }
 #footer{
-  padding-left: $grid-gutter-width/2;
+  border-top:1px solid $gray;;
+  margin-top:$grid-gutter-width;
+  padding-top:$grid-gutter-width;
+  @media (min-width: $screen-md-min) {
+    padding-left: $grid-gutter-width;
+    border-top:none;
+    margin-top:0;
+    padding-top:0;
+    padding-left: $grid-gutter-width/2;
+  }
   border-left: 0;  
   ul{
     padding-left:0;
