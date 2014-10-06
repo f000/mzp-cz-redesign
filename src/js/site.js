@@ -88,16 +88,41 @@ function colorboxLightbox() {
 }
 
 function mainMenu() {
-  $('#main-nav ul li a').click(function(e) {
+  //deactivate main links on 1st level
+  $('#main-nav > ul > li > a').not('#main-nav > ul > li:first-child a').click(function(e) {
     e.preventDefault(); 
   });
   
-  $('#main-nav ul li').click(function() {
-    $(this).children('div').toggle();
+  // fade out inactive
+  $('#main-nav div').mouseleave(function() {
+    $(this).delay(1000).fadeOut();
   });
+
+  //2nd level  
+  $('#main-nav > ul > li').click(function() {
+    $('#main-nav > ul > li').not($(this)).find('div').hide();
+    $(this).children('div').toggle();
+    /* 
+    //same height box style
+    var maxHeight = Math.max.apply(null, $(this).find('ul').map(function (){
+        return $(this).height();
+    }).get());
+    $(this).children('div').height(maxHeight);
+    $(this).find('ul ul').height(maxHeight);
+    */
+    var basicHeight = $(this).children('div').height();
+    $(this).find('ul ul').each(function() { 
+      if( $(this).height() < basicHeight ){
+         $(this).height(basicHeight + 1);
+      }     
+    });
+  });
+  
+  //3rd level
   $('#main-nav ul ul li').hover(function() {
     $(this).children('ul').toggle();
   });
+
 }
 
 function contactTelCollapsing() {
