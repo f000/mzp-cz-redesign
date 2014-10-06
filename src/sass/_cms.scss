@@ -125,6 +125,8 @@
 				}
 				.contentMainText .view h4 {
 					font-size: 100%;
+          margin-bottom:0;
+          margin-top:0;
 				}
 				.contentMainText p.source,
 				.contentMainText p.source a {
@@ -459,6 +461,7 @@
 						background-image: url(../img/lion.svg?NCMARK);
 						background-repeat: no-repeat;
 						background-position: right 40px;
+            background-size:30%;
 						font-weight: $weight-bold-sans-serif;
 						color: #000;
 					}
