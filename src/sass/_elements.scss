@@ -716,6 +716,12 @@ a.green3{
       top: $font-size-small/2;
     }
   }
+  li:first-child a{
+    display:block;
+    width:32px;
+    height:23px;
+    margin-top:-20px;
+  }
   a{
     @extend .green3;
   }
