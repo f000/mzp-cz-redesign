@@ -19,6 +19,10 @@ Balík šablon a zdrojových kódů pro projekt Redesignu stránek [http://www.m
 * [Referenční příručka](REFERENCE.md)
 * [Pokyny k sestavení](BUILD.md)
 
+## Zbývá dopracovat
+
+* [Seznam úkolů k dopracování](TODO.md)
+
 ## Základní použití
 
 V adresáři `dist/` se nachází *distribuční verze* projektu, určená k dalšímu zpracování v Redakčním systému MŽP. Obsahuje kompletní balík šablon vč. předkompilovaných a optimalizovaných js, css souborů a všech závislostí, připravený k nakopírování na webový server.
