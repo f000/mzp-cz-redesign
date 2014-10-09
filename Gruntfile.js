@@ -51,6 +51,16 @@ module.exports = function(grunt) {
         dest: '<%=dirs.tmp%>/tooltip.js',
         nonull: true
       },
+      smartmenus:{
+        options: {
+          stripBanners: false
+        },
+        src: [
+          '<%=dirs.libs%>/smartmenus/dist/jquery.smartmenus.js',
+        ],
+        dest: '<%=dirs.tmp%>/smartmenus.js',
+        nonull: true          
+      },
       grunticon: {
         options: {
           stripBanners: false
@@ -79,6 +89,7 @@ module.exports = function(grunt) {
           '<%= concat.colorbox.dest %>',
           '<%= concat.owlcarousel.dest %>',
           '<%= concat.tooltip.dest %>',
+          '<%= concat.smartmenus.dest %>',
           '<%= concat.grunticon.dest %>',
           '<%= concat.mzp.dest %>'
         ],
@@ -185,7 +196,8 @@ module.exports = function(grunt) {
           boss:true,
           sub:true,
           eqnull:true,
-          browser:true
+          browser:true,
+          scripturl:true
         },
         files: {
           src: ['<%= concat.final.dest %>']
@@ -212,6 +224,11 @@ module.exports = function(grunt) {
         nonull: true,
         src: '<%=dirs.libs%>/box-sizing-polyfill/boxsizing.htc',
         dest: '<%=dirs.dist%>/js/boxsizing.htc'
+      },
+      smartmenus: {
+        nonull: true,
+        src:  '<%=dirs.libs%>/smartmenus/dist/css/sm-core-css.css',
+        dest: '<%=dirs.src%>/sass/_smartmenus-core.scss'
       },
       fonts: {
         nonull: true,
@@ -305,6 +322,7 @@ module.exports = function(grunt) {
         '<%= concat.colorbox.dest %>',
         '<%= concat.owlcarousel.dest %>',
         '<%= concat.tooltip.dest %>',
+        '<%= concat.smartmenus.dest %>',
         '<%= concat.grunticon.dest %>',
         '<%= concat.mzp.dest %>',
         '<%= concat.final.dest %>'

@@ -187,9 +187,16 @@
 // Main navigation
 #main-nav{
   @extend .col-xs-12;
-  @extend .col-md-9;
-  text-align:right;
-  padding: 40px 0 50px 0;
+  @extend .col-sm-9;
+  text-align:left;
+  padding: 20px 0 20px 0;
+  @media (min-width: $screen-sm-min) {
+    padding: 20px 0 40px 0;
+  } 
+  @media (min-width: $screen-md-min) {
+    text-align:right;
+    padding: 40px 0 50px 0;
+  }
   //@extend .main-menu; selectors length optimization
   @extend .no-print;
 }

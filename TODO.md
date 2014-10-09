@@ -2,19 +2,15 @@
 
 ## Zbývá dopracovat
 
-- Hlavni horni menu (zatim pouze experimentalni verze)
-- Odladeni IE, atd
-- Odladeni responzivity
 - Odstranit nepouzivane  styly ze stareho webu 
 - Dopracovat sablonu pro tisk
 - Probrat gzip
 - Zkusit dat min height pro boxy novinek
 - Lightbox- tlacitka
-- Otestovat SVG licence ve Firefoxu nezobrazuje se pate policko
+- Otestovat SVG licence ve Firefoxu nezobrazuje se 3. policko
 - Urcit do manualu minimalni sirku obrazku v aktualitach
 - Fotogalerie - pridat vertikalni i horizontalni obrazky
 - Dodelat k fotogalerii popisek
-- Do lightbou pridat ikonu pro stazeni a napojit na analytics
 - Seminahodne promichani pro tagcloud
 - Blbe funguji aktuality v horzinotaknim pohledu na ipadu se zalamuji se pod sebe
 

@@ -6,9 +6,12 @@
 // --------------------------------------------------
 
 .main-menu{
+  display:inline-block;
   list-style-type: none;
-  margin: 0 $grid-gutter-width 0 0;
+  margin: 0 $grid-gutter-width*2 0 0;
   padding-left: 0;
+  position:relative;
+  top:12px;
   > li{
     display: inline-block;
     > a, > a:visited{
@@ -20,17 +23,17 @@
       @extend .icomoon;
       @extend .icon-bar;
       font-family: $font-family-sans-serif;
-
+      cursor:pointer !important;
       &:before {
         font-family: 'icomoon';
         font-size:$icomoon-bar-fontsize;
-      	position: absolute;
+        position: absolute;
         margin-top:-33px;
         font-weight:400;
         color:$brand-green3;
         display:none;
       }
-      &:hover,&:focus{
+      &:hover,&:focus,&.highlighted{
         color:$brand-green3;
         text-decoration:none;
         outline:0;
@@ -45,97 +48,212 @@
         padding:0;
       }
     }
-    &.active a, &.active a:visited{
+    &.current a, &.current a:visited{
       color:$brand-green3;
       &:before {
         display:block;
       }
     }
   }
-  div{
-    position:absolute;
-    margin-top:18px;
-    display:none;
-    z-index:100;
-    
-    border:1px solid $bg-gray2;
-    background-color:#fff;
-    text-align:left;
-    &:before{
-      position:absolute;
-      content:"";
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 10px 10px 10px;
-      border-color: transparent transparent $bg-gray2 transparent;
-      margin:-11px 0 0 13px;
-    }
-    a,a:visited{
-      white-space:nowrap;
-      color:$gray-medium;
-      display:block;
-      padding:4px $grid-gutter-width/2;
-      border-bottom:1px solid $bg-gray2;
-      font-weight:400;
-      &:hover{
-        background-color:$bg-gray3;
-        color:$brand-green3;
-      }
-    }
+}
 
-    li:last-child a,li:last-child a:visited{
-   
-    }
-    li:hover,
-    li.active a, li.active a:visited{
-      background-color:$bg-gray3;
-      color:$brand-green3;
-    }
-    ul{
-      list-style-type: none;
-      background-color:$bg-white;
-      padding-left: 0;
-      ul{
-        position:absolute;
-        display:none;
-        top: -1px; 
-        background-color:$bg-gray3;
-        margin-left:100%;
-        min-width:131px;
+.no-js .main-menu ul{
+  display:none;
+}
 
-        a,a:visited{
-          white-space:nowrap;
-          color:$gray-medium;
-          display:block;
-          padding:3px $grid-gutter-width/2;
-          font-weight:400;
-          &:hover{
-            background-color:$bg-gray1;
-            color:$brand-green3;
-          }
-        }
-      }
+.main-menu ul {
+  text-align:left;
+  background:$bg-white;
+  -moz-box-shadow:0 1px 1px rgba(0,0,0,0.2);
+  -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.2);
+  box-shadow:0 1px 1px rgba(0,0,0,0.2);
+}
+/* Submenu top carret */
+.main-menu > li > ul:before {
+  content:'';
+  position:absolute;
+  top:-17px;
+  left:14px;
+  width:0;
+  height:0;
+  overflow:hidden;
+  border-width:9px; /* tweak size of the arrow */
+  border-style:dashed dashed solid dashed;
+  border-color:transparent transparent $bg-gray2 transparent;
+}
+.main-menu > li > ul:after {
+  content:'';
+  position:absolute;
+  top:-15px;
+  left:14px;
+  width:0;
+  height:0;
+  overflow:hidden;
+  border-width:8px;
+  border-style:dashed dashed solid dashed;
+  border-color:transparent transparent $bg-white transparent;
+}
 
-    }
+/* Menu items*/
+.main-menu ul a {
+  padding:4px $grid-gutter-width/2;
+  color:$gray-medium;
+  font-weight:400;
+  text-decoration:none;
+}
+.main-menu ul a:hover, .main-menu ul a:focus, .main-menu ul a:active{
+  background-color:$bg-gray1;
+  color:$brand-green3;
+}
+.main-menu ul li.current a, .main-menu ul li.current a:hover, .main-menu ul li.current a:focus, .main-menu ul li.current a:active,
+.main-menu ul a.highlighted {
+  background-color:$bg-gray1;
+  color:$gray-medium; 
+}
+.main-menu ul a.has-submenu{
+  padding-right:$grid-gutter-width;
+}
+
+/* Sub menu indicators*/
+.main-menu a span.sub-arrow{
+  display:none;
+}
+.main-menu ul a span.sub-arrow {
+  display:block;
+  position:absolute;
+  right:6px;
+  top:50%;
+  margin-top:-4px;
+  width:0;
+  height:0;
+  overflow:hidden;
+  border-width:5px;
+  border-style:dashed dashed dashed solid;
+  border-color:transparent transparent transparent $gray-x;
+}
+
+/* Items separators*/
+.main-menu ul li,{
+  border-left:0;
+  border-top:1px solid $bg-gray2;
+}
+
+/* Scrolling arrows containers for tall sub menus */
+.main-menu span.scroll-up, .main-menu span.scroll-down {
+  position:absolute;
+  display:none;
+  visibility:hidden;
+  overflow:hidden;
+  border:solid $gray-x;
+  border-width:1px 0;
+  background:$bg-white;
+  height:22px;
+  /* width and position will be automatically set by the script */
+}
+.main-menu span.scroll-up-arrow, .main-menu span.scroll-down-arrow {
+  position:absolute;
+  top:-2px;
+  left:50%;
+  margin-left:-8px;
+  width:0;
+  height:0;
+  overflow:hidden;
+  border-width:8px; /* tweak size of the arrow */
+  border-style:dashed dashed solid dashed;
+  border-color:transparent transparent #555 transparent;
+}
+.main-menu span.scroll-down-arrow {
+  top:6px;
+  border-style:solid dashed dashed dashed;
+  border-color:$bg-gray2 transparent transparent transparent;
+}
+
+
+@media (max-width: $screen-md-min) {
+  ul.main-menu{
+    margin: 0 $grid-gutter-width/2;
   }
 }
 
-.no-js .main-menu{
-  > li:hover{
-    div{
-      display:block;
-    }
-  }
-  div{
-    ul{
-      li:hover ul{
-        display:block;
-        position:absolute;
-        left:100%;
-        top:0;
+
+@media (max-width: $screen-sm-min) {
+  ul.main-menu{
+    display:block;
+    top:0;
+    > li{
+      display: block;
+      > a, > a:visited{
+        border-right:none;
+        padding: 0.5em 0;
+        margin:0.5em 0;
       }
     }
+  }
+
+  ul.main-menu{width:auto !important;}
+  ul.main-menu ul{display:none;position:static !important;top:auto !important;left:auto !important;margin-left:0 !important;margin-top:0 !important;width:auto !important;min-width:0 !important;max-width:none !important;}
+  ul.main-menu>li{float:none;}
+  ul.main-menu>li>a,ul.main-menu ul.sm-nowrap>li>a{white-space:normal;}
+  ul.main-menu iframe{display:none;}
+
+  /* Menu box*/
+  .main-menu ul {
+    border:0;
+    background:$bg-gray2;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    ul{
+      background:$bg-gray3;
+    }
+  }
+
+  /* Submenu top carret */
+  .main-menu > li > ul:before {
+    display:none;
+  }
+  .main-menu > li > ul:after {
+    display:none;
+  }
+
+  /* Menu items*/
+  .main-menu ul a:hover, .main-menu ul a:focus, .main-menu ul a:active{
+    background-color:$gray-light;
+    color:$brand-green3;
+  }
+  .main-menu ul li.current a, .main-menu ul li.current a:hover, .main-menu ul li.current a:focus, .main-menu ul li.current a:active,
+  .main-menu ul a.highlighted {
+    background-color:$gray-light;
+    color:$gray-medium; 
+  }
+  
+  /* add some text indentation for the 2+ level sub menu items */
+  .main-menu ul a {
+    padding:9px $grid-gutter-width/2 9px 0;
+    border-left:$grid-gutter-width/2 solid transparent;
+  }
+  .main-menu ul ul a {
+    padding:9px $grid-gutter-width/2 9px 0;
+    border-left:$grid-gutter-width solid transparent;
+  }
+
+  /* Sub menu indicators*/
+  .main-menu a span.sub-arrow {
+    right:auto;
+    margin-left:-14px;
+  }
+  /* Hide sub indicator when item is expanded - we enable the item link when it's expanded */
+  .main-menu a.highlighted span.sub-arrow {
+    display:none !important;
+  }
+
+
+  /* Items separators*/
+  .main-menu ul li {
+    border-left:0;
+  }
+  .main-menu ul li:first-child {
+    border-top:0 !important;
   }
 }
 
