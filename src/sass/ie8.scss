@@ -130,3 +130,20 @@ ul,li{
 .pages .numbers a {
   width:1.2em;
 }
+
+
+// Imgs
+.std-img:first-child + .std-img + .std-img,
+.std-img:first-child + .std-img + .std-img .std-img + .std-img,
+.std-img:first-child + .std-img + .std-img .std-img + .std-img .std-img + .std-img,
+.std-img:first-child + .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img,
+.std-img:first-child + .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img,
+.std-img:first-child + .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img,
+.std-img:first-child + .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img,
+.std-img:first-child + .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img,
+.std-img:first-child + .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img,
+.std-img:first-child + .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img .std-img + .std-img,
+.std-img:first-child + .std-img + .std-img{
+    clear:left;
+
+}

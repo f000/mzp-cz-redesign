@@ -127,6 +127,10 @@ Loga organizací jsou implementována jako Data URLs v souboru `css/organization
 
 Maximálně 7 odkazů v každém ze 2 sloupců.
 
+### Fotogalerie
+
+Popisek u fotky, zvetšené do modálního okna, se čerpá z první nalezené hodnoty v pořadí: Popisek fotky, Atribut title odkazu, Atribut title obrázku, Atribut alt obrázku.
+
 ### Běžný obsah stránky
 
 ---

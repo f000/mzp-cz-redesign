@@ -58,6 +58,7 @@ h6, .h6 { font-size: $font-size-h6; }
 
 h1{
   color: $brand-green2;
+  margin-top:$line-height-computed/1.5;
 }
 
 // Body text
@@ -107,4 +108,15 @@ dt {
 }
 dd {
   margin-left: 0; // Undo browser default
+}
+// Figures
+figure{
+  
+}
+
+figcaption{
+  text-align:center;
+  font-size:$font-size-small;
+  font-style:italic;
+  margin-top:3px;
 }

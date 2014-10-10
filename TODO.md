@@ -6,13 +6,14 @@
 - Dopracovat sablonu pro tisk
 - Probrat gzip
 - Zkusit dat min height pro boxy novinek
-- Lightbox- tlacitka
 - Otestovat SVG licence ve Firefoxu nezobrazuje se 3. policko
 - Urcit do manualu minimalni sirku obrazku v aktualitach
 - Fotogalerie - pridat vertikalni i horizontalni obrazky
 - Dodelat k fotogalerii popisek
 - Seminahodne promichani pro tagcloud
 - Blbe funguji aktuality v horzinotaknim pohledu na ipadu se zalamuji se pod sebe
+- vylepsit ikony lightboxu
+- donutit sysnet implementovat highlight a current classes pro horni menu
 
 ---
 

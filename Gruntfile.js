@@ -101,9 +101,8 @@ module.exports = function(grunt) {
       dist: {
         options: {
           compress: true,
-          sourceMap: true,
           beautify: false,
-          mangle: false,
+          mangle: true,
           report: 'gzip',
           preserveComments:'some'
         },

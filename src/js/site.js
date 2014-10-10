@@ -5,7 +5,7 @@
 * @licence CC BY-NC-ND 3.0 CZ
 */
 /*jslint browser: true, sloppy: true, todo: true */
-/*global Modernizr:false, $:false, alert:false, grunticon:false*/
+/*global Modernizr:false, $:false, alert:false, grunticon:false, console*/
 
 // SVG Fallback
 if (!Modernizr.svgasimg) {
@@ -83,7 +83,22 @@ function titleTooltip() {
 function colorboxLightbox() {
     $('a[rel^="lightbox"]').colorbox({
         rel: 'gallery',
-        opacity: 0.7
+        opacity: 0.7,
+        title: function () {
+            if ($(this).siblings('figcaption').text()) {
+                return $(this).siblings('figcaption').text();
+            }
+            if ($(this).attr('title')) {
+                return $(this).attr('title');
+            }
+            if ($(this).children('img').attr('title')) {
+                return $(this).children('img').attr('title');
+            }
+            if ($(this).children('img').attr('alt')) {
+                return $(this).children('img').attr('alt');
+            }
+            return false;
+        }
     });
 }
 
