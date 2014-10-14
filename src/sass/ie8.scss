@@ -101,16 +101,25 @@ ul,li{
 }
 
 .news-list{
-  article + article + article,
-  article + article + article + article + article{
+  article:first-child + article + article,
+  article:first-child + article + article + article + article,
+  article:first-child + article + article + article + article + article + article{
     clear:both;
   }
-  article + article + article + article,
-  article + article + article + article + article + article{
+  article:first-child + article,
+  article:first-child + article + article + article,
+  article:first-child + article + article + article + article + article,
+  article:first-child + article + article + article + article + article + article + article{
     clear:none;
   }
+  article:first-child,
+  article:first-child + article{
+    a,a:visited{
+        border-top:none;
+        padding-top:0;
+    }
+  }
 }
-
 .banner-list{
   ul{
     li{

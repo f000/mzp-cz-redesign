@@ -2,10 +2,8 @@
 
 ## Zbývá dopracovat
 
-- Odstranit nepouzivane  styly ze stareho webu 
+- Odstranit nepouzivane styly ze stareho webu 
 - Dopracovat sablonu pro tisk
-- Probrat gzip
-- Zkusit dat min height pro boxy novinek
 - Otestovat SVG licence ve Firefoxu nezobrazuje se 3. policko
 - Urcit do manualu minimalni sirku obrazku v aktualitach
 - Fotogalerie - pridat vertikalni i horizontalni obrazky

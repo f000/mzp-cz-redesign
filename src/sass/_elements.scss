@@ -239,6 +239,8 @@ a.green3{
 .news-list{
   @extend .row;
   @include clearfix();
+  border-bottom:1px solid $gray-border;
+  margin-bottom:$grid-gutter-width;
   .news-item{
     @extend .col-md-6;
     @media print {
@@ -254,10 +256,18 @@ a.green3{
   &:nth-child(odd){
     clear:both;
   }
-  margin-bottom:$grid-gutter-width/2;
-  > a, > a:visited{
+  &:nth-child(-n+2){
+      > a{
+          border-top:none;
+          padding-top:0;
+      }
+  }
+  > a{
     display:block;
-    border-bottom:1px solid $gray-border;
+    @media (min-width: $screen-md-min) {
+      border-top:1px solid $gray-border;
+    }
+    padding:$grid-gutter-width/2 0 0;
     @include clearfix();
     color:$text-color;
     text-decoration:none;
@@ -291,6 +301,7 @@ a.green3{
   }
   .read-more{
     text-align:right;
+    margin-bottom:$grid-gutter-width;
   }
 }
 
