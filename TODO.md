@@ -4,7 +4,6 @@
 
 - Odstranit nepouzivane styly ze stareho webu 
 - Dopracovat sablonu pro tisk
-- Otestovat SVG licence ve Firefoxu nezobrazuje se 3. policko
 - Urcit do manualu minimalni sirku obrazku v aktualitach
 - Fotogalerie - pridat vertikalni i horizontalni obrazky
 - Dodelat k fotogalerii popisek
