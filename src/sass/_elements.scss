@@ -389,14 +389,14 @@ a.green3{
   }
   figure{
     width:261px;
-    height:96px;
+    min-height:96px;
     @media (min-width: $screen-md-min) {
       width:210px;
-      height:77px;
+      min-height:77px;
     }
     @media (min-width: $screen-lg-min) {
       width:261px;
-      height:96px;
+      min-height:96px;
     }
     border:1px solid $gray-border;
     display:table-cell;

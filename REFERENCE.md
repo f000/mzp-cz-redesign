@@ -105,7 +105,11 @@ Fotka ministra musí mít rozměr 203×174 a formát PNG 24-bit + 8-bit alpha.
 
 ### Bannery
 
-Bannery pro levou a pravou sekci stránky se zobrazují v orámovaných boxech o vnitřním rozměru 261×96px. Pokud vložíte obrázek s menším rozměrem, bude vertikálně i horizontálne vycentrován uvnitř tohoto boxu. Lze vkládat obrázky s průhledností a využít tak default designu podkladu boxu. Ve Firefoxu budou bannery roztaženy vždy na celou šířku boxu (neopravený bug Firefoxu).
+Bannery pro levou a pravou sekci stránky se zobrazují v orámovaných boxech o vnitřním rozměru 261×96px. 
+
+Optimální rozměr vkládaných bannerů je 261×96px, případně 261×192px pro velmi důležité akce. 
+
+Lze vkládat obrázky s průhledností a využít tak připravený design podkladu boxu. Ve Firefoxu budou bannery roztaženy vždy na celou šířku boxu (neopravený bug Firefoxu).
 
 ### List novinek
 
