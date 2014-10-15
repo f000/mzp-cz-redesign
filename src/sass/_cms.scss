@@ -48,6 +48,7 @@
   }
   // File download  
   #filesList, .filesList{
+    margin-bottom:$line-height-computed;
     h5 {
       color: $brand-green3;
       @extend .fancy-header;
@@ -56,6 +57,7 @@
     ul {
       padding-left:0;
       list-style: none none;
+      background-color:$bg-gray1;
     }
     ul li {
       padding: 3px 0 3px 26px;
