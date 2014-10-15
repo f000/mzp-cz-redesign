@@ -89,6 +89,76 @@
 .no-svg ul{
   list-style:square url('../img/li-square.png?NCMARK');
 }
+/* ----- pages */
+  
+  .pages h2,.pages h3, .pages h4{
+    margin-bottom:5px;
+  }
+	.pages {
+		background-color: $brand-light-g1;
+		padding: 6px 10px;
+		
+		margin: 2em 0;
+    text-align: center;
+    @include clearfix;
+	}
+	.pages .arrowLeft {
+		float: left;
+		width: 6em;
+		text-align: left;
+    padding-top:2px;
+	}
+	.pages .arrowLeft a {
+		background-image: url(../img/icons/pages-arrowleft.png?NCMARK);
+		background-repeat: no-repeat;
+		background-position: left 45%;
+		padding: 0 0 0 15px;
+    line-height:1.2em;
+		color: $brand-green3;
+    &:hover,&:focus{
+      color:$text-color;
+    }
+	}
+	.pages .numbers {
+		display:inline;
+		text-align: center;
+	
+	}
+	.pages .numbers a {
+		color: $brand-green3;
+    line-height:1.2em;
+    padding-top:3px;
+    display:inline-block;
+    min-width:1.2em;
+    &:hover,&:focus{
+      color:$text-color;
+    }
+	}
+	.pages .numbers a.act {
+		color: #fff;
+		background-color: #93b633;
+	}
+	.pages .arrowRight {
+		float: right;
+		width: 6em;
+		text-align: right;
+    padding-top:2px;
+	}
+	.pages .arrowRight a {
+		background-image: url(../img/icons/pages-arrowright.png?NCMARK);
+		background-repeat: no-repeat;
+		background-position: right 45%;
+		padding: 0 15px 0 0;
+    line-height:1.2em;
+    
+		color: $brand-green3;
+    &:hover,&:focus{
+      color:$text-color;
+    }
+	}
+/* end. pages */
+
+
 
 /* Old cms content styles from ILIKETHIS! www.ilikethis.cz
 // TODO: cleaning and grep -o '\/img\/icons\/[a-zA-Z0-9/.:_-]*' _content.scss > ../../tmp/old-images.txt
@@ -407,8 +477,6 @@
 				}
 			/* end. linksList */
 		/* end. contentMain */
-		
-		
 
 			/* ----- unpackBox */
 				.unpackBox {
