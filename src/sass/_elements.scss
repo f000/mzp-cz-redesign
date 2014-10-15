@@ -448,10 +448,11 @@ a.green3{
     position:absolute;
     list-style: none;
     padding-left:0;
-    margin-top:-155px;
+    margin-top:-160px;
     margin-left:160px;
     li{
       color:$brand-green3;
+      padding-bottom:8px;
       &:before{
         font-size:$font-size-small;
         padding-right:5px;

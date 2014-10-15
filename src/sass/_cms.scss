@@ -11,7 +11,7 @@
   table{
     margin: 0 0 $line-height-computed/2;
     td,th{
-    	padding: $table-cell-padding;
+      padding: $table-cell-padding;
     }
     th{
       text-align:left;
@@ -46,44 +46,45 @@
     list-style-type:square;
     list-style:square url('../img/li-square.svg?NCMARK');
   }
-  
-  // File download
-	#filesList h5 {
-		color: $brand-green3;
-    @extend .fancy-header;
-    margin-bottom:0;
-	}
-	#filesList ul {
-    padding-left:0;
-		list-style: none none;
-	}
-	#filesList ul li {
-    padding: 3px 0 3px 26px;
-		margin: $line-height-computed/3;
-		background-repeat: no-repeat;
-		background-position: 0 3px;
-    a{
-      padding-right:0.5em;
+  // File download  
+  #filesList, .filesList{
+    h5 {
+      color: $brand-green3;
+      @extend .fancy-header;
+      margin-bottom:0;
     }
-	}
-	#filesList ul li.pdf {
-		background-image: url(../img/icons/file-pdf.gif);
-	}
-	#filesList ul li.doc {
-		background-image: url(../img/icons/file-doc.gif);
-	}
-	#filesList ul li.xls {
-		background-image: url(../img/icons/file-xls.gif);
-	}
-	#filesList ul li.gen {
-		background-image: url(../img/icons/file-gen.gif);
-	}
-	#filesList ul li.jpg {
-		background-image: url(../img/icons/file-jpg.gif);
-	}
-	#filesList ul li a {
-		text-decoration: underline;
-	}
+    ul {
+      padding-left:0;
+      list-style: none none;
+    }
+    ul li {
+      padding: 3px 0 3px 26px;
+      margin: $line-height-computed/3;
+      background-repeat: no-repeat;
+      background-position: 0 3px;
+      a{
+        padding-right:0.5em;
+      }
+    }
+    ul li.pdf {
+      background-image: url(../img/icons/file-pdf.gif);
+    }
+    ul li.doc {
+      background-image: url(../img/icons/file-doc.gif);
+    }
+    ul li.xls {
+      background-image: url(../img/icons/file-xls.gif);
+    }
+    ul li.gen {
+      background-image: url(../img/icons/file-gen.gif);
+    }
+    ul li.jpg {
+      background-image: url(../img/icons/file-jpg.gif);
+    }
+    ul li a {
+      text-decoration: underline;
+    }    
+  }
 }
 .no-svg ul{
   list-style:square url('../img/li-square.png?NCMARK');
