@@ -96,9 +96,10 @@
 
 /* Menu items*/
 .main-menu ul a {
-  padding:4px $grid-gutter-width/2;
+  padding:7px $grid-gutter-width/2;
   color:$gray-dark;
   font-weight:400;
+  font-size: $font-size-small;
   text-decoration:none;
 }
 .main-menu ul a:hover, .main-menu ul a:focus, .main-menu ul a:active{
