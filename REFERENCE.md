@@ -113,7 +113,9 @@ Lze vkládat obrázky s průhledností a využít tak připravený design podkla
 
 ### List novinek
 
-Úvodní fotografie by měla mít poměr stran 4:3 a systém by ji měl generovat pro tento prvek v rozměru 263×197.
+Úvodní fotografie by měla mít poměr stran 4:3 a systém by ji měl generovat pro tento prvek v rozměru 263×197px.
+
+Pokyny pro rozměry všech vkládaných obrázků jsou pro "Fotogalerie a element s obrázkem v textu vlevo nebo vpravo".
 
 Úryvek textu nesmí obsahovat žádné HTML značky a by měl by být systémem zkracován na cca 300 znaků a doplněn znakem trojtečky. Titulek zkracovat na maximálně cca 60 znaků.
 
@@ -131,7 +133,15 @@ Loga organizací jsou implementována jako Data URLs v souboru `css/organization
 
 Maximálně 7 odkazů v každém ze 2 sloupců.
 
-### Fotogalerie
+### Fotogalerie a element s obrázkem v textu vlevo nebo vpravo
+
+Minimální šířka vkládaného obrázku je 263px. 
+
+Nejen pro funkci rozkliknutí do modálního okna je doporučeno vkládat co největší obrázky (z důvodu možného využití většího rozlišení v blízké budoucnosti – obrazovky s vysokým rozlišením). 
+
+Systém vložené obrázky automaticky zmenší na šířku 263px pro náhled a maximálně 800×600px pro obrázek rozkliknutý do modálního okna.
+
+Systém by měl automaticky zajistit možnost rozkliknutí – zvětšení do modálního okna, pokud má originál šířku větší než 263px.
 
 Popisek u fotky, zvetšené do modálního okna, se čerpá z první nalezené hodnoty v pořadí: Popisek fotky, Atribut title odkazu, Atribut title obrázku, Atribut alt obrázku.
 
