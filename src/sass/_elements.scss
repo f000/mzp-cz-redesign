@@ -604,6 +604,12 @@ a.green3{
         background-color:lighten($brand-green1, 10%);
         padding-left:$grid-gutter-width*1.5;
       }
+      ul{
+        a,a:visited{
+          background-color:lighten($brand-green1, 13%);
+          padding-left:$grid-gutter-width*2;
+        }
+      }
     }
   }
 }
