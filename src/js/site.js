@@ -107,7 +107,7 @@ function colorboxLightbox() {
         current: '{current} / {total}',
         previous: '«',
         next: '»',
-        close: '×'
+        close: '\u00D7'
     });
 }
 
