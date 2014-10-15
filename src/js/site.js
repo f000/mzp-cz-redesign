@@ -117,7 +117,7 @@ function mainMenu() {
         mainMenuSubOffsetY: 10,
         subMenusSubOffsetY: -9,
         subMenusMinWidth: 0,
-        subMenusMaxWidth: 300
+        subMenusMaxWidth: 200
     });
 }
 
