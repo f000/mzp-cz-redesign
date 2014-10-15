@@ -4,10 +4,8 @@
 
 – Snizit mezeru pod logem
 – rozbalovat směrem doleva (pouze 2 úrovně) – zároveň šipečky také nalevo
-- Odstranit nepouzivane styly ze stareho webu 
 - Dopracovat sablonu pro tisk
 - Seminahodne promichani pro tagcloud
-- vylepsit ikony lightboxu
 - donutit sysnet implementovat highlight a current classes pro horni menu
 
 ---
