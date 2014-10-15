@@ -2,9 +2,7 @@
 
 ## Zbývá dopracovat
 
-– Snizit mezeru pod logem
 – rozbalovat směrem doleva (pouze 2 úrovně) – zároveň šipečky také nalevo
-- Dopracovat sablonu pro tisk
 - Seminahodne promichani pro tagcloud
 - donutit sysnet implementovat highlight a current classes pro horni menu
 
