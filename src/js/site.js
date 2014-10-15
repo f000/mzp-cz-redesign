@@ -23,13 +23,13 @@ function scrollToTop(sel) {
 }
 
 // Shuffle Tag Cloud
-// TODO: remove for production
 function shuffleTagCloud(sel) {
     var cloud = $(sel),
-        tags = cloud.children();
-    while (tags.length) {
-        cloud.append(tags.splice(Math.floor(Math.random() * tags.length), 1)[0]);
-    }
+        tags = cloud.children(),
+        semirandom = [2, 0, 9, 1, 10, 4, 12, 7, 15, 6, 13, 8, 11, 3, 14, 5];
+    $.each(semirandom, function (i, n) {
+        cloud.append(tags.splice(n, 1)[0]);
+    });
 }
 
 // Print page using print css

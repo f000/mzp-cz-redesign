@@ -95,7 +95,7 @@ Ostatní skripty se musí nacházet těsně před `</body>`:
 ## Prvky pro editory
 
 
-### Oblíbené odkazy
+### Oblíbené odkazy (tag cloud)
 
 Tagcloud obsahuje 16 odkazů s přiřazenou prioritou 1-5. Redakční systém by měl umožnit nastavení priority a generovat `<ol>` list sestupně dle priority. Pseudonáhodné promíchání pro tagcloud je zajištěno JavaScriptem.
   

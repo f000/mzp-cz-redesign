@@ -3,7 +3,6 @@
 ## Zbývá dopracovat
 
 – rozbalovat směrem doleva (pouze 2 úrovně) – zároveň šipečky také nalevo
-- Seminahodne promichani pro tagcloud
 - donutit sysnet implementovat highlight a current classes pro horni menu
 
 ---
