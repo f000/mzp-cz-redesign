@@ -139,7 +139,7 @@ Minimální šířka vkládaného obrázku je 263px.
 
 Nejen pro funkci rozkliknutí do modálního okna je doporučeno vkládat co největší obrázky (z důvodu možného využití většího rozlišení v blízké budoucnosti – obrazovky s vysokým rozlišením). 
 
-Systém vložené obrázky automaticky zmenší na šířku 263px pro náhled a maximálně 800×600px pro obrázek rozkliknutý do modálního okna.
+Systém by měl zachovat originály pro budoucí použití a vygenerovat 2 veze pro současný web – automaticky zmenšit na šířku 263px pro náhled a maximálně 800×600px pro obrázek rozkliknutý do modálního okna.
 
 Systém by měl automaticky zajistit možnost rozkliknutí – zvětšení do modálního okna, pokud má originál šířku větší než 263px.
 
