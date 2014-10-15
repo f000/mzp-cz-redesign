@@ -97,7 +97,7 @@
 /* Menu items*/
 .main-menu ul a {
   padding:4px $grid-gutter-width/2;
-  color:$gray-medium;
+  color:$gray-dark;
   font-weight:400;
   text-decoration:none;
 }
@@ -108,7 +108,7 @@
 .main-menu ul li.current a, .main-menu ul li.current a:hover, .main-menu ul li.current a:focus, .main-menu ul li.current a:active,
 .main-menu ul a.highlighted {
   background-color:$bg-gray1;
-  color:$gray-medium; 
+  color:$gray-dark; 
 }
 .main-menu ul a.has-submenu{
   padding-right:$grid-gutter-width;
