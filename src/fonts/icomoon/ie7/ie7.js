@@ -27,6 +27,7 @@
 		'icon-print': '&#xe604;',
 		'icon-rss': '&#xe605;',
 		'icon-sitemap': '&#xe606;',
+		'icon-close': '&#xd7;',
 		'icon-facebook': '&#xe60d;',
 		'0': 0
 		},

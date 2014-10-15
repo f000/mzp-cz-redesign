@@ -40,6 +40,9 @@
 .icon-sitemap {
 	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe606;');
 }
+.icon-close {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xd7;');
+}
 .icon-facebook {
 	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60d;');
 }

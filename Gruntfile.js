@@ -233,7 +233,7 @@ module.exports = function(grunt) {
       fonts: {
         nonull: true,
         src: '<%=dirs.src%>/fonts/icomoon/fonts/*',
-        dest: '<%=dirs.src%>/fonts/'
+        dest: '<%=dirs.dist%>/fonts/'
       },
       htmlTemplates: {
         files: [

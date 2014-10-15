@@ -57,13 +57,9 @@
         }
         #cboxNext{left:26px;}
         #cboxClose{
-          top:-29px;
           right:0;
-          font-family: $font-family-sans-serif;
-          font-size:$font-size-xxlarge + 5px;
-          font-weight:$weight-bold-sans-serif;
-          
+
         }
         #cboxContent button{
-            @include single-transition(all, 0);
+            @include single-transition(color, $transition-duration/2);
         }
