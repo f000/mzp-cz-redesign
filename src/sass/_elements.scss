@@ -492,6 +492,9 @@ a.green3{
 .footer-box{
   color:$text-color-inverted;
   font-size:$font-size-small;
+  @media (min-width: $screen-md-min) {
+    min-height:210px !important;
+  }
   h3,.h3{
     font-size:$font-size-h2;
     color:$text-color-inverted;
