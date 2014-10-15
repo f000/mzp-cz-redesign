@@ -69,19 +69,22 @@
       }
     }
     ul li.pdf {
-      background-image: url(../img/icons/file-pdf.gif);
+      background-image: url(../img/fileicons/pdf.png);
     }
     ul li.doc {
-      background-image: url(../img/icons/file-doc.gif);
+      background-image: url(../img/fileicons/doc.png);
     }
     ul li.xls {
-      background-image: url(../img/icons/file-xls.gif);
+      background-image: url(../img/fileicons/xls.png);
     }
     ul li.gen {
-      background-image: url(../img/icons/file-gen.gif);
+      background-image: url(../img/fileicons/file.png);
     }
     ul li.jpg {
-      background-image: url(../img/icons/file-jpg.gif);
+      background-image: url(../img/fileicons/jpg.png);
+    }
+    ul li.zip {
+      background-image: url(../img/fileicons/zip.png);
     }
     ul li a {
       text-decoration: underline;
@@ -456,22 +459,26 @@
 					background-position: 0 3px;
 				}
 				#linksList ul li.pdf {
-					background-image: url(../img/icons/file-pdf.gif);
+					background-image: url(../img/fileicons/pdf.png);
 				}
 				#linksList ul li.doc {
-					background-image: url(../img/icons/file-doc.gif);
+					background-image: url(../img/fileicons/doc.png);
 				}
 				#linksList ul li.xls {
-					background-image: url(../img/icons/file-xls.gif);
+					background-image: url(../img/fileicons/xls.png);
 				}
 				#linksList ul li.gen {
-					background-image: url(../img/icons/file-gen.gif);
+					background-image: url(../img/fileicons/file.png);
 				}
 				#linksList ul li.jpg {
-					background-image: url(../img/icons/file-jpg.gif);
+					background-image: url(../img/fileicons/jpg.png);
 				}
 				#linksList ul li.link {
-					background-image: url(../img/icons/file-link.gif);
+					background-image: url(../img/fileicons/html.png);
+					background-position: 3px 8px;
+				}
+				#linksList ul li.zip {
+					background-image: url(../img/fileicons/zip.png);
 					background-position: 3px 8px;
 				}
 				#linksList ul li a {
