@@ -2,10 +2,7 @@
 
 ## Zbývá dopracovat
 
-
-
 – Snizit mezeru pod logem
-- Udelat automaticky resizing v liteboxu
 – rozbalovat směrem doleva (pouze 2 úrovně) – zároveň šipečky také nalevo
 - Odstranit nepouzivane styly ze stareho webu 
 - Dopracovat sablonu pro tisk

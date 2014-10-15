@@ -83,7 +83,7 @@ function titleTooltip() {
 function colorboxLightbox() {
     $('a[rel^="lightbox"]').colorbox({
         rel: 'gallery',
-        opacity: 0.7,
+        opacity: 0.6,
         title: function () {
             if ($(this).siblings('figcaption').text()) {
                 return $(this).siblings('figcaption').text();
@@ -98,7 +98,11 @@ function colorboxLightbox() {
                 return $(this).children('img').attr('alt');
             }
             return false;
-        }
+        },
+        maxWidth: '90%',
+        maxHeight: '90%',
+        initialWidth: 800,
+        initialHeight: 600
     });
 }
 
