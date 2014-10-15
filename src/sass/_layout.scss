@@ -96,7 +96,7 @@
     display: block;
     background: url('../img/logo-mzp-cs.svg?NCMARK') no-repeat scroll top left;
     height: 60px;
-    width: 100%;
+    max-width: 263px;
     background-size:contain;
     @media print {
       background-image: none;
@@ -305,6 +305,7 @@ li#print{
 // Breadcrumb navigation
 #crumb-nav{
     @extend .col-md-12;
+    @extend .no-print;
     ol{
       @extend .breadcrumb-nav;
     }
