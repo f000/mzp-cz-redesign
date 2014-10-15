@@ -243,17 +243,18 @@
   }
 }
 #footer{
-  border-top:1px solid $gray;;
+  border-top:1px solid $gray;
+  border-left: none;  
   margin-top:$grid-gutter-width;
   padding-top:$grid-gutter-width;
   @media (min-width: $screen-md-min) {
     padding-left: $grid-gutter-width;
     border-top:none;
+    border-left: none; 
     margin-top:0;
     padding-top:0;
     padding-left: $grid-gutter-width/2;
   }
-  border-left: 0;  
   ul{
     padding-left:0;
     @extend .no-print;

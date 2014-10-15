@@ -2,13 +2,14 @@
 
 ## Zbývá dopracovat
 
+
+
+– Snizit mezeru pod logem
+- Udelat automaticky resizing v liteboxu
+– rozbalovat směrem doleva (pouze 2 úrovně) – zároveň šipečky také nalevo
 - Odstranit nepouzivane styly ze stareho webu 
 - Dopracovat sablonu pro tisk
-- Urcit do manualu minimalni sirku obrazku v aktualitach
-- Fotogalerie - pridat vertikalni i horizontalni obrazky
-- Dodelat k fotogalerii popisek
 - Seminahodne promichani pro tagcloud
-- Blbe funguji aktuality v horzinotaknim pohledu na ipadu se zalamuji se pod sebe
 - vylepsit ikony lightboxu
 - donutit sysnet implementovat highlight a current classes pro horni menu
 

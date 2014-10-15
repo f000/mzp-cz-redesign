@@ -103,7 +103,7 @@ function colorboxLightbox() {
 }
 
 function mainMenu() {
-    $('#main-nav > ul > li > a').not('#main-nav > ul > li:first-child a').addClass('disabled');
+    $('#main-nav > ul > li > a').not('#main-nav > ul > li:first-child a').not('#main-nav > ul > li:last-child a').addClass('disabled');
     $('#main-nav > ul').smartmenus({
         mainMenuSubOffsetY: 10,
         subMenusSubOffsetY: -9,
