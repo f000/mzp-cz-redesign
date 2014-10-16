@@ -42,19 +42,19 @@ Pro možnost explicitní definice byla zavedena CSS třída `.print-only` (vidit
 
 ### Nastavení serveru
 
-Pro HTML soubory doporučujeme posílat HTTP hlavičku `X-UA-Compatible" s hodnotou `IE=edge,chrome=1`. 
+Pro HTML soubory je nutno posílat HTTP hlavičku `X-UA-Compatible` s hodnotou `IE=edge,chrome=1`. 
 
-Zavést kompresi HTTP spojení pro nekomprimované formáty (HTML, Javascript, CSS...) `gzip`/`deflate`. V případě možnosti negativních dopadů na rychlost serveru bude doplněn Grunt task na vygenerovaní gzipovaných produkčních JS a CSS. Možné řešení pro Apache naleznete v souboru [.htaccess](https://github.com/f000/mzp-cz-redesign/blob/master/dist/.htaccess).
+Doporučujeme zavést kompresi HTTP spojení pro nekomprimované formáty (HTML, Javascript, CSS, SVG...) `gzip`/`deflate`. V případě možnosti negativních dopadů na rychlost serveru bude doplněn Grunt task na vygenerovaní gzipovaných produkčních souborů. Možné řešení pro Apache naleznete v souboru [.htaccess](https://github.com/f000/mzp-cz-redesign/blob/master/dist/.htaccess).
 
 ### Bezpečnost (doporučení)
 
-Zprovoznit možnost šifrovaného připojení přes SSL – možnosti:
+Doporučujeme zprovoznit možnost šifrovaného připojení přes SSL – možnosti:
 
 1. vlastní SSL certifikát vydaný certifikační autoritou MŽP
 2. [certifikát od autority akreditované MVČR pro Elektronický podpis](http://www.mvcr.cz/clanek/prehled-udelenych-akreditaci.aspx)
 3. [běžný komerční SSL certifikát](https://www.ssls.cz)
 
-V produkční verzi nepoužívat externí zdroje skriptů, jako např. jQuery z Google CND a Google Analytics. Vhodná náhrada za Analytics je např. provozování lokální instalace [Piwik](http://piwik.org).
+V produkční verzi doporučujeme nepoužívat externí zdroje skriptů, jako např. jQuery z Google CND a Google Analytics. Vhodná náhrada za Analytics je např. provozování lokální instalace [Piwik](http://piwik.org).
 
 ### Externí odkazy
 
