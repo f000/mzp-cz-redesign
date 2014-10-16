@@ -148,7 +148,7 @@ Popisek u fotky, zvetšené do modálního okna, se čerpá z první nalezené h
 
 ### Nadpisy
 
-V obsahu je třeba dodržovat posloupnost významnosti nadpisů úrovně 1–6 (HTML značky <h1> až <h6>) takto sémanticky a neorientovat se podle designu jednotlivých úrovní nadpisu.
+V obsahu je nutno dodržovat hierarchii významnosti nadpisů úrovně 1 až 6 (HTML značky `<h1>` až `<h6>`) – sémanticky a neorientovat se podle designu jednotlivých úrovní nadpisu. Žádný nadpis nesmí obsahovat tučný text, nebo kurzívu.
 
 Příklad pro stránku Ministr (nevychází z reálného obsahu):
 
@@ -170,6 +170,13 @@ Příklad pro stránku Ministr (nevychází z reálného obsahu):
   <h2>Fotogalerie</h2>
   <h2>Ke stažení</h2>
 ```  
+### Formátování textu
+
+Je zakázáno formátovat obsah pomocí prázdných řádků – prázdné řádky by se neměly nikde vyskytovat. V případě potřeby je možno vložit mezinadpis, horizonální linku, nebo jiný obsahový element pro vizuální odlišení od zbytku obsahu.
+
+Pokud je to možné, je doporučeno maximálně využívat speciální prvky obsahu, například element "Stáhněte si...".
+
+Je zakázáno používat jiné fonty, barvy textu a odkazů, než je automaticky předvoleno. Pro zvýraznění běžného textu je možno použít tučné písmo, nebo kurzívu.
 
 ---
 
