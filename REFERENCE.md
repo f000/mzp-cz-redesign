@@ -94,7 +94,6 @@ Ostatní skripty se musí nacházet těsně před `</body>`:
 
 ## Prvky pro editory
 
-
 ### Oblíbené odkazy (tag cloud)
 
 Tagcloud obsahuje 16 odkazů s přiřazenou prioritou 1-5. Redakční systém by měl umožnit nastavení priority a generovat `<ol>` list sestupně dle priority. Pseudonáhodné promíchání pro tagcloud je zajištěno JavaScriptem.
@@ -111,11 +110,11 @@ Optimální rozměr vkládaných bannerů je 261×96px, případně 261×192px p
 
 Lze vkládat obrázky s průhledností a využít tak připravený design podkladu boxu. Ve Firefoxu budou bannery roztaženy vždy na celou šířku boxu (neopravený bug Firefoxu).
 
-### List novinek
+### List aktualit
 
-Úvodní fotografie by měla mít poměr stran 4:3 a systém by ji měl generovat pro tento prvek v rozměru 263×197px.
+Úvodní fotografie musí mít poměr stran 4:3, systém ji bude zmenšovat na velikost 263×197px.
 
-Pokyny pro rozměry všech vkládaných obrázků jsou pro "Fotogalerie a element s obrázkem v textu vlevo nebo vpravo".
+Pokyny pro rozměry a vzhled fotek jsou stejné, jako v sekci "Fotogalerie a element s obrázkem v textu vlevo nebo vpravo".
 
 Úryvek textu nesmí obsahovat žádné HTML značky a by měl by být systémem zkracován na cca 300 znaků a doplněn znakem trojtečky. Titulek zkracovat na maximálně cca 60 znaků.
 
@@ -137,15 +136,40 @@ Maximálně 7 odkazů v každém ze 2 sloupců.
 
 Minimální šířka vkládaného obrázku je 263px. 
 
-Nejen pro funkci rozkliknutí do modálního okna je doporučeno vkládat co největší obrázky (z důvodu možného využití většího rozlišení v blízké budoucnosti – obrazovky s vysokým rozlišením). 
+Nejen pro funkci rozkliknutí do modálního okna je doporučeno vkládat co největší fotky (z důvodu možného využití většího rozlišení v blízké budoucnosti – obrazovky s vysokým rozlišením). 
 
-Systém by měl zachovat originály pro budoucí použití a vygenerovat 2 veze pro současný web – automaticky zmenšit na šířku 263px pro náhled a maximálně 800×600px pro obrázek rozkliknutý do modálního okna.
+Systém by měl zachovat originály pro budoucí použití a vygenerovat 2 veze pro současný web – automaticky zmenšit na šířku 263px pro náhled a maximálně 800×600px pro fotku, rozkliknutou do modálního okna.
 
 Systém by měl automaticky zajistit možnost rozkliknutí – zvětšení do modálního okna, pokud má originál šířku větší než 263px.
 
+Fotografie by neměla obsahovat žádný text a pokud je to nezbytně nutné, vzhled textu by měl odpovídat design manuálu a současnému vzhledu webu. Použitý font musí být Myriad, případně Myriad Narrow, v řezu Regular nebo Bold.
+
 Popisek u fotky, zvetšené do modálního okna, se čerpá z první nalezené hodnoty v pořadí: Popisek fotky, Atribut title odkazu, Atribut title obrázku, Atribut alt obrázku.
 
-### Běžný obsah stránky
+### Nadpisy
+
+V obsahu je třeba dodržovat posloupnost významnosti nadpisů úrovně 1–6 (HTML značky <h1> až <h6>) takto sémanticky a neorientovat se podle designu jednotlivých úrovní nadpisu.
+
+Příklad pro stránku Ministr (nevychází z reálného obsahu):
+
+```
+<h1>Ministr Mgr. Richard Brabec</h1>
+  <h2>Životopis<h2>
+    <h3>Dosažené vzdělání</h3>
+    <h3>Cizí jazyky</h3>
+    <h3>Pracovní praxe</h3>
+    <h3>Znalosti a dovednosti</h3>
+  <h2>Ministr v médiích<h2>
+    <h3>Rozhovory</h3>
+      <h4>Televize</h4>
+        <h5>Česká televize</h5>
+        <h5>TV Nova</h5>
+      <h4>Rozhlas</h4>
+    <h3>Eseje a fejetony</h3>
+    <h3>Expertízy a odborné články</h3>
+  <h2>Fotogalerie</h2>
+  <h2>Ke stažení</h2>
+```  
 
 ---
 
