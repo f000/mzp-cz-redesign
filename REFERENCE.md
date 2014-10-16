@@ -128,6 +128,14 @@ Titulek akce by neměl být delší než cca 60 znaků. Kategorie akce max. 20 z
 
 Loga organizací jsou implementována jako Data URLs v souboru `css/organizations/icons.data.svg.css` (async) s fallbackem pro prohlížeče bez SVG (`css/organizations/icons.data.png.css`) a Javascriptu (`css/organizations/icons.fallback.css`). Vkládaná loga musí být vč. pozadí vycentrovaná ve čtverci 100×100px.
 
+### Hlavní menu
+
+Menu je připraveno na 3 úrovně zanoření, ostatní úrovně budou dostupné buď z levého menu, nebo přímo z obsahu stránek. Vizuální orientace je zajištěna pomocí CSS třídy `.highlight` pro stránky v cestě k aktuální stránce a CSS třídou `.current` pro aktuální aktivní stránku.
+
+### Menu vlevo
+
+Levé menu je připraveno na 4 úrovně zanoření. 5 úroveň by se na webu neměla vyskytovat, jinak bude dostupná pouze z obsahu stránky. Vizuální orientace je zajištěna pomocí CSS třídy `.active` pro aktuální aktivní stránku.
+
 ### Navigace v patičce
 
 Maximálně 7 odkazů v každém ze 2 sloupců.
@@ -177,7 +185,7 @@ Je zakázáno formátovat obsah pomocí prázdných řádků – prázdné řád
 
 Pokud je to možné, je doporučeno maximálně využívat speciální prvky obsahu, například element "Stáhněte si...".
 
-Je zakázáno používat jiné fonty, barvy textu a odkazů, než je automaticky předvoleno. Pro zvýraznění běžného textu je možno použít pouze tučné písmo, nebo kurzívu.
+Je zakázáno používat jiné fonty, barvy textu a odkazů, než je automaticky předvoleno. Pro zvýraznění běžného textu je možno použít pouze tučné písmo nebo kurzívu.
 
 ---
 
