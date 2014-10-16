@@ -176,7 +176,7 @@ Je zakázáno formátovat obsah pomocí prázdných řádků – prázdné řád
 
 Pokud je to možné, je doporučeno maximálně využívat speciální prvky obsahu, například element "Stáhněte si...".
 
-Je zakázáno používat jiné fonty, barvy textu a odkazů, než je automaticky předvoleno. Pro zvýraznění běžného textu je možno použít tučné písmo, nebo kurzívu.
+Je zakázáno používat jiné fonty, barvy textu a odkazů, než je automaticky předvoleno. Pro zvýraznění běžného textu je možno použít pouze tučné písmo, nebo kurzívu.
 
 ---
 
