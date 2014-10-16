@@ -37,6 +37,8 @@
     <ul>
       <li><a href="#content">Hlavní obsah</a></li>
       <li><a href="#main-nav">Hlavní navigace</a></li>
+      <li><a href="#sub-nav">Menu aktuální sekce a služby webu</a></li>
+      <li><a href="#crumb-nav">Drobečková navigace</a></li>
     </ul>
   </nav>
   <header role="banner">
@@ -75,8 +77,8 @@
           <nav id="main-nav" role="navigation">
             <h3 class="sr-only">Hlavní navigace</h3>
             <ul class="main-menu sm">
-              <li class="current"><a href="/">Úvodní stránka</a></li>
-              <li><a href="http://www.example.cz">Ministerstvo</a>
+              <li><a href="/">Úvodní stránka</a></li>
+              <li class="current"><a href="http://www.example.cz">Ministerstvo</a>
                 <ul>
                   <li>
                     <a href="http://www.example.cz">Ministr</a>
@@ -193,142 +195,108 @@
       </div>
     </div>
   </header>
-  <div id="bg-6">
-    <div class="container">
-      <nav class="row">
-        <h3 class="sr-only">Témata</h3>
-        <ul class="topics">
-          <li class="ovzdusi">
-            <a href="#"><span><em class="icon-gt"></em>Ovzduší</span></a>
-          </li>
-          <li class="priroda">
-            <a href="#"><span><em class="icon-gt"></em>Příroda a krajina</span></a>
-          </li>
-          <li class="voda">
-            <a href="#"><span><em class="icon-gt"></em>Voda</span></a>
-          </li>
-          <li class="odpady">
-            <a href="#"><span><em class="icon-gt"></em>Odpadové hospodářství</span></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
   <div id="bg-3">
     <div class="bg-line-1"></div>
     <div class="container">
       <div class="row">
+        <nav id="crumb-nav">
+          <ol>
+            <li><a href="#"><span class="sr-only">Úvodní stránka</span></a></li>
+            <li><a href="#">Ministerstvo</a></li>
+            <li>Organizace zřizované MŽP</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row">
         <main id="content" role="main">
-          <section>
-            <h1 class="green2">Aktuality</h1>
-            <div class="news-list">
-              <article class="news-item">
-                <a href="#">
-                  <figure class="photo"><img src="http://ima.gs/cee5b8/none/8f9296/263x197.png" class="img-responsive" alt="Dummy image"/></figure>
-                  <time datetime="2014-08-16"><span class="icon-clock"></span>16.08.2014</time>
-                  <h2>Ministr Brabec na den strážcem šumavské přírody</h2>
-                  <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ...</blockquote>
-                  <p class="read-more"><small class="btn">Celý článek</small></p>
-                </a>
-              </article>
-              <article class="news-item">
-                <a href="#">
-                  <figure class="photo"><img src="http://ima.gs/cee5b8/none/8f9296/263x197.png" class="img-responsive" alt="Dummy image"/></figure>
-                  <time datetime="2014-08-12"><span class="icon-clock"></span>12.8.2014</time>
-                  <h2>222 přihlášených filmů na 40. ročník Ekofilmu je rekord</h2>
-                  <blockquote>Praha, 16. srpna – Národní parky jsou chloubou každého státu. Jejich přírodní stav i každodenní život je prioritou většiny ministrů životního prostředí. Nejinak je tomu i u současného ministra ...</blockquote>
-                  <p class="read-more"><small class="btn">Celý článek</small></p>
-                </a>
-              </article>
-              <article class="news-item">
-                <a href="#">
-                  <figure class="photo"><img src="http://ima.gs/cee5b8/none/8f9296/263x197.png" class="img-responsive" alt="Dummy image"/></figure>
-                  <time datetime="2014-08-11"><span class="icon-clock"></span>11.8.2014</time>
-                  <h2>O kotlíkových dotacích Středočeského kraje více na webu</h2>
-                  <blockquote>Na zlepšení životního prostředí půjde dalších 300 milionů korun. Ministr Richard Brabec podepsal dotace pro 88 projektů z takzvaného zásobníku Operačního programu Životní prostředí 2007-2013. Aby ...</blockquote>
-                  <p class="read-more"><small class="btn">Celý článek</small></p>
-                </a>
-              </article>
-              <article class="news-item">
-                <a href="#">
-                  <figure class="photo"><img src="http://ima.gs/cee5b8/none/8f9296/263x197.png" class="img-responsive" alt="Dummy image"/></figure>
-                  <time datetime="2014-08-07"><span class="icon-clock"></span>7.8.2014</time>
-                  <h2>Stanice pro handicapovaná zvířata v Klášterci na Šumavě vrátila do přírody už 40 zvířat</h2>
-                  <blockquote>Středočeský kraj pokračuje v mimořádně úspěšném projektu takzvaných kotlíkových dotací. Na výměnu starých kotlů za nové a tím i na zlepšení kvality ovzduší ve středních Čechách je ve druhém kole ...</blockquote>
-                  <p class="read-more"><small class="btn">Celý článek</small></p>
-                </a>
-              </article>
+          <section class="content-box contentMainText">
+            <h1>Vodní živočichové</h1> 
+            <p>Úvodní text existuje spousta vodních živočichů. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+            <h2>Metodiky</h2>
+            <h3>Metodika ryb</h3>
+            <ul>
+              <li>metodika 1 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+              <li>metodika 2</li>
+              <li>metodika 3</li>
+            </ul>
+            <h3>Metodika krokodýlů</h3>
+            <ul>
+              <li>metodika 1 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+              <li>metodika 2</li>
+              <li>metodika 3</li>
+            </ul>
+            <hr />
+            <h1> Jiny zpusob</h1>
+            <p>Úvodní text existuje spousta vodních živočichů. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+            <h2>Metodika ryb</h2>
+            <ul>
+              <li>metodika 1 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+              <li>metodika 2</li>
+              <li>metodika 3</li>
+            </ul>
+            <h2>Metodika krokodýlů</h2>
+            <ul>
+              <li>metodika 1 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+              <li>metodika 2</li>
+              <li>metodika 3</li>
+            </ul>
+            <div id="filesList">
+              <h5>Stáhněte si...</h5>
+              <ul>
+                <li class="pdf"><a href="#">Protokol o schválení plánu péče</a> (PDF, 1 MB)</li>
+                <li class="xls"><a href="#">Tabulka vypořádání připomínek</a> (PDF, 410kB)</li>
+              </ul>
             </div>
-            <p class="read-more"><a href="#" class="btn">Archiv novinek</a></p>
-          </section>
+            
+            
+         </section>
         </main>
         <nav class="sr-only"><a href="#top">Na začátek stránky</a></nav>
         <aside id="left-sidebar">
-          <article class="sidebar-box profile-box">
-            <h3 class="green1">Ministr</h3>
-            <figure>
-              <img src="img/richard-brabec.png?NCMARK141016164311" width="203" height="174" alt="Fotka Richarda Brabce" />
-              <figcaption>Mgr. Richard Brabec <small>ministr životního prostředí</small></figcaption>
-            </figure>
-            <ul>
-              <li><a href="#"><span class="icon-gt"></span>Životopis</a></li>
-              <li><a href="#"><span class="icon-gt"></span>V médiích</a></li>
+          <nav class="sidebar-box" id="sub-nav">
+            <h3 class="green3">Ministerstvo</h3>
+            <ul class="side-nav">
+              <li><a href="#">Ministr</a></li>
+              <li><a href="#">Vedení ministerstva</a></li>
+              <li><a href="#">Vedení ministerstva</a></li>
+              <li><a href="#">Organizace zřizované MŽP</a>
+                <ul>
+                  <li><a href="#">Excepteur sint occaecat</a></li>
+                  <li><a href="#">Lorem ipsum</a>
+                    <ul>
+                      <li><a href="#">Lorem ipsum</a></li>
+                      <li><a href="#">Lorem ipsum</a></li>
+                      <li><a href="#">Lorem ipsum</a></li>
+                      <li><a href="#">Lorem ipsum</a></li>
+                      <li><a href="#">Lorem ipsum</a>
+                        <ul>
+                          <li><a href="#">Dalsi level</a></li>
+                          <li class="active"><a href="#">Lorem ipsum</a></li>
+                          <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Qui officia deserunt mollit anim id est laborum</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Volná místa</a></li>
+              <li><a href="#">Veřejné zakázky</a></li>
+              <li><a href="#">Resortní statistická zjišťování</a></li>
+              <li><a href="#">Nový úřad</a></li>
             </ul>
-          </article>
-          <nav class="sidebar-box">
-            <h3>Oblíbené odkazy</h3>
-            <ol class="tag-cloud">
-              <li><a class="level1" href="#">Nejdůležitější</a></li>
-              <li><a class="level1" href="#">Legislativa</a></li>
-              <li><a class="level2" href="#">Velmi důležité</a></li>
-              <li><a class="level2" href="#">Úřední deska</a></li>
-              <li><a class="level2" href="#">Granty</a></li>
-              <li><a class="level3" href="#">Důležité</a></li>
-              <li><a class="level3" href="#">Kontakty</a></li>
-              <li><a class="level3" href="#">Média</a></li>
-              <li><a class="level4" href="#">Méně důležité</a></li>
-              <li><a class="level4" href="#">Volná místa</a></li>
-              <li><a class="level4" href="#">Organizační struktura</a></li>
-              <li><a class="level4" href="#">Odpady</a></li>
-              <li><a class="level5" href="#">Informační strategie</a></li>
-              <li><a class="level5" href="#">Ministr</a></li>
-              <li><a class="level5" href="#">Zcela nedůležité</a></li>
-            </ol>
           </nav>
           <nav class="sidebar-box">
             <h3>Služby</h3>
             <ul class="side-nav">
               <li><a href="#">Úřední deska</a></li>
               <li><a href="#">Knihovnické a informační služby</a></li>
-              <li><a href="#">Jednotný informační systém životního prostředí</a></li>
+              <li class="active"><a href="#">Organizace zřizované MŽP</a></li>
               <li><a href="#">Poskytování informací</a></li>
               <li><a href="#">Publikace a periodika</a></li>
               <li><a href="#">Odkazy</a></li>
             </ul>
           </nav>
-          <section class="sidebar-box">
-            <h3 class="sr-only">Bannery</h3>
-            <ul class="banner-list">
-              <li>
-                <figure>
-                  <a href="#"><img src="http://ima.gs/7bc143/none/000/261x96.png" width="261" height="96" class="img-responsive" title="Banner na akci AAA" alt="Banner na akci AAA" /></a>
-                  <figcaption>Akce AAA popisek</figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"><img src="http://ima.gs/7bc143/none/000/200x75.png" width="200" height="75" class="img-responsive" title="Banner na akci BBB" alt="Banner na akci BBB" /></a>
-                  <figcaption>Akce BBB popisek</figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"><img src="http://ima.gs/transparent/7bc143/000/187x81%20transparent-187x81.png" width="160" height="80" class="img-responsive" title="Banner na akci CCC" alt="Banner na akci CCC" /></a>
-                  <figcaption>Akce CCC popisek</figcaption>
-                </figure>
-              </li>
-            </ul>
-          </section>
         </aside>
         <aside id="right-sidebar">
           <section id="events" class="sidebar-box">
@@ -515,11 +483,6 @@
             <ul class="footer-nav">
               <li><a href="#">Stránka 1</a></li>
               <li><a href="#">Stránka 2</a></li>
-              <li><a href="#">Stránka 3</a></li>
-              <li><a href="#">Stránka 4</a></li>
-              <li><a href="#">Stránka 5</a></li>
-              <li><a href="#">Stránka 6</a></li>
-              <li><a href="#">Stránka 7</a></li>
             </ul>
           </nav>
           <nav id="footer-nav2" class="footer-box">
@@ -529,9 +492,6 @@
               <li><a href="#">Stránka 9</a></li>
               <li><a href="#">Stránka 10</a></li>
               <li><a href="#">Stránka 11</a></li>
-              <li><a href="#">Stránka 12</a></li>
-              <li><a href="#">Stránka 13</a></li>
-              <li><a href="#">Stránka 14</a></li>
             </ul>
           </nav>
           <section id="footer-contact" class="footer-box" itemscope itemtype="http://schema.org/Organization">
