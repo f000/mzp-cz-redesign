@@ -160,7 +160,7 @@ V obsahu je nutno dodržovat hierarchii významnosti nadpisů úrovně 1 až 6 (
 
 Příklad pro stránku Ministr (nevychází z reálného obsahu):
 
-```
+```xml
 <h1>Ministr Mgr. Richard Brabec</h1>
   <h2>Životopis<h2>
     <h3>Dosažené vzdělání</h3>
