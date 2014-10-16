@@ -165,6 +165,7 @@ Příklad pro stránku Ministr (nevychází z reálného obsahu):
         <h5>Česká televize</h5>
         <h5>TV Nova</h5>
       <h4>Rozhlas</h4>
+      <h4>Internet</h4>
     <h3>Eseje a fejetony</h3>
     <h3>Expertízy a odborné články</h3>
   <h2>Fotogalerie</h2>
