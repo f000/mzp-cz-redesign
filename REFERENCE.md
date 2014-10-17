@@ -138,8 +138,17 @@ Levé menu je připraveno na 4 úrovně zanoření. 5 úroveň by se na webu nem
 
 ### Navigace v patičce
 
-Maximálně 7 odkazů v každém ze 2 sloupců.
+Maximálně 7 odkazů v každém ze 2 sloupců, každý sloupec musí mít nadpis.
 
+### Prvek iframe
+
+Prvek `<iframe>` – například kód pro sdílení z Youtube, Vimeo nebo Google Maps je třeba vkládat pro responzivní chování do `<div class="embed-container">`
+
+```xml
+<div class="embed-container">
+ <iframe src="http://......" frameborder="0"></iframe>
+</div>
+```
 ### Fotogalerie a element s obrázkem v textu vlevo nebo vpravo
 
 Minimální šířka vkládaného obrázku je 263px. 
@@ -153,16 +162,6 @@ Systém by měl automaticky zajistit možnost rozkliknutí – zvětšení do mo
 Fotografie by neměla obsahovat žádný text a pokud je to nezbytně nutné, vzhled textu by měl odpovídat design manuálu a současnému vzhledu webu. Použitý font musí být Myriad, případně Myriad Narrow, v řezu Regular nebo Bold.
 
 Popisek u fotky, zvetšené do modálního okna, se čerpá z první nalezené hodnoty v pořadí: Popisek fotky, Atribut title odkazu, Atribut title obrázku, Atribut alt obrázku.
-
-### Prvek iframe
-
-Prvek `<iframe>` – například kód pro sdílení z Youtube, Vimeo nebo Google Maps je třeba vkládat pro responzivní chování do `<div class="embed-container">`
-
-```xml
-<div class="embed-container">
- <iframe src="http://..." frameborder="0"></iframe>
-</div>
-```
 
 ### Nadpisy
 
