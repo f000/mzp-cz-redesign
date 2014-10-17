@@ -13,7 +13,7 @@ Projekt využívá pokročilé technologie s ohledem na UX, přístupnost a dato
 
 Zastaralé prohlížeče nebo prohlížeče s omezenou funkcionalitou jsou podporovány pomocí graceful degradation tak, aby byl web použitelný na většině možných zařízení s degradací co nejmenšího množství designu a funkcionalit.
 
-### Responsivní varianty
+### Responzivní varianty
 
 Jsou vytvořeny varianty pro velmi malé obrazovky (mobily), malé obrazovky (tablety a mobily) a dvě varianty šířky pro klasické monitory. Na základě statistik návštěvnosti by v Q2 2014 využívalo nejširší variantu cca 70% návštěvníků.
 
@@ -153,6 +153,16 @@ Systém by měl automaticky zajistit možnost rozkliknutí – zvětšení do mo
 Fotografie by neměla obsahovat žádný text a pokud je to nezbytně nutné, vzhled textu by měl odpovídat design manuálu a současnému vzhledu webu. Použitý font musí být Myriad, případně Myriad Narrow, v řezu Regular nebo Bold.
 
 Popisek u fotky, zvetšené do modálního okna, se čerpá z první nalezené hodnoty v pořadí: Popisek fotky, Atribut title odkazu, Atribut title obrázku, Atribut alt obrázku.
+
+### Prvek iframe
+
+Prvek `<iframe>` – například kód pro sdílení z Youtube, Vimeo nebo Google Maps je třeba vkládat pro responzivní chování do `<div class="embed-container">`
+
+```xml
+<div class="embed-container">
+ <iframe src="http://..." frameborder="0"></iframe>
+</div>
+```
 
 ### Nadpisy
 
