@@ -737,11 +737,21 @@ a.green3{
       top: $font-size-small/2;
     }
   }
-  li:first-child a{
-    display:block;
-    width:32px;
-    height:23px;
-    margin-top:-20px;
+  li:first-child{
+    a{
+      display:block;
+      width:30px;
+      height:23px;
+      position:relative;
+      top:5px;
+      z-index:100;
+      cursor:pointer;
+    }
+    &:before{
+      z-index:90;
+      top:22px;
+      position:absolute;
+    }
   }
   a{
     @extend .green3;
