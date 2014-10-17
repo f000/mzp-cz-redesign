@@ -17,6 +17,7 @@
     "modernizr": "^2.8.3",
     "bootstrap-sass-official": "^3.2.0",
     "colorbox": "^1.5.13",
-    "box-sizing-polyfill": "*"
+    "box-sizing-polyfill": "*",
+    "smartmenus": "~0.9.7"
   }
 }
