@@ -796,7 +796,7 @@ a.green3{
   border:0;
   padding: 0;
   background-image:none;
-  margin:$line-height-computed/2 0;
+  margin:$line-height-computed/2 0 $grid-gutter-width;
   border-bottom:1px solid $bg-gray4;
   article{
     border-top:1px solid $bg-gray4;
