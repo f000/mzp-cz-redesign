@@ -29,8 +29,9 @@ a{
 }
 
 // Headings
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6, h7, h8,
+.h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8{
+  display:block;
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
@@ -44,7 +45,9 @@ h3, .h3 {
 }
 h4, .h4,
 h5, .h5,
-h6, .h6 {
+h6, .h6,
+h7, .h7,
+h8, .h8 {
   font-weight:$weight-bold-sans-serif;
   margin-top: ($line-height-computed );
   margin-bottom: ($line-height-computed );
@@ -55,7 +58,28 @@ h3, .h3 { font-size: $font-size-h3; }
 h4, .h4 { font-size: $font-size-h4; }
 h5, .h5 { font-size: $font-size-h5; }
 h6, .h6 { font-size: $font-size-h6; }
+h7, .h7 { font-size: $font-size-h7; }
+h8, .h8 { font-size: $font-size-h8; }
 
+// Old CMS style compatiblity – remove after content revision
+h4, .h4,
+h5, .h5,
+h6, .h6,
+h7, .h7,
+h8, .h8{
+  font-size: $font-size-h4 + 2;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8{
+  strong,b{
+    font-weight:400;
+  }
+  em,i{
+    font-style:normal;
+  }
+}
+
+// Main header
 h1{
   color: $brand-green2;
   margin-top:$line-height-computed/1.5;
