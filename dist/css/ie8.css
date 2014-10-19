@@ -1,5 +1,11 @@
 /*!
- * Part of MZP.CZ Redesign Project - v1.0.3 - 2014-10-19
+ * Part of MZP.CZ Redesign Project - v1.0.4 - 2014-10-19
+ * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
+ * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
+ * @licence CC BY-NC-ND 3.0 CZ
+ */
+/*!
+ * Part of MZP.CZ Redesign Project - v1.0.4 - 2014-10-19
  * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
  * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
  * @licence CC BY-NC-ND 3.0 CZ
@@ -10,339 +16,127 @@
  * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
  * @licence CC BY-NC-ND 3.0 CZ
  */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-19
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.2 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.1 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.1 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.1 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.0 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.0 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.0 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.0 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v1.0.0 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v0.6.0 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v0.6.0 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/*!
- * Part of MZP.CZ Redesign Project - v0.6.0 - 2014-10-17
- * @author Lukas Vorlicek <lukas.vorlicek@codeart.cz>
- * @copyright Copyright (c) 2014 Ministry of the Environment of the Czech Republic
- * @licence CC BY-NC-ND 3.0 CZ
- */
-/* line 17, ../../src/sass/ie8.scss */
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .input-group, .row, .content {
   box-sizing: border-box;
   * behavior: url(/js/boxsizing.htc); }
 
-/* line 21, ../../src/sass/ie8.scss */
 audio, canvas, video {
   * display: inline;
   zoom: 1; }
 
-/* line 22, ../../src/sass/ie8.scss */
 html {
   * font-size: 100%; }
 
-/* line 23, ../../src/sass/ie8.scss */
 img {
   * width: auto;
   * height: auto;
   -ms-interpolation-mode: bicubic; }
 
-/* line 24, ../../src/sass/ie8.scss */
 button, input {
   * overflow: visible; }
 
-/* line 25, ../../src/sass/ie8.scss */
 .container {
   * zoom: 1; }
 
-/* line 26, ../../src/sass/ie8.scss */
 .row {
   * zoom: 1; }
 
-/* line 27, ../../src/sass/ie8.scss */
 input[type="radio"], input[type="checkbox"] {
   * margin-top: 0; }
 
-/* line 28, ../../src/sass/ie8.scss */
 .sr-only {
   * clip: rect(0 0 0 0); }
 
-/* line 31, ../../src/sass/ie8.scss */
 .icon-crumb {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2f;'); }
 
-/* line 34, ../../src/sass/ie8.scss */
 .icon-lt2 {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x3c;'); }
 
-/* line 37, ../../src/sass/ie8.scss */
 .icon-gt2 {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x3e;'); }
 
-/* line 40, ../../src/sass/ie8.scss */
 .icon-lt {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xab;'); }
 
-/* line 43, ../../src/sass/ie8.scss */
 .icon-caret {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x5e;'); }
 
-/* line 46, ../../src/sass/ie8.scss */
 .icon-gt {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xbb;'); }
 
-/* line 49, ../../src/sass/ie8.scss */
 .icon-bar {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2013;'); }
 
-/* line 52, ../../src/sass/ie8.scss */
 .icon-search {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe607;'); }
 
-/* line 55, ../../src/sass/ie8.scss */
 .icon-bubble {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe600;'); }
 
-/* line 58, ../../src/sass/ie8.scss */
 .icon-clock {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x25ef;'); }
 
-/* line 61, ../../src/sass/ie8.scss */
 .icon-home {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe603;'); }
 
-/* line 64, ../../src/sass/ie8.scss */
 .icon-print {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe604;'); }
 
-/* line 67, ../../src/sass/ie8.scss */
 .icon-rss {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe605;'); }
 
-/* line 70, ../../src/sass/ie8.scss */
 .icon-sitemap {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe606;'); }
 
-/* line 73, ../../src/sass/ie8.scss */
 .icon-facebook {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60d;'); }
 
-/* line 77, ../../src/sass/ie8.scss */
+.icon-close:before {
+  * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xed7'); }
+
 .breadcrumb-nav li {
   * zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2f;'); }
 
-/* line 84, ../../src/sass/ie8.scss */
 #bg-1 {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF6F6F6', endColorstr='#FFE9E9E9'); }
 
-/* line 88, ../../src/sass/ie8.scss */
 #bg-2 {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#FFFFFFFF'); }
 
-/* line 92, ../../src/sass/ie8.scss */
+.banner-list figure {
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFEDEDED'); }
+
 .owl-carousel li {
   * float: left;
   * display: inline;
   * width: 120px; }
 
-/* line 98, ../../src/sass/ie8.scss */
 ul, li {
   list-style-type: none;
   list-style-image: none; }
 
-/* line 104, ../../src/sass/ie8.scss */
 .news-list article:first-child + article + article,
 .news-list article:first-child + article + article + article + article,
 .news-list article:first-child + article + article + article + article + article + article {
   clear: both; }
-/* line 109, ../../src/sass/ie8.scss */
 .news-list article:first-child + article,
 .news-list article:first-child + article + article + article,
 .news-list article:first-child + article + article + article + article + article,
 .news-list article:first-child + article + article + article + article + article + article + article {
   clear: none; }
-/* line 117, ../../src/sass/ie8.scss */
 .news-list article:first-child a, .news-list article:first-child a:visited,
 .news-list article:first-child + article a,
 .news-list article:first-child + article a:visited {
   border-top: none;
   padding-top: 0; }
 
-/* line 133, ../../src/sass/ie8.scss */
-.banner-list figure {
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFEDEDED'); }
-
-/* line 139, ../../src/sass/ie8.scss */
 .pages .numbers a {
   width: 1.2em; }
 
-/* line 144, ../../src/sass/ie8.scss */
 .std-img:first-child + .std-img + .std-img,
 .std-img:first-child + .std-img + .std-img .std-img + .std-img,
 .std-img:first-child + .std-img + .std-img .std-img + .std-img .std-img + .std-img,
@@ -356,11 +150,9 @@ ul, li {
 .std-img:first-child + .std-img + .std-img {
   clear: left; }
 
-/* line 159, ../../src/sass/ie8.scss */
 #crumb-nav {
   height: 45px; }
 
-/* line 163, ../../src/sass/ie8.scss */
 #crumb-nav ol li {
   display: inline;
   float: left;

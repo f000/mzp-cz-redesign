@@ -6,6 +6,7 @@
 */
 
 /*global module:false,require:false*/
+/*jslint sloppy: true, white: true, indent: 2 */
 
 module.exports = function(grunt) {
   require('time-grunt')(grunt);
@@ -46,7 +47,7 @@ module.exports = function(grunt) {
           stripBanners: false
         },
         src: [
-          '<%=dirs.libs%>/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js',
+          '<%=dirs.libs%>/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js'
         ],
         dest: '<%=dirs.tmp%>/tooltip.js',
         nonull: true
@@ -56,7 +57,7 @@ module.exports = function(grunt) {
           stripBanners: false
         },
         src: [
-          '<%=dirs.libs%>/smartmenus/dist/jquery.smartmenus.js',
+          '<%=dirs.libs%>/smartmenus/dist/jquery.smartmenus.js'
         ],
         dest: '<%=dirs.tmp%>/smartmenus.js',
         nonull: true          
@@ -67,7 +68,7 @@ module.exports = function(grunt) {
         },
         src: [
           '<%=dirs.modules%>/grunt-grunticon/tasks/grunticon/static/grunticon.loader.banner.js',
-          '<%=dirs.modules%>/grunt-grunticon/tasks/grunticon/static/grunticon.loader.js',
+          '<%=dirs.modules%>/grunt-grunticon/tasks/grunticon/static/grunticon.loader.js'
         ],
         dest: '<%=dirs.tmp%>/grunticon.js',
         nonull: true
@@ -126,7 +127,7 @@ module.exports = function(grunt) {
     compass: {
       options: {
         banner: '<%= banner %>',
-        specify: '<%=dirs.src%>/sass/*',
+        
         sassDir: '<%=dirs.src%>/sass/',
         cssDir: '<%=dirs.dist%>/css/',
         imagesDir: '<%=dirs.src%>/img/',
@@ -137,16 +138,18 @@ module.exports = function(grunt) {
         ],
         relativeAssets: true
       },
-      dist: {
+      all: {
         options: {
+          specify: '<%=dirs.src%>/sass/all.scss',
           outputStyle: 'compressed',
           noLineComments: true
         }
       },
-      dev: {
+      ie8: {
         options: {
+          specify: '<%=dirs.src%>/sass/ie8.scss',
           outputStyle: 'nested',
-          noLineComments: false
+          noLineComments: true
         }
       }
     },
@@ -257,7 +260,7 @@ module.exports = function(grunt) {
           from: /NCMARK[0-9]{0,12}/g,
           to: "NCMARK<%= grunt.template.today('yymmddHHMMss') %>"
         }]
-      },
+      }
     },
     svgmin: {
       organizations: {
@@ -314,7 +317,7 @@ module.exports = function(grunt) {
           'testprops' : true,
           'domprefixes' : true
         },
-        "parseFiles" : false,
+        "parseFiles" : false
       }
     },
     clean: {
@@ -349,7 +352,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['<%=dirs.src%>/sass/*'],
-        tasks: ['compass:dev', 'replace:css', 'replace:html']
+        tasks: ['compass', 'replace:css', 'replace:html']
       }
     }
   });
@@ -367,5 +370,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks("grunt-modernizr");
 
-  grunt.registerTask('default', ['htmlhint', 'copy', 'modernizr', 'svgmin', 'grunticon', 'compass:dist', 'jshint:src', 'concat', 'jshint:tmp', 'uglify', 'replace', 'clean']);
+  grunt.registerTask('default', ['htmlhint', 'copy', 'modernizr', 'svgmin', 'grunticon', 'compass', 'jshint:src', 'concat', 'jshint:tmp', 'uglify', 'replace', 'clean']);
 };
