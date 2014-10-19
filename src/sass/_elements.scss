@@ -179,7 +179,10 @@ a.green3{
 .topics{
   padding:0;
   list-style-type: none;
-  height:72px + 12px + $line-height-computed + 2px;
+  @include clearfix();
+  @media (min-width: $screen-md-min) {
+    height:72px + 12px + $line-height-computed + 2px;
+  }
   li{
     padding-bottom:36px;
     @extend .col-xs-6;
