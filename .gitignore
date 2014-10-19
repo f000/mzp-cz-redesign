@@ -34,3 +34,4 @@ md_toc.rb
 # Deployed apps should consider commenting this lines out:
 node_modules
 bower_components
+closure
