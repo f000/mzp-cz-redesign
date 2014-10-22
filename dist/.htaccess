@@ -1,6 +1,18 @@
 ########################################
 # EXPIRATION HEADERS
-
+<IfModule mod_mime.c>
+  AddType text/x-component .htc
+  AddType image/svg+xml .svg .svgz
+  AddType image/gif .gif
+  AddType image/jpeg .jpg .jpeg .jpe
+  AddType image/png .png
+  AddType application/pdf .pdf
+  AddType application/msword .doc .docx
+  AddType text/richtext .rtf .rtx
+  AddType application/vnd.ms-powerpoint .pot .pps .ppt .pptx
+  AddType application/vnd.ms-excel .xla .xls .xlsx .xlt .xlw
+  AddType application/zip .zip
+</IfModule>
 <IfModule mod_expires.c> 
   # Enable expirations 
   ExpiresActive On 
@@ -12,7 +24,13 @@
   ExpiresByType image/png "access plus 1 year" 
   ExpiresByType image/jpg "access plus 1 year" 
   ExpiresByType image/jpeg "access plus 1 year" 
-  ExpiresByType image/svg+xml "access plus 1 year" 
+  ExpiresByType image/svg+xml "access plus 1 year"
+  # Documents - ensure filename change when modified
+  ExpiresByType application/pdf "access plus 1 year" 
+  ExpiresByType application/msword "access plus 1 year" 
+  ExpiresByType text/richtext "access plus 1 year" 
+  ExpiresByType application/vnd.ms-powerpoint "access plus 1 year" 
+  ExpiresByType application/vnd.ms-excel "access plus 1 year" 
   # CSS - ensure filename change when modified
   ExpiresByType text/css "access 1 year"
   # Javascript - ensure filename change when modified
