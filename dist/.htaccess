@@ -31,6 +31,7 @@
   ExpiresByType text/richtext "access plus 1 year" 
   ExpiresByType application/vnd.ms-powerpoint "access plus 1 year" 
   ExpiresByType application/vnd.ms-excel "access plus 1 year" 
+  ExpiresByType application/zip .zip "access plus 1 year" 
   # CSS - ensure filename change when modified
   ExpiresByType text/css "access 1 year"
   # Javascript - ensure filename change when modified
