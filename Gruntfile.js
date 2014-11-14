@@ -270,6 +270,14 @@ module.exports = function(grunt) {
           src: ['*.svg'],
           dest: '<%=dirs.tmp%>/organizations'
         }]
+      },
+      organizations_en: {
+        files: [{
+          expand: true,
+          cwd: '<%=dirs.src%>/img/organizations_en',
+          src: ['*.svg'],
+          dest: '<%=dirs.tmp%>/organizations_en'
+        }]
       }
     },
     grunticon: {
@@ -283,6 +291,18 @@ module.exports = function(grunt) {
         options: {
           cssprefix: '.org-',
           pngfolder: '../../img/organizations'
+        }
+      },
+      organizations_en: {
+        files: [{
+          expand: true,
+          cwd: '<%=dirs.tmp%>/organizations_en',
+          src: ['*.svg', '*.png'],
+          dest: '<%=dirs.dist%>/css/organizations_en'
+        }],
+        options: {
+          cssprefix: '.org-',
+          pngfolder: '../../img/organizations_en'
         }
       }
     },
@@ -334,11 +354,14 @@ module.exports = function(grunt) {
         '<%= uglify.dev.dest %>'
       ],
       svgmin: [
-        '<%=dirs.tmp%>/organizations'
+        '<%=dirs.tmp%>/organizations',
+        '<%=dirs.tmp%>/organizations_en'
       ],
       grunticon: [
         '<%=dirs.dist%>/css/organizations/grunticon.loader.js',
-        '<%=dirs.dist%>/css/organizations/preview.html'
+        '<%=dirs.dist%>/css/organizations/preview.html',
+        '<%=dirs.dist%>/css/organizations_en/grunticon.loader.js',
+        '<%=dirs.dist%>/css/organizations_en/preview.html'
       ]
     },
     watch: {

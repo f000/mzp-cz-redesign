@@ -143,7 +143,6 @@ function initMZP() {
     colorboxLightbox();
     contactTelCollapsing();
     mainMenu();
-    grunticon(['css/organizations/icons.data.svg.css', 'css/organizations/icons.data.png.css', 'css/organizations/icons.fallback.css']);
 }
 
 $(document).ready(initMZP);
