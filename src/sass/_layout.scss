@@ -112,6 +112,17 @@
     background-image: url('../img/logo-mzp-cs.png?NCMARK');
   }
 } 
+.lang-en #header-logo{
+   margin:20px 0 0;
+  a{
+    background-image: url('../img/logo-mzp-en.png?NCMARK');
+  }
+} 
+.lang-en.no-svg #header-logo{
+  a{
+    background-image: url('../img/logo-mzp-en.png?NCMARK');
+  }
+} 
 .no-backgroundsize #header-logo{
   .print-only{
     display: block;
