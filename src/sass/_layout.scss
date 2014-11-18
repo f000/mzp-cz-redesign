@@ -112,13 +112,13 @@
     background-image: url('../img/logo-mzp-cs.png?NCMARK');
   }
 } 
-.lang-en #header-logo{
+#header-logo:lang(en){
    margin:20px 0 0;
   a{
     background-image: url('../img/logo-mzp-en.png?NCMARK');
   }
 } 
-.lang-en.no-svg #header-logo{
+.no-svg #header-logo:lang(en){
   a{
     background-image: url('../img/logo-mzp-en.png?NCMARK');
   }
