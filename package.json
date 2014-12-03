@@ -1,7 +1,7 @@
 {
   "name": "mzp-cz-redesign",
   "title": "MZP.CZ Redesign Project",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Lukas Vorlicek <lukas.vorlicek@codeart.cz>"
   },
@@ -27,7 +27,7 @@
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "~0.5.0",
-    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-grunticon": "^1.2.13",
     "grunt-htmlhint": "^0.4.1",
     "grunt-markdown-pdf": "^2.1.1",

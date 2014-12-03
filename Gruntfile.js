@@ -242,6 +242,11 @@ module.exports = function(grunt) {
         files: [
           {nonull: true, expand: true, cwd: '<%=dirs.src%>/', src: ['*.html'], dest: '<%=dirs.dist%>/', filter: 'isFile'}
         ]
+      },
+      holderjs: {
+        nonull: true,
+        src: '<%=dirs.libs%>/holderjs/holder.js',
+        dest: '<%=dirs.dist%>/js/holder.js'
       }
     },
     replace: {
