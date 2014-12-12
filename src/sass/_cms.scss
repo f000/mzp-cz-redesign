@@ -90,6 +90,51 @@
       text-decoration: underline;
     }    
   }
+  /* ----- linksList */
+  .linksList, #linksList{
+    margin: 1em 0;
+    h3 {
+
+      color: $brand-green3;
+      //font-size: 120%;
+    }
+    ul {
+      margin: 0; padding: 0;
+      list-style-type: none;
+      list-style-image: none;
+    }
+    li {
+      padding: 3px 0 3px 26px;
+      background-repeat: no-repeat;
+      background-position: 0 3px;
+    }
+    li.pdf {
+      background-image: url(../img/fileicons/pdf.png);
+    }
+    li.doc {
+      background-image: url(../img/fileicons/doc.png);
+    }
+    li.xls {
+      background-image: url(../img/fileicons/xls.png);
+    }
+    li.gen {
+      background-image: url(../img/fileicons/file.png);
+    }
+    li.jpg {
+      background-image: url(../img/fileicons/jpg.png);
+    }
+    li.link {
+      background-image: url(../img/fileicons/html.png);
+      background-position: 3px 8px;
+    }
+    li.zip {
+      background-image: url(../img/fileicons/zip.png);
+      background-position: 3px 8px;
+    }
+    li a {
+      text-decoration: underline;
+    }
+  }
 }
 .no-svg .contentMainText ul{
   list-style:square url('../img/li-square.png?NCMARK');
@@ -435,53 +480,6 @@
 				/* end. contactTel */
 
 			/* end. contact */
-				/* ----- linksList */
-				#linksList {
-					margin: 1em 0;
-
-				}
-				#linksList h3 {
-
-					color: $brand-green3;
-					//font-size: 120%;
-				}
-				#linksList ul {
-					margin: 0; padding: 0;
-					list-style-type: none;
-          list-style-image: none;
-				}
-				#linksList ul li {
-					padding: 3px 0 3px 26px;
-					background-repeat: no-repeat;
-					background-position: 0 3px;
-				}
-				#linksList ul li.pdf {
-					background-image: url(../img/fileicons/pdf.png);
-				}
-				#linksList ul li.doc {
-					background-image: url(../img/fileicons/doc.png);
-				}
-				#linksList ul li.xls {
-					background-image: url(../img/fileicons/xls.png);
-				}
-				#linksList ul li.gen {
-					background-image: url(../img/fileicons/file.png);
-				}
-				#linksList ul li.jpg {
-					background-image: url(../img/fileicons/jpg.png);
-				}
-				#linksList ul li.link {
-					background-image: url(../img/fileicons/html.png);
-					background-position: 3px 8px;
-				}
-				#linksList ul li.zip {
-					background-image: url(../img/fileicons/zip.png);
-					background-position: 3px 8px;
-				}
-				#linksList ul li a {
-					text-decoration: underline;
-				}
-			/* end. linksList */
 		/* end. contentMain */
 
 			/* ----- unpackBox */
