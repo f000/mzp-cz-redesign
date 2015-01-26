@@ -308,11 +308,15 @@ a.green3{
   }
 }
 
-// Event list
-.event-list{
+// Event list & Poll box
+.event-list, .poll-box{
   border:1px solid $gray-border;
   @include clearfix();
   @include background-image(linear-gradient(bottom, $bg-gray4 0%, rgba(255,255,255,0) 25%));
+}
+
+// Event list
+.event-list{
   article{
     clear:both;
     > a, > a:visited{
@@ -375,6 +379,82 @@ a.green3{
     margin:$grid-gutter-width/2 0;
     text-align:right;
     padding-right:10px;
+  }
+}
+
+// Poll
+
+.poll-box{
+  padding:0 $grid-gutter-width/2;
+  dl{
+    margin-bottom:$grid-gutter-width;
+  }
+  dt{
+    font-size:$font-size-base;
+    color:$brand-green2;
+    margin:$line-height-computed 0;
+  }
+  dd{
+    margin:$line-height-computed 0;
+    font-size:$font-size-small;
+  }
+  p{
+    margin-bottom:$line-height-computed/3;
+  }
+  label{
+    margin-left:1.5em;
+    display:block;
+  }
+  input{
+    float:left;
+    margin-top:1px;
+  }
+  progress{
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    width:100%;
+    height:10px;
+    display:block;
+    border:none;
+    border-radius:6px;
+    background-color:$bg-gray3;
+    color:$brand-green2;
+    position:relative;
+  }
+  progress::-webkit-progress-bar{
+    background-color:$bg-gray3;
+    border-radius:6px;
+  }
+  progress::-webkit-progress-value{
+    position:relative;
+    background-color:$brand-green2;
+    border-radius:6px;
+    min-width:6px;
+  }
+  progress[value="0"]::-webkit-progress-value{
+    min-width:0;
+  }
+  progress::-moz-progress-bar{
+    background-color:$brand-green2;
+    border-radius:6px;
+    min-width:6px;
+  }
+  .progress-bar{
+    background-color:$bg-gray3;
+    border-radius:6px;
+    width:100%;
+    height:10px;
+  }
+  .progress-bar span{
+    background-color:$brand-green2;
+    border-radius:6px;
+    display: block;
+    min-width:6px;
+    text-indent: -9999px;height:10px;
+  }
+  progress[value="0"] .progress-bar span{
+    min-width:0;
   }
 }
 

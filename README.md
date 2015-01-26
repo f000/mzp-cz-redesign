@@ -14,6 +14,7 @@ Balík šablon a zdrojových kódů pro projekt Redesignu stránek [http://www.m
 * [Kontakty (původní)](http://f000.github.io/mzp-cz-redesign/dist/contact.html)
 * [Hledání (původní)](http://f000.github.io/mzp-cz-redesign/dist/search.html)
 * [EN verze (pouze carousel)](http://f000.github.io/mzp-cz-redesign/dist/index_en.html)
+* [Anketa](http://f000.github.io/mzp-cz-redesign/dist/poll.html)
 
 ## Dokumentace
 
