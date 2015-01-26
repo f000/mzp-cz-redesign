@@ -64,6 +64,7 @@
       margin: $line-height-computed/3;
       background-repeat: no-repeat;
       background-position: 0 3px;
+      background-image: url(../img/fileicons/file.png);
       a{
         padding-right:0.5em;
       }
@@ -86,6 +87,12 @@
     ul li.zip {
       background-image: url(../img/fileicons/zip.png);
     }
+    ul li.link {
+      background-image: url(../img/fileicons/html.png);
+    }
+    ul li.url {
+      background-image: url(../img/fileicons/url.png);
+    }
     ul li a {
       text-decoration: underline;
     }    
@@ -107,6 +114,7 @@
       padding: 3px 0 3px 26px;
       background-repeat: no-repeat;
       background-position: 0 3px;
+      background-image: url(../img/fileicons/file.png);
     }
     li.pdf {
       background-image: url(../img/fileicons/pdf.png);
@@ -125,7 +133,9 @@
     }
     li.link {
       background-image: url(../img/fileicons/html.png);
-      background-position: 3px 8px;
+    }
+    li.url {
+      background-image: url(../img/fileicons/url.png);
     }
     li.zip {
       background-image: url(../img/fileicons/zip.png);
