@@ -25,10 +25,12 @@
 #bg-3{
   background-color: $bg-white;
   border-top: 1px solid $gray-lighter;
-  @include background-image(
-    linear-gradient(bottom, $bg-gray3 0px, $bg-gray2 15px, $bg-white 115px, rgba(255,255,255,0) 100%),
-    linear-gradient(top, $bg-gray1 0px, $bg-white 115px, rgba(255,255,255,0) 100%)
-  );
+  @include with-browser-ranges(css-gradients) {
+    @include background-image(
+      linear-gradient(bottom, $bg-gray3 0px, $bg-gray2 15px, $bg-white 115px, rgba(255,255,255,0) 100%),
+      linear-gradient(top, $bg-gray1 0px, $bg-white 115px, rgba(255,255,255,0) 100%)
+    );
+  }
   font-size:0;
   .container{
     font-size:$font-size-base;
