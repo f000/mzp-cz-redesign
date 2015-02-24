@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs" class="no-js">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Anketa</title>
+  <link rel="stylesheet" media="all" href="css/all.css?NCMARK"/>
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie8.css?NCMARK"/>
+    <script src="js/html5shiv.min.js?NCMARK"></script>
+    <script src="js/respond.min.js?NCMARK"></script>
+  <![endif]-->
+  <script src="//use.typekit.net/roz2nwd.js"></script> 
+  <script>try{Typekit.load();}catch(e){}</script>
+  <script src="js/modernizr.min.js?NCMARK"></script>
+</head>
+<body>
+
+    <div class="poll-box">
+      <form method="post">
+        <dl>
+          <dt>Líbí se vám nový web MŽP?</dt>
+          <dd>
+            <input type="radio" id="poll-answer-1" name="poll-answer" value="1" />
+            <label for="poll-answer-1">Nádhera, je vidět velký krok vpřed</label>
+          </dd>
+          <dd>
+            <input type="radio" id="poll-answer-2" name="poll-answer" value="2" />
+            <label for="poll-answer-2">Zajímavá grafika, bohužel obsah je stejný</label>
+          </dd>
+          <dd>
+            <input type="radio" id="poll-answer-3" name="poll-answer" value="3" />
+            <label for="poll-answer-3">Je to omnoho více předhlednější</label>
+          </dd>
+          <dd>
+            <input type="radio" id="poll-answer-4" name="poll-answer" value="4" />
+            <label for="poll-answer-4">Nevím</label>
+          </dd>
+        </dl>
+      </form>
+      <dl>
+        <dt>Líbí se vám nový web MŽP?</dt>
+        <dd>
+          <p>Nádhera, je vidět velký krok vpřed (1&nbsp;856 hlasů)</p>
+          <progress max="100" value="60">
+            <div class="progress-bar">
+              <span style="width: 60%;">60%</span>
+            </div>
+          </progress>
+        </dd>
+        <dd>
+          <p>Zajímavá grafika, bohužel obsah je stejný (856 hlasů)</p>
+          <progress max="100" value="39">
+            <div class="progress-bar">
+              <span style="width: 39%;">39%</span>
+            </div>
+          </progress>
+        </dd>
+        <dd>
+          <p>Je to omnoho více předhlednější (1 hlas)</p>
+          <progress max="100" value="1">
+            <div class="progress-bar">
+              <span style="width: 1%;">1%</span>
+            </div>
+          </progress>
+        </dd>
+        <dd>
+          <p>Nevím (0 hlasů)</p>
+          <progress max="100" value="0">
+            <div class="progress-bar">
+              <span style="width: 0%;">0%</span>
+            </div>
+          </progress>
+        </dd>
+      </dl>
+    </div>
+    <script>
+      var body = document.body,
+          html = document.documentElement;
+      var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+      parent.pollResize(height);
+    </script>
+</body>
+</html>

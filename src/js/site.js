@@ -133,16 +133,27 @@ function contactTelCollapsing() {
     });
 }
 
+// Resize iframe
+function pollResize(height) {
+    $('#mzp-poll').height(0);
+    $('#mzp-poll').height(height);
+}
+
 // Init
 function initMZP() {
     shuffleTagCloud('.tag-cloud');
     scrollToTop('#gotop a');
     printPage('#print a');
     owlCarousel('.owl-carousel');
+
     titleTooltip();
     colorboxLightbox();
     contactTelCollapsing();
     mainMenu();
+
+    $('#mzp-poll').on("load", function () {
+        
+    });
 }
 
 $(document).ready(initMZP);
