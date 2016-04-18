@@ -397,8 +397,11 @@ a.green3{
   }
   dt{
     font-size:$font-size-base;
-    color:$brand-green2;
-    margin:$line-height-computed 0;
+    color:#fff;
+    position:relative;
+    margin:0 (-$grid-gutter-width/2) $line-height-computed;
+    background-color:$brand-green2;
+    padding:$line-height-computed $grid-gutter-width/2;
   }
   dd{
     margin:$line-height-computed 0;

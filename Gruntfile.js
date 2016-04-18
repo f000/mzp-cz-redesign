@@ -101,9 +101,9 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         options: {
-          compress: true,
+          compress: {},
           beautify: false,
-          mangle: true,
+          mangle: {},
           report: 'gzip',
           preserveComments:'some'
         },
